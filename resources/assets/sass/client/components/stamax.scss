@@ -1,0 +1,21 @@
+.stamax {
+  opacity: .8;
+  margin-bottom: 10px;
+  font-size: 11px;
+  text-align: center;
+  color: #fff;
+  transition: opacity .5s;
+
+  img {
+    width: 50px;
+  }
+
+  a {
+    display: block;
+    text-align: center;
+  }
+
+  &:hover {
+    opacity: 1;
+  }
+}
