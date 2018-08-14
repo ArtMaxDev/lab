@@ -7,6 +7,11 @@
             'icon'  => 'si si-user',
             'url'   => route('admin.users.index'),
         ),
+        array(
+            'name'  => 'Настройки',
+            'icon'  => 'si si-settings',
+            'url'   => route('admin.settings.index'),
+        ),
         #array(
         #    'name'  => 'Меню с подпунктами',
         #    'icon'  => 'si si-briefcase',

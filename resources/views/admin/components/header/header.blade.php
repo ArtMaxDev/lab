@@ -175,7 +175,7 @@
   <div id="page-header-loader" class="overlay-header bg-primary">
     <div class="content-header content-header-fullrow text-center">
       <div class="content-header-item">
-        <i class="fa fa-sun-o fa-spin text-white"></i>
+        <i class="fas fa-sun fa-spin text-white"></i>
       </div>
     </div>
   </div>

@@ -15,4 +15,5 @@ Route::get('/', function () {
     return redirect()->route('admin.users.index');
 })->name('admin.index');
 Route::view('/users', 'admin.pages.users')->name('admin.users.index');
+Route::view('/settings', 'admin.pages.settings')->name('admin.settings.index');
 Route::view('/login', 'admin.pages.login')->name('admin.users.login');
