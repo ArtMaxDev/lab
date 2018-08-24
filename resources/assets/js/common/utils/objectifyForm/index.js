@@ -6,7 +6,7 @@
 export default function (formArray) {
   const returnArray = {};
   for (let i = 0; i < formArray.length; i++) {
-    if (formArray[i].value) {
+    if (formArray[i].value && formArray[i].name !== '_token') {
       returnArray[formArray[i].name] = formArray[i].value;
     }
   }

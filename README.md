@@ -14,8 +14,8 @@
 
 ##### 1. Clone & install
 ```bash
-git clone git@bitbucket.org:stamax-dev/{PROJECT_NAME}.git
-cd {PROJECT_NAME}
+git clone git@github.com:ArtMaxDev/lab.git
+cd lab
 git checkout develop
 composer install
 npm install
