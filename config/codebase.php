@@ -12,8 +12,8 @@ return [
     'version' => env('CODEBASE_VERSION', 'v2.1'),
     'author' => env('CODEBASE_AUTHOR', 'pixelcave'),
     'robots' => env('CODEBASE_ROBOTS', 'noindex, nofollow'),
-    'title' => env('CODEBASE_TITLE', 'Stamax Bootstrap 4 Admin Template &amp, UI Framework'),
-    'description' => env('CODEBASE_DESCRIPTION', 'Bootstrap 4 Admin Template &amp, created by Stamax'),
+    'title' => env('CODEBASE_TITLE', 'Bootstrap 4 Admin Template &amp, UI Framework'),
+    'description' => env('CODEBASE_DESCRIPTION', 'Bootstrap 4 Admin Template &amp, created by ArtMax'),
 
     // : The url of your site, used in Open Graph Meta Data (eg 'https://example.com')
     'og_url_site' => env('CODEBASE_OG_URL_SITE', ''),

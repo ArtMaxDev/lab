@@ -7,7 +7,7 @@
                     Система управления интернет-магазином
                 </p>
                 <p class="font-italic text-white-op">
-                    Copyright &copy; Stamax <span class="js-year-copy">2017</span>
+                    Copyright &copy; ArtMaxDev <span class="js-year-copy">2018</span>
                 </p>
             </div>
         </div>
@@ -17,7 +17,7 @@
                 <div class="px-30 py-10">
                     <a class="link-effect font-w700" href="{{route('admin.index')}}">
                         <i class="si si-fire"></i>
-                        <span class="font-size-xl text-primary-dark">STA</span><span class="font-size-xl">MAX</span>
+                        <span class="font-size-xl text-primary-dark">ОНКО</span><span class="font-size-xl">ТЕРА</span>
                     </a>
                     <h1 class="h3 font-w700 mt-30 mb-10">Добро пожаловать в административную панель</h1>
                     <h2 class="h5 font-w400 text-muted mb-0">Выполните вход</h2>

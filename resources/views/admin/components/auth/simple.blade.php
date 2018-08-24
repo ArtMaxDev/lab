@@ -7,7 +7,7 @@
                 <div class="py-30 text-center">
                     <a class="link-effect font-w700" href="{{route('admin.index')}}">
                         <i class="si si-fire"></i>
-                        <span class="font-size-xl text-primary-dark">STA</span><span class="font-size-xl">MAX</span>
+                        <span class="font-size-xl text-primary-dark">ОНКО</span><span class="font-size-xl">ТЕРА</span>
                     </a>
                     <h1 class="h4 font-w700 mt-30 mb-10">Добро пожаловать в административную панель</h1>
                     <h2 class="h5 font-w400 text-muted mb-0">Сегодня прекрасный день!</h2>

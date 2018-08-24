@@ -25,12 +25,14 @@ const validation = (() => {
   const validationRules = {
     ...validationDefaults,
     rules: {
-      user_name: { required: true, minlength: 3 },
-      user_phone_first: { required: true, phonesRUS_UA: true },
-      user_phone_second: { required: false, phonesRUS_UA: true },
-      email: { required: true, email: true, minlength: 6 },
-      password: { required: true, minlength: 8 },
-      repassword: { required: true, minlength: 8, equalTo: '#user_password_confirm' }
+      email: { required: true, email: true },
+      phone1: { required: true, phonesRUS_UA: true },
+      address_uk: { required: true },
+      address_en: { required: true },
+      meta_description: { required: true },
+      meta_description_en: { required: true },
+      meta_keywords: { required: true },
+      meta_keywords_en: { required: true }
     }
   };
 
@@ -40,13 +42,8 @@ const validation = (() => {
       submitHandler(form) {
         Codebase.layout('header_loader_on');
         SettingsAPI.update(form)
-          .then((response) => {
+          .then(() => {
             Codebase.layout('header_loader_off');
-            if (isEdit) {
-              //
-            } else {
-              //
-            }
             showSuccess(true);
           }).catch((response) => {
             $(form).removeClass('is-loading');
