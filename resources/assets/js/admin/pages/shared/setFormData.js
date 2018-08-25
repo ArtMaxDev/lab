@@ -1,7 +1,7 @@
 /**
  * Fills form from jQuery.serializeArray() like data
  * @param form {jQuery}
- * @param data {Array}
+ * @param data {Array|Object}
  */
 export default function (form, data) {
   Object.keys(data).forEach((key) => {
