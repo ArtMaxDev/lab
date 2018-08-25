@@ -43,11 +43,6 @@
                                 <td>{{$user->email}}</td>
                             </tr>
                         @endforeach
-                            <tr>
-                                <td class="text-center">1</td>
-                                <td class="font-w600">oleg</td>
-                                <td>example@email.com</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
