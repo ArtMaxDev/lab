@@ -17,6 +17,9 @@ const defaultConfig = {
   },
   modalTarget: '#modalApi',
   formTarget: '#formApi',
+  resetOnEdit: {},
+  runOnEditOpen() {},
+  runOnCreateOpen() {},
 };
 
 /**
@@ -24,7 +27,7 @@ const defaultConfig = {
  * @param table {jQuery.DataTable}
  * @param options {Object}
  */
-export default function (table, options) {
+export default function (table, options = {}) {
   const config = {
     ...defaultConfig,
     ...options
@@ -35,15 +38,19 @@ export default function (table, options) {
       if (config.before) {
         if (config.before(jQuery(config.formTarget)) === false) return;
       }
+
       const isEditMode = $(e.relatedTarget).data('edit') === true;
       if (isEditMode && table) {
         const data = table.row({ selected: true }).data();
-        setFormData(jQuery(config.formTarget), data);
+        config.runOnEditOpen(e.target, data);
+        setFormData(jQuery(config.formTarget), { ...data, ...config.resetOnEdit });
       } else {
+        config.runOnCreateOpen(e.target);
         $(config.formTarget).get(0).reset();
         $(config.formTarget).find('select').trigger('change');
         setFormData($(config.formTarget), {
-          id: null
+          id: null,
+          userId: null
         });
       }
       $(e.target).find('.block-header:first')
@@ -53,6 +60,8 @@ export default function (table, options) {
         .text(isEditMode ? config.edit.text : config.create.text);
       $(e.target).find('button[type=submit] span')
         .text(isEditMode ? config.edit.buttonText : config.create.buttonText);
+      $(e.target).find('.is-invalid')
+        .removeClass('is-invalid');
     }
   });
 }

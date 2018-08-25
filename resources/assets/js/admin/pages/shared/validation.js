@@ -24,7 +24,7 @@ export const validationDefaults = {
 /**
  * Fill form with response error messages
  * @param response {Object}
- * @param $validatorInstance {jQuery.validate}
+ * @param [$validatorInstance] {jQuery.validate}
  */
 export function showErrors(response, $validatorInstance) {
   let errorText = 'Попробоуйте еще раз, позже';
@@ -40,7 +40,7 @@ export function showErrors(response, $validatorInstance) {
     title: 'Ошибка!',
     type: 'error',
     html: errorText,
-    timer: 1500
+    timer: 5000
   });
 }
 
@@ -54,6 +54,8 @@ export function showSuccess(isEdit = false) {
     title: 'Удача!',
     type: 'success',
     html: text,
-    timer: 1500
+    timer: 2500
   });
 }
+
+export default swal;

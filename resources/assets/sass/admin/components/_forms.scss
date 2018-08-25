@@ -1,0 +1,37 @@
+form {
+  position: relative;
+
+  &.is-loading {
+    &::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(#fff, .7);
+      z-index: 1;
+    }
+
+    &::after {
+      animation: fa-spin 1s infinite steps(8);
+      display: inline-block;
+      font: normal normal normal 14px/1 'Font Awesome 5 Free';
+      font-size: 2em;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      content: "\f110";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 2;
+    }
+
+    button[type=submit],
+    input[type=submit] {
+      pointer-events: none;
+      opacity: 0.5;
+    }
+  }
+}
