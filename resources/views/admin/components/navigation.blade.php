@@ -12,6 +12,11 @@
             'icon'  => 'si si-settings',
             'url'   => route('admin.settings.index'),
         ),
+        array(
+            'name'  => 'Обратная связь',
+            'icon'  => 'si si-envelope-letter',
+            'url'   => route('admin.feedback.index'),
+        ),
         #array(
         #    'name'  => 'Меню с подпунктами',
         #    'icon'  => 'si si-briefcase',
