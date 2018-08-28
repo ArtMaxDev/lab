@@ -50,18 +50,6 @@
                                 <td>{{$item->status}}</td>
                             </tr>
                         @endforeach
-                            <tr>
-                                <td class="text-center">1</td>
-                                <td>25-06-2018</td>
-                                <td class="font-w600">Макаров Оленг Владимирович</td>
-                                <td class="font-w600">+380630121202</td>
-                                <td>makarov@example.com</td>
-                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto ex quas unde. Adipisci ducimus molestiae nam necessitatibus sunt unde, voluptates. Consequuntur culpa facilis minima, neque nulla omnis totam ullam.</td>
-                                <td>Ad alias amet consequuntur cum cumque distinctio enim eos facere facilis harum
-                                    id labore natus odit officia possimus, praesentium quae qui quia ratione sint
-                                    sit sunt suscipit, unde voluptates, voluptatum.</td>
-                                <td>1</td>
-                            </tr>
                         </tbody>
                     </table>
                 </div>
