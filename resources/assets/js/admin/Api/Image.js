@@ -1,8 +1,8 @@
 import '../core';
-// import Router from 'common/Router';
+import Router from 'common/Router';
 
 export default class {
   static store() {
-    return Promise.resolve({ link: '//placehold.it/800' });
+    return $.post(Router.name('admin.image.store'));
   }
 }
