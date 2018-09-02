@@ -10,6 +10,6 @@ export default class {
       processData: false,
       contentType: false,
       data,
-    }).then(response => response.path);
+    });
   }
 }
