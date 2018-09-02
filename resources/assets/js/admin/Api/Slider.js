@@ -28,7 +28,6 @@ export default class {
   static load($element, container) {
     return $.get(Router.name('admin.sliders.index'))
       .then((response) => {
-        console.log(response);
         $element.html($(response).find(container).html());
       });
   }

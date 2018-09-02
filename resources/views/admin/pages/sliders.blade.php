@@ -1,17 +1,5 @@
 @extends('admin.master')
-@php($sliders = [(object)[
-    "id"=> '1',
-    "title_uk"=> 'title_uk',
-    "title_en"=> 'title_en',
-    "description_uk"=> 'description_ukdescription_uk description_uk description_uk description_ukdescription_uk description_uk description_uk description_uk',
-    "description_en"=> 'description_en',
-    "link"=> 'link',
-    "image"=> '//placehold.it/600',
-    "image_alt"=> 'image_alt',
-    "sorting"=> 0,
-    "style"=> 1,
-    "status"=> 1
-]])
+@php($sliders = [])
 @php($statusList = [
     0 => 'Активный',
     1 => 'Не активный'
