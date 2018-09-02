@@ -1,8 +1,4 @@
 @extends('admin.master')
-@php($statusList = [
-    0 => "Опубликованно",
-    1 => "Не опубликованно",
-])
 @section('content')
     <!-- Page Content -->
     <div class="content">
@@ -153,11 +149,6 @@
     </div>
 @endpush
 @push('scripts')
-    <script>
-        window.app_data = {
-            statusList: {!! json_encode($statusList) !!},
-        }
-    </script>
     <script defer src="{{mix('/assets/pages/publication-create.js', 'admin')}}"></script>
 @endpush
 @push('styles')
