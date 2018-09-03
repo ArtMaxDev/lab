@@ -18,6 +18,11 @@
             'url'   => route('admin.feedback.index'),
         ),
         array(
+            'name'  => 'Слайдер',
+            'icon'  => 'fa fa-images',
+            'url'   => route('admin.sliders.index'),
+        ),
+        array(
             'name'  => 'Публикации',
             'icon'  => 'fa fa-list',
             'sub'   => array(

@@ -23,3 +23,4 @@ Route::view('/publications/{id}', 'admin.pages.publication-create')->name('admin
 /* END Publications */
 Route::view('/settings', 'admin.pages.settings')->name('admin.settings.index');
 Route::view('/login', 'admin.pages.login')->name('admin.users.login');
+Route::view('/sliders', 'admin.pages.sliders')->name('admin.sliders.index');
