@@ -1,5 +1,5 @@
 import '../core';
-import Router from '../../common/Router';
+import Router from 'common/Router';
 import makeForm from './shared/jsonFromJqueryForm';
 
 export default class {
