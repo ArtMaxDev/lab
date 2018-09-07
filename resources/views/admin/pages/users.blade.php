@@ -1,5 +1,4 @@
 @extends('admin.master')
-@php($users = [])
 @section('content')
     <!-- Page Content -->
     <div class="content">
@@ -8,7 +7,7 @@
         <div class="block">
             <div class="block-header block-header-default d-block d-md-flex">
                 <h3 class="block-title pr-3">Users
-                    <small>({{count($users)}})</small>
+                    <small>({{$users->count()}})</small>
                 </h3>
                 <div class="block-options form-inline pl-0">
                     <button type="button" class="btn btn-sm btn-success mr-2" data-toggle="modal"
@@ -94,7 +93,7 @@
                                                 class="text-danger js-pass-required">*</span></label>
                                         <div class="col-12">
                                             <input type="password" class="form-control" id="user_password"
-                                                   name="user_password">
+                                                   name="password">
                                         </div>
                                     </div>
                                 </div>
@@ -104,7 +103,7 @@
                                                 class="text-danger js-pass-required">*</span></label>
                                         <div class="col-12">
                                             <input type="password" class="form-control" id="user_password_confirm"
-                                                   name="user_password_confirm">
+                                                   name="password_confirmation">
                                         </div>
                                     </div>
                                 </div>

@@ -12,11 +12,15 @@
 */
 Route::get('/login', 'AuthController@showLoginForm')->name('users.login');
 Route::post('/login', 'AuthController@login')->name('users.login.post');
+
 Route::middleware(['auth', 'role:root'])->group(function () {
     Route::get('/', function () {
         return redirect()->route('admin.users.index');
     })->name('index');
-    Route::view('/users', 'admin.pages.users')->name('users.index');
+    Route::get('/users', 'UserController@index')->name('users.index');
+    Route::post('/users', 'UserController@store')->name('users.store');
+    Route::put('/users/{user}', 'UserController@update')->name('users.update');
+    Route::delete('/users/{user}', 'UserController@delete')->name('users.delete');
     Route::view('/feedback', 'admin.pages.feedback')->name('feedback.index');
 
     Route::get('/publications', 'PublicationController@index')->name('publications.index');
