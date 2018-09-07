@@ -16,11 +16,13 @@ Route::get('/', function () {
 })->name('admin.index');
 Route::view('/users', 'admin.pages.users')->name('admin.users.index');
 Route::view('/feedback', 'admin.pages.feedback')->name('admin.feedback.index');
-/* Publications */
-Route::view('/publications', 'admin.pages.publications')->name('admin.publications.index');
-Route::view('/publications/create', 'admin.pages.publication-create')->name('admin.publications.create');
-Route::view('/publications/{id}', 'admin.pages.publication-create')->name('admin.publications.edit');
-/* END Publications */
+
+Route::get('/publications', 'PublicationController@index')->name('admin.publications.index');
+Route::get('/publications/create', 'PublicationController@create')->name('admin.publications.create');
+Route::get('/publications/{publication}', 'PublicationController@edit')->name('admin.publications.edit');
+Route::post('/publications', 'PublicationController@store')->name('admin.publications.store');
+Route::put('/publications/{publication}', 'PublicationController@update')->name('admin.publications.update');
+
 Route::view('/settings', 'admin.pages.settings')->name('admin.settings.index');
 Route::view('/login', 'admin.pages.login')->name('admin.users.login');
 Route::view('/sliders', 'admin.pages.sliders')->name('admin.sliders.index');
