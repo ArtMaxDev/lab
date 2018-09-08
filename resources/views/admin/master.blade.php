@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
 
     <title>@yield('title', config('codebase.title') )</title>
-
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="description" content="@yield('description', config('codebase.description') )">
     <meta name="author" content="{{ config('codebase.author') }}">
     <meta name="robots" content="{{ config('codebase.robots') }}">
