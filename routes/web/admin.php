@@ -32,4 +32,9 @@ Route::middleware(['auth', 'role:root'])->group(function () {
     Route::view('/settings', 'admin.pages.settings')->name('settings.index');
     Route::view('/sliders', 'admin.pages.sliders')->name('sliders.index');
     Route::post('/image', 'ImageController')->name('image.upload');
+
+    Route::get('/sliders', 'SliderController@index')->name('sliders.index');
+    Route::post('/sliders', 'SliderController@store')->name('sliders.store');
+    Route::put('/sliders', 'SliderController@update')->name('sliders.update');
+    Route::delete('/sliders', 'SliderController@destroy')->name('sliders.destroy');
 });

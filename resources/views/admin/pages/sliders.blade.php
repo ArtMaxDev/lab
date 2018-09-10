@@ -1,5 +1,4 @@
 @extends('admin.master')
-@php($sliders = [])
 @php($statusList = [
     0 => 'Активный',
     1 => 'Не активный'
@@ -16,7 +15,7 @@
         <div class="block" id="mainBlock">
             <div class="block-header block-header-default d-block d-md-flex">
                 <h3 class="block-title pr-3">Слайдеры
-                    <small>({{count($sliders)}})</small>
+                    <small>({{$sliders->count()}})</small>
                 </h3>
                 <div class="block-options form-inline pl-0">
                     <button type="button" class="btn btn-sm btn-success mr-2" data-toggle="modal"
