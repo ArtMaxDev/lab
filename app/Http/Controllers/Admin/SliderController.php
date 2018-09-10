@@ -2,31 +2,31 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Slider;
+use App\Models\Slide;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
 class SliderController extends Controller
 {
-    public function index(Slider $slider)
+    public function index(Slide $slide)
     {
         return view('admin.sliders.index')->with([
-            'sliders' => $slider->get(),
+            'sliders' => $slide->get(),
         ]);
     }
 
-    public function store(Request $request, Slider $slider)
+    public function store(Request $request, Slide $slide)
     {
-        return $slider->create($request->all());
+        return $slide->create($request->all());
     }
 
-    public function update(Request $request, Slider $slider)
+    public function update(Request $request, Slide $slide)
     {
-        return $slider->update($request->all());
+        return $slide->update($request->all());
     }
 
-    public function destroy(Slider $slider)
+    public function destroy(Slide $slide)
     {
-        return $slider->delete();
+        return $slide->delete();
     }
 }
