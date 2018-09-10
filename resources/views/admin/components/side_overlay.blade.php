@@ -17,7 +17,7 @@
                     <a class="img-link mr-5" href="{{route('admin.index')}}">
                         <img class="img-avatar img-avatar32" src="/admin/assets/images/static/avatar.jpg" alt="">
                     </a>
-                    <a class="align-middle link-effect text-primary-dark font-w600" href="{{route('admin.index')}}">John Smith</a>
+                    <a class="align-middle link-effect text-primary-dark font-w600" href="{{route('admin.index')}}">{{Auth::user()->name}}</a>
                 </div>
                 <!-- END User Info -->
             </div>

@@ -6,9 +6,9 @@
     'codebase.inc_footer' => false,
 ]))
 @section('content')
-    @include('admin.components.auth.boxed')
+{{--    @include('admin.components.auth.boxed')--}}
     {{--@include('admin.components.auth.simple')--}}
-    {{--@include('admin.components.auth.full')--}}
+    @include('admin.components.auth.full')
 @endsection
 @push('scripts')
     <script defer src="{{mix('/assets/pages/login.js', 'admin')}}"></script>

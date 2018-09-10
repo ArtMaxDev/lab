@@ -3,9 +3,6 @@
     <div class="row mx-0 bg-black-op">
         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
             <div class="p-30 invisible" data-toggle="appear">
-                <p class="font-size-h3 font-w600 text-white">
-                    Система управления интернет-магазином
-                </p>
                 <p class="font-italic text-white-op">
                     Copyright &copy; ArtMaxDev <span class="js-year-copy">2018</span>
                 </p>
@@ -27,7 +24,8 @@
                 <!-- Sign In Form -->
                 <!-- jQuery Validation (.js-validation-signin class is initialized in js/pages/login.js) -->
                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                <form class="js-validation-signin px-30" action="{{--route('login')--}}" method="post">
+                <form class="js-validation-signin px-30" action="{{route('admin.users.login.post')}}" method="post">
+                    {{csrf_field()}}
                     <div class="form-group row">
                         <div class="col-12 {{$errors->any() ? ' invalid' : ''}}">
                             <div class="form-material floating">
