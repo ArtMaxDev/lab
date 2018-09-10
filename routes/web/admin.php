@@ -12,6 +12,7 @@
 */
 Route::get('/login', 'AuthController@showLoginForm')->name('users.login');
 Route::post('/login', 'AuthController@login')->name('users.login.post');
+Route::post('/logout', 'AuthController@logout')->name('users.logout.post');
 
 Route::middleware(['auth', 'role:root'])->group(function () {
     Route::get('/', function () {
