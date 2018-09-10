@@ -1,40 +1,50 @@
 @extends('client.master')
 @section('content')
-    <div class="container">
-        <nav class="navbar">
-        <span id="navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </span>
-            <a href="#" id="logo">ОНКОТЕРАНОСТИКА</a>
-            <ul id="main-nav">
-                <li>
-                    <a href="#" class="nav-links">Про нас</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-links">Послуги</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-links">Корисна Информация</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-links">Команда</a>
-                </li>
-                <li>
-                    <a href="#" class="nav-links">Контакти</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- /.row -->
-    </div>
 
-    <div class="container-fluid">
-        <div class="row">
-            Slider
+    <section class="slider">
+    <div id="slider">
+        <div class="slide">
+            <img class="image tns-lazy-img" data-src="/client/assets/images/static/slide1.jpg" alt="Slide 1">
+            <div class="content">
+                <div class="container">
+                    <div class="content-right">
+                        <h3 class="title">Цени свою жизнь</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
+                        <a href="#" class="btn">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /.row -->
+        <div class="slide">
+            <img class="image tns-lazy-img" data-src="/client/assets/images/static/slide1.jpg?1" alt="Slide 2">
+            <div class="content">
+                <div class="container">
+                    <div class="content-right">
+                        <h3 class="title">Цени свою жизнь</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
+                        <a href="#" class="btn">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slide">
+            <img class="image tns-lazy-img" data-src="/client/assets/images/static/slide1.jpg?2" alt="Slide 3">
+            <div class="content">
+                <div class="container">
+                    <div class="content-right">
+                        <h3 class="title">Цени свою жизнь</h3>
+                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
+                        <a href="#" class="btn">Узнать подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-    <!-- /.container-fluid -->
+    </section>
 @endsection
 @push('scripts')
     <script defer src="{{mix('/assets/pages/index.js', 'client')}}"></script>
+@endpush
+@push('critical-css')
+    <link rel="stylesheet" href="{{mix('/assets/pages/index.css', 'client')}}">
 @endpush
