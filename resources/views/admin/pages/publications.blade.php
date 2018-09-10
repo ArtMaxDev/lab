@@ -1,9 +1,4 @@
 @extends('admin.master')
-@php($publications = [])
-@php($statusList = [
-    0 => "Опубликованно",
-    1 => "Не опубликованно",
-])
 @section('content')
     <!-- Page Content -->
     <div class="content">
@@ -12,7 +7,7 @@
         <div class="block">
             <div class="block-header block-header-default d-block d-md-flex">
                 <h3 class="block-title pr-3">Публикации
-                    <small>({{count($publications)}})</small>
+                    <small>({{$publications->count()}})</small>
                 </h3>
                 <div class="block-options form-inline pl-0">
                     <button type="button" class="btn btn-sm btn-success mr-2 js-create">
