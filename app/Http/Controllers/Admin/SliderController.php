@@ -10,7 +10,7 @@ class SliderController extends Controller
 {
     public function index(Slide $slide)
     {
-        return view('admin.sliders.index')->with([
+        return view('admin.pages.sliders')->with([
             'sliders' => $slide->get(),
         ]);
     }
