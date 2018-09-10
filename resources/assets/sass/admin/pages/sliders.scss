@@ -1,0 +1,9 @@
+@import "../core/variables";
+
+#preview {
+  display: block;
+}
+
+#preview[src=""] {
+  display: none;
+}

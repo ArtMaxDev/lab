@@ -143,7 +143,7 @@
                                         <label for="style" class="col-12">Стиль</label>
                                         <div class="col-12">
                                             <select name="style" id="style" class="form-control">
-                                                @foreach($statusList as $style_id => $style)
+                                                @foreach($styleList as $style_id => $style)
                                                     <option value="{{$style_id}}">{{$style}}</option>
                                                 @endforeach
                                             </select>
@@ -194,4 +194,7 @@
         }
     </script>
     <script defer src="{{mix('/assets/pages/sliders.js', 'admin')}}"></script>
+@endpush
+@push('styles')
+    <link rel="stylesheet" href="{{mix('/assets/pages/sliders.css', 'admin')}}">
 @endpush
