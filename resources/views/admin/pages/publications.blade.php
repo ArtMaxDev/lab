@@ -1,8 +1,4 @@
 @extends('admin.master')
-@php($statusList = [
-    0 => "Не публикованно",
-    1 => "Опубликованно",
-])
 @section('content')
     <!-- Page Content -->
     <div class="content">
