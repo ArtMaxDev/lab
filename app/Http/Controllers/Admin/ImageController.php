@@ -16,8 +16,8 @@ class ImageController extends Controller
                 'h' => 1080,
             ],
             'small' => [
-                'w' => 200,
-                'h' => 200,
+                'w' => 400,
+                'h' => 400,
             ]
         ];
 
