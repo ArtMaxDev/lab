@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Illuminate\Notifications\Notifiable;
+use Ultraware\Roles\Models\Role;
 use Ultraware\Roles\Traits\HasRoleAndPermission;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -34,4 +35,12 @@ class User extends Authenticatable
         'password', 'remember_token',
     ];
 
+    public static function boot()
+    {
+        parent::boot();
+        self::creating(function ($model) {
+            $role = Role::where('name', 'root')->first();
+            $model->attachRole($role);
+        });
+    }
 }

@@ -1,5 +1,6 @@
 import '../core';
 import Router from '../../common/Router';
+import ImageAPI from './Image';
 import makeForm from './shared/jsonFromJqueryForm';
 
 export default class {

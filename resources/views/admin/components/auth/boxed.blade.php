@@ -20,7 +20,8 @@
             <div class="col-sm-8 col-md-6 col-xl-4">
                 <!-- jQuery Validation (.js-validation-signin class is initialized in pages/login.js) -->
                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                <form class="js-validation-signin" action="{{--route('login')--}}" method="post">
+                <form class="js-validation-signin" action="{{route('admin.users.login.post')}}" method="post">
+                    @csrf
                     <div class="form-group row">
                         <div class="col-12 {{$errors->any() ? ' invalid' : ''}}">
                             <div class="form-material floating">
