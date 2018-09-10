@@ -38,7 +38,7 @@ class User extends Authenticatable
     public static function boot()
     {
         parent::boot();
-        self::creating(function ($model) {
+        self::created(function ($model) {
             $role = Role::where('name', 'root')->first();
             $model->attachRole($role);
         });
