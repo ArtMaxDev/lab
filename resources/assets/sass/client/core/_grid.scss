@@ -1,0 +1,16 @@
+.container-fluid {
+  padding-right: $p-gutter / 2;
+  padding-left: $p-gutter / 2;
+}
+
+.container {
+  width: $p-container;
+  max-width: 100%;
+  padding-right: 16px;
+  padding-left: 16px;
+}
+
+.container, .container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+}
