@@ -17,16 +17,24 @@ class SliderController extends Controller
 
     public function store(Request $request, Slide $slide)
     {
-        return $slide->create($request->all());
+        return response()->json([
+            'data' => $slide->create($request->all())->toArray(),
+        ]);
     }
 
     public function update(Request $request, Slide $slide)
     {
-        return $slide->update($request->all());
+        $slide->update($request->all());
+
+        return response()->json([
+            'data' => $slide->toArray(),
+        ]);
     }
 
     public function destroy(Slide $slide)
     {
-        return $slide->delete();
+        $slide->delete();
+
+        return response()->json([], 200);
     }
 }

@@ -31,7 +31,9 @@ class PublicationController extends Controller
 
     public function store(Request $request, Publication $publication)
     {
-        return $publication->create($request->all());
+        return response()->json([
+            'data' => $publication->create($request->all())->toArray(),
+        ]);
     }
 
     public function edit(Publication $publication)
@@ -44,11 +46,17 @@ class PublicationController extends Controller
 
     public function update(Request $request, Publication $publication)
     {
-        return $publication->update($request->all());
+        $publication->update($request->all());
+
+        return response()->json([
+            'data' => $publication->toArray(),
+        ]);
     }
 
     public function destroy(Publication $publication)
     {
-        return $publication->delete();
+        $publication->delete();
+
+        return response()->json([], 200);
     }
 }

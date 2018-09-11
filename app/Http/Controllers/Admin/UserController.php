@@ -17,24 +17,32 @@ class UserController extends Controller
 
     public function store(UserRequest $request, User $user)
     {
-        return $user->create($request->only([
-            'name',
-            'email',
-            'password',
-        ]));
+        return response()->json([
+            'data' => $user->create($request->only([
+                'name',
+                'email',
+                'password',
+            ]))->toArray(),
+        ]);
     }
 
     public function update(UserRequest $request, User $user)
     {
-        return $user->update($request->only([
+        $user->update($request->only([
             'name',
             'email',
             'password',
         ]));
+
+        return response()->json([
+            'data' => $user->toArray(),
+        ]);
     }
 
     public function delete(User $user)
     {
-        return $user->delete();
+        $user->delete();
+
+        return response()->json([], 200);
     }
 }
