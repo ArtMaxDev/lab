@@ -171,7 +171,7 @@
                                     <label class="custom-file-label" for="image"></label>
                                 </div>
                             </div>
-                            <img src="{{$slider->image ?? null}}" id="preview" alt="Загрузите изображение" class="img-fluid mx-auto d-block mb-3">
+                            <img src="{{$slider->image ?? null}}" id="preview" alt="Загрузите изображение" class="img-fluid mx-auto mb-3">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-alt-secondary" data-dismiss="modal">Отмена</button>
