@@ -136,7 +136,7 @@ const validation = (() => {
         promise
           .then(() => {
             $('#modalApi').modal('hide');
-            SliderAPI.load($('#content'), 'content')
+            SliderAPI.load($('#content'), '#content')
               .then(() => {
                 Codebase.blocks('#mainBlock', 'state_normal');
               }).catch(() => {

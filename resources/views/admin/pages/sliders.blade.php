@@ -30,7 +30,7 @@
                     @foreach($sliders as $slider)
                         <div class="col-md-3 animated fadeIn">
                             <div class="options-container fx-item-zoom-in {{$slider->status === 0 ? 'ribbon-success' : 'ribbon-danger'}}">
-                                <img class="img-fluid options-item d-block mx-auto" src="{{$slider->image}}" alt="{{$slider->image_alt}}">
+                                <img class="img-fluid options-item d-block mx-auto" src="{{"$slider->image.jpg"}}" alt="{{$slider->image_alt}}">
                                 <div class="ribbon-box">
                                     <i class="fa fa-fw fa-lg {{$slider->status === 0 ? 'fa-eye' : 'fa-eye-slash'}}"></i>
                                 </div>
@@ -171,7 +171,7 @@
                                     <label class="custom-file-label" for="image"></label>
                                 </div>
                             </div>
-                            <img src="{{$slider->image ?? null}}" id="preview" alt="Загрузите изображение" class="img-fluid mx-auto mb-3">
+                            <img src="" id="preview" alt="Загрузите изображение" class="img-fluid mx-auto mb-3">
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-alt-secondary" data-dismiss="modal">Отмена</button>

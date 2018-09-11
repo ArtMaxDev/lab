@@ -83,6 +83,6 @@ class ImageController extends Controller
             self::IMAGE_SIZES['small']['h']
         )->save($storage_path . $small_image_name);
 
-        return url($image_path_save . '/' . $image_name);
+        return url('/storage' . $image_path_save . '/' . $image_name);
     }
 }
