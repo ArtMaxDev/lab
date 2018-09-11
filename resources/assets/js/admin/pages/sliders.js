@@ -77,6 +77,7 @@ const actions = (() => {
             html: 'Слайд успешно удален!',
             timer: 2500
           });
+          window.location.reload();
         }
       });
     });
@@ -136,13 +137,8 @@ const validation = (() => {
         promise
           .then(() => {
             $('#modalApi').modal('hide');
-            SliderAPI.load($('#content'), '#content')
-              .then(() => {
-                Codebase.blocks('#mainBlock', 'state_normal');
-              }).catch(() => {
-                window.location.reload();
-              });
             showSuccess(isEdit);
+            window.location.reload();
           }).catch((response) => {
             Codebase.blocks('#mainBlock', 'state_normal');
             showErrors(response.responseJSON || response, $validator);

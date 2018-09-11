@@ -30,7 +30,7 @@
                     @foreach($sliders as $slider)
                         <div class="col-md-3 animated fadeIn">
                             <div class="options-container fx-item-zoom-in {{$slider->status === 0 ? 'ribbon-success' : 'ribbon-danger'}}">
-                                <img class="img-fluid options-item d-block mx-auto" src="{{"$slider->image.jpg"}}" alt="{{$slider->image_alt}}">
+                                <img class="img-fluid options-item d-block mx-auto" src="{{"$slider->image.jpg"}}" alt="{{$slider->image_alt}}" style="min-height: 150px">
                                 <div class="ribbon-box">
                                     <i class="fa fa-fw fa-lg {{$slider->status === 0 ? 'fa-eye' : 'fa-eye-slash'}}"></i>
                                 </div>
@@ -42,9 +42,9 @@
                                                 data-target="#modalApi" data-edit="true" data-id="{{$slider->id}}">
                                             <i class="fa fa-pencil"></i> Редактировать
                                         </button>
-                                        <a class="btn btn-sm btn-rounded btn-alt-danger min-width-75" href="javascript:void(0)">
+                                        <button class="btn btn-sm btn-rounded btn-alt-danger min-width-75 js-remove" data-id="{{$slider->id}}">
                                             <i class="fa fa-times"></i> Удалить
-                                        </a>
+                                        </button>
                                     </div>
                                 </div>
                             </div>

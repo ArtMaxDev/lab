@@ -22,8 +22,9 @@ class CreateSlidesTable extends Migration
             $table->string('link');
             $table->string('image');
             $table->string('image_alt')->nullable();
-            $table->string('style')->default(0);
-            $table->string('status')->default(0);
+            $table->unsignedInteger('style')->default(0);
+            $table->unsignedInteger('status')->default(0);
+            $table->unsignedInteger('sorting')->default(0);
             $table->timestamps();
         });
     }

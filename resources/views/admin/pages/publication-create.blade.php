@@ -55,31 +55,31 @@
                     <div class="row">
                         <div class="form-group col-xl-6">
                             <label for="meta_title_uk">Meta-title [UK]</label>
-                            <input type="text" class="form-control" id="meta_title_uk" name="meta_title_uk" placeholder="..." value="{{$publication->meta_title_uk ?? null}}" required>
+                            <input type="text" class="form-control" id="meta_title_uk" name="meta_title_uk" placeholder="..." value="{{$publication->meta_title_uk ?? null}}">
                             <div class="form-text text-muted">Название публикации для поисковых систем.</div>
                         </div>
                         <div class="form-group col-xl-6">
                             <label for="meta_title_en">Meta-title [EN]</label>
-                            <input type="text" class="form-control" id="meta_title_en" name="meta_title_en" placeholder="..." value="{{$publication->meta_title_en ?? null}}" required>
+                            <input type="text" class="form-control" id="meta_title_en" name="meta_title_en" placeholder="..." value="{{$publication->meta_title_en ?? null}}">
                         </div>
                         <div class="form-group col-xl-6">
                             <label for="meta_description_uk">Meta-description [UK]</label>
-                            <textarea class="form-control" id="meta_description_uk" name="meta_description_uk" placeholder="..." required>{{$publication->meta_description_uk ?? null}}</textarea>
+                            <textarea class="form-control" id="meta_description_uk" name="meta_description_uk" placeholder="...">{{$publication->meta_description_uk ?? null}}</textarea>
                             <div class="form-text text-muted">Описание публикации для поисковых систем. Обычно это 50-250 символов.</div>
                         </div>
                         <div class="form-group col-xl-6">
                             <label for="meta_description_en">Meta-description [EN]</label>
-                            <textarea class="form-control" id="meta_description_en" name="meta_description_en" placeholder="..." required>{{$publication->meta_description_en ?? null}}</textarea>
+                            <textarea class="form-control" id="meta_description_en" name="meta_description_en" placeholder="...">{{$publication->meta_description_en ?? null}}</textarea>
                         </div>
 
                         <div class="form-group col-xl-6">
                             <label for="meta_keywords_uk">Meta-keywords [UK]</label>
-                            <textarea class="form-control" id="meta_keywords_uk" name="meta_keywords_uk" placeholder="..." required>{{$publication->meta_keywords_uk ?? null}}</textarea>
+                            <textarea class="form-control" id="meta_keywords_uk" name="meta_keywords_uk" placeholder="...">{{$publication->meta_keywords_uk ?? null}}</textarea>
                             <div class="form-text text-muted">Слова или словосочетания описывающие публикацию, вводимые через запятую.</div>
                         </div>
                         <div class="form-group col-xl-6">
                             <label for="meta_keywords_en">Meta-keywords [EN]</label>
-                            <textarea class="form-control" id="meta_keywords_en" name="meta_keywords_en" placeholder="..." required>{{$publication->meta_keywords_en ?? null}}</textarea>
+                            <textarea class="form-control" id="meta_keywords_en" name="meta_keywords_en" placeholder="...">{{$publication->meta_keywords_en ?? null}}</textarea>
                         </div>
                     </div>
                     <!-- /.row -->
@@ -87,7 +87,7 @@
                     <div class="row">
                         <div class="form-group col-md-6">
                             <label for="date">Дата публикации</label>
-                            <input type="text" class="form-control js-datepicker" id="date" name="date" placeholder="DD-MM-YYYY" required data-date-format="dd-mm-yyyy" value="{{$publication->date ?? null}}">
+                            <input type="text" class="form-control js-datepicker" id="date" name="date" placeholder="DD-MM-YYYY" data-date-format="dd-mm-yyyy" value="{{$publication->date ?? null}}">
                         </div>
                         <div class="form-group col-md-6">
                             <label for="date">Изображение<span class="text-danger">*</span></label>

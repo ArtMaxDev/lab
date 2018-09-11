@@ -16,5 +16,6 @@ class Slide extends Model
         'image_alt',
         'style',
         'status',
+        'sorting',
     ];
 }
