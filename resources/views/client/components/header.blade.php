@@ -4,7 +4,7 @@
     </a>
     <ul class="nav-lang">
         <li class="nav-lang-item"><a href="#" class="nav-lang-link">Укр</a></li>
-        <li class="nav-lang-item"><a href="#" class="nav-lang-link">Eng</a></li>
+        <li class="nav-lang-item disabled"><a href="#" class="nav-lang-link">Eng</a></li>
     </ul>
     <ul class="nav-menu">
         <li class="nav-item"><a href="#" class="nav-link">Про нас</a></li>

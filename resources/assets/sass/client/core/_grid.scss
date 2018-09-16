@@ -1,3 +1,5 @@
+$section-margin: 85px;
+
 .container-fluid {
   padding-right: $p-gutter / 2;
   padding-left: $p-gutter / 2;
@@ -13,4 +15,33 @@
 .container, .container-fluid {
   margin-right: auto;
   margin-left: auto;
+}
+
+.section {
+  padding-top: $section-margin;
+  padding-bottom: $section-margin;
+
+  &-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 46px;
+    color: #3a4143;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-weight: bold;
+  }
+}
+
+span,
+div,
+button,
+a,
+ul,
+li,
+section,
+main,
+input,
+textarea {
+  box-sizing: border-box;
 }
