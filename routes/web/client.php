@@ -12,3 +12,4 @@
 */
 
 Route::view('/', 'client.pages.index')->name('client.index');
+Route::view('/team', 'client.pages.team')->name('client.team.index');
