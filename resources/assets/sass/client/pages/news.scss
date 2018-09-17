@@ -11,5 +11,12 @@
   .item {
     width: 33.33%;
   }
+}
 
+@media all and (max-width: 1024px) {
+  .news {
+    .item {
+      width: 50%;
+    }
+  }
 }

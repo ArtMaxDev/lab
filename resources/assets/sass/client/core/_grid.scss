@@ -91,3 +91,9 @@ textarea,
 nav {
   box-sizing: border-box;
 }
+
+@media all and (max-width: 1024px) {
+  .breadcrumbs {
+    text-align: center;
+  }
+}

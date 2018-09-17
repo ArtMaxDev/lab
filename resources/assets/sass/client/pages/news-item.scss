@@ -85,3 +85,27 @@ img.news-article-img {
   max-width: 100%;
   height: auto;
 }
+
+@media all and (max-width: 1024px) {
+  .news-article {
+    font-size: 16px;
+  }
+  h1.news-article-title {
+    text-align: center;
+    font-size: 30px;
+
+    time {
+      font-size: 18px;
+      margin-top: 15px;
+      display: block;
+    }
+  }
+
+  .news {
+    .item {
+      &:nth-child(n + 3) {
+        display: none;
+      }
+    }
+  }
+}
