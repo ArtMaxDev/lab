@@ -1,0 +1,77 @@
+$hexagon-color: #17a3ad;
+$hexagon-color-active: darken($hexagon-color, 5%);
+$hexagon-width: 44px;
+
+.pagination {
+  display: flex;
+  padding: 0;
+  margin: 15px 0;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+
+  a {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: #999999;
+    line-height: 24px;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    margin-top: 12px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .link {
+    font-size: 24px;
+    margin: 15px 0;
+    text-transform: none;
+    position: relative;
+    width: $hexagon-width;
+    height: 26.63px;
+    background-color: transparent;
+    outline: none;
+    border: 0;
+    transition: none;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 0;
+      border-left: ($hexagon-width / 2) solid transparent;
+      border-right: ($hexagon-width / 2) solid transparent;
+      transition: none;
+    }
+
+    &::before {
+      bottom: 100%;
+      border-bottom: 10.81px solid transparent;
+    }
+
+    &::after {
+      top: 100%;
+      width: 0;
+      border-top: 10.81px solid transparent;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    &.active {
+      color: #fff;
+      pointer-events: none;
+      background-color: $hexagon-color;
+
+      &::before,
+      &::after {
+        border-top-color: lighten($hexagon-color-active, 5%);
+        border-bottom-color: lighten($hexagon-color-active, 5%);
+      }
+    }
+  }
+}

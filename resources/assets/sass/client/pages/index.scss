@@ -253,6 +253,7 @@ $service-color-2: #17a3ad;
       text-align: center;
       text-decoration: none;
       font-family: 'Roboto Slab', serif;
+      color: #3a4143;
 
       &:hover {
         text-decoration: underline;
@@ -431,61 +432,13 @@ $service-color-2: #17a3ad;
   }
 }
 
+@import "../components/news-item";
+
 .news {
   position: relative;
 
   .item {
     display: none;
-    margin: 0;
-    text-decoration: none;
-    text-align: center;
-
-    .content {
-      padding: 5px 20px;
-      line-height: 30px;
-      text-align: center;
-      font-family: 'Roboto Condensed', sans-serif;
-    }
-
-    .img {
-      display: block;
-      max-width: 100%;
-      width: 100%;
-      object-fit: cover;
-      filter: grayscale(1);
-      transition: filter .15s;
-    }
-
-    time {
-      margin: 10px auto 0;
-      display: block;
-      font-size: 16px;
-      color: #ccc;
-    }
-
-    .title {
-      margin-top: 0;
-      margin-bottom: 20px;
-      font-size: 24px;
-      color: #0b959f;
-    }
-
-    .description {
-      font-size: 18px;
-      color: #686b6d;
-    }
-
-    &:hover {
-      .title {
-        color: #ea5260;
-      }
-      .description {
-        text-decoration: underline;
-      }
-      .img {
-        filter: grayscale(0);
-      }
-    }
   }
 }
 

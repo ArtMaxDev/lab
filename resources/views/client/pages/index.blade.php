@@ -209,17 +209,7 @@
     <section class="section container news" id="news">
         <h2 class="section-title">Новини</h2>
         <div id="slider-news">
-            @foreach([1,2,3,4,5] as $slide)
-                <a href="#" class="item">
-                    <article class="content">
-                        <img src="//placehold.it/400/600" alt="" class="img" width="100%" height="230px">
-                        <time>10.10.2018</time>
-                        <h5 class="title">Заголовок блока</h5>
-                        <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, expedita voluptatem! Architecto at atque commodi, cupiditate doloribus id, inventore iure, necessitatibus nihil repudiandae sint sit veritatis vero! Itaque voluptatem, voluptates.</p>
-                    </article>
-                </a>
-                <!-- /.item -->
-            @endforeach
+            @each('client.components.news-item', [1,2,3,4,5], 'news')
         </div>
         <!-- /#slider-team -->
     </section>
