@@ -41,3 +41,17 @@
     }
   }
 }
+
+@media all and (max-width: 1024px) {
+  .team {
+    .item {
+      .name {
+        font-size: 16px;
+      }
+
+      .sub-text {
+        font-size: 14px;
+      }
+    }
+  }
+}
