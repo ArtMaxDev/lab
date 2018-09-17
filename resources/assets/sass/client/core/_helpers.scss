@@ -1,0 +1,16 @@
+.d-block {
+  display: block !important;
+}
+
+
+.d-md-block {
+  @media all and (min-width: 1024px) {
+    display: block !important;
+  }
+}
+
+.d-md-none {
+  @media all and (min-width: 1024px) {
+    display: none !important;
+  }
+}

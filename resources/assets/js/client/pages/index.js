@@ -9,7 +9,7 @@ tns({
   navAsThumbnails: true,
   viewportMax: true,
   arrowKeys: true,
-  autoplay: true,
+  autoplay: false,
   autoplayTimeout: 3000,
   autoplayButton: false,
   autoplayHoverPause: true,

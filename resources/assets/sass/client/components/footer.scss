@@ -119,6 +119,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
 
+
     .info {
       flex: 0 1 25%;
     }
@@ -165,6 +166,42 @@
     &.open {
       transform: translate(0, 0);
       display: block;
+    }
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .footer {
+    > .section {
+      padding-bottom: 0;
+      flex-flow: column nowrap;
+
+      .info {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        > div, > ul {
+          width: 33.33%;
+          margin: 0 auto;
+          padding: 0 25px;
+        }
+
+        .phone, .socials {
+          margin-bottom: 20px;
+        }
+      }
+
+      .form {
+        text-align: center;
+        background: #fff;
+        margin: 25px -15px 0;
+        padding: 15px 25px 25px;
+      }
+    }
+
+    .map {
+      top: 225px;
     }
   }
 }

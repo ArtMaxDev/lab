@@ -1,16 +1,20 @@
 <footer class="footer">
     <div class="container section">
         <div class="info">
-            <address class="address">Україна, Київ, 03022 вул. Васильківська, 45</address>
-            <a href="#" class="js-open-map">Показати на мапі</a>
-            <ul class="phone">
-                <li><a href="#"><strong>+38 068 412 21 54</strong></a></li>
-                <li><a href="#"><strong>+38 066 992 39 81</strong></a></li>
-                <li><a href="#"><strong>+38 066 922 39 46</strong></a></li>
-            </ul>
-            <!-- /.phone -->
-            <a href="#">help@oncotheranostics.com.ua</a>
-            <a href="#" class="skype"><b>Skype:</b> oncotheranostics</a>
+            <div>
+                <address class="address">Україна, Київ, 03022 вул. Васильківська, 45</address>
+                <a href="#" class="js-open-map">Показати на мапі</a>
+            </div>
+            <div>
+                <ul class="phone">
+                    <li><a href="#"><strong>+38 068 412 21 54</strong></a></li>
+                    <li><a href="#"><strong>+38 066 992 39 81</strong></a></li>
+                    <li><a href="#"><strong>+38 066 922 39 46</strong></a></li>
+                </ul>
+                <!-- /.phone -->
+                <a href="#">help@oncotheranostics.com.ua</a>
+                <a href="#" class="skype"><b>Skype:</b> oncotheranostics</a>
+            </div>
 
             <ul class="socials">
                 <li><a href="#"><i class="icon icon-facebook"></i>Facebook</a></li>
