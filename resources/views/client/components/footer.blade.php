@@ -44,7 +44,7 @@
                         <textarea class="form-control" rows="4"></textarea>
                     </div>
                 </div>
-                <button type="submit" class="btn">дізнатися детальніше</button>
+                <button type="submit" class="btn">Відправити</button>
             </form>
         </div>
         <!-- /.form -->

@@ -3,42 +3,7 @@
 
     <section class="slider">
         <div id="slider">
-            <div class="slide">
-                <img class="image tns-lazy-img" data-src="/client/assets/images/static/slide1.jpg" alt="Slide 1">
-                <div class="content">
-                    <div class="container">
-                        <div class="content-right">
-                            <h3 class="title">Цени свою жизнь</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
-                            <a href="#" class="btn">Узнать подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <img class="image tns-lazy-img" data-src="/client/assets/images/static/slide1.jpg?1" alt="Slide 2">
-                <div class="content">
-                    <div class="container">
-                        <div class="content-right">
-                            <h3 class="title">Цени свою жизнь</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
-                            <a href="#" class="btn">Узнать подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="slide">
-                <img class="image tns-lazy-img" data-src="/client/assets/images/static/slide1.jpg?2" alt="Slide 3">
-                <div class="content">
-                    <div class="container">
-                        <div class="content-right">
-                            <h3 class="title">Цени свою жизнь</h3>
-                            <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
-                            <a href="#" class="btn">Узнать подробнее</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @each('client.components.slide-item', [0,1,2], 'slide')
         </div>
     </section>
 
@@ -207,19 +172,7 @@
     <section class="section container team" id="team">
         <h2 class="section-title">Наша команда</h2>
         <div id="slider-team">
-            @foreach([1,2,3,4,5] as $slide)
-                <a href="#" class="item">
-                    @include('client.components.team-member', [
-                           'image' => '/client/assets/images/static/doctor.jpg'
-                       ])
-                    <div class="content">
-                        <strong class="name">Петрова Елена
-                            Викторовна</strong>
-                        <span class="sub-text">Кандидат в доктор наук в области Гематологии</span>
-                    </div>
-                    <!-- /.item -->
-                </a>
-            @endforeach
+            @each('client.components.team-item', [1,2,3,4,5], 'member')
         </div>
         <!-- /#slider-team -->
     </section>

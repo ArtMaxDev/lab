@@ -11,19 +11,7 @@
             <!-- /.breadcrumbs -->
 
             <div class="team">
-                @foreach([1,2,3,4,5,6,7,8,9,10] as $slide)
-                    <a href="#" class="item">
-                        @include('client.components.team-member', [
-                               'image' => '/client/assets/images/static/doctor.jpg'
-                           ])
-                        <div class="content">
-                            <strong class="name">Петрова Елена
-                                Викторовна</strong>
-                            <span class="sub-text">Кандидат в доктор наук в области Гематологии</span>
-                        </div>
-                        <!-- /.item -->
-                    </a>
-                @endforeach
+                @each('client.components.team-item', [1,2,3,4,5,6,7,8,9,10], 'member')
             </div>
         </div>
         <!-- /.container -->
