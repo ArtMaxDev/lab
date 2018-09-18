@@ -60,7 +60,7 @@
 
     <section class="container section services-2" id="services-2">
         <h2 class="section-title">Послуги</h2>
-        <ul class="list">
+        <ul class="service-list">
             <li class="item">
                 <a href="#" class="link">
                     <img class="img" src="/client/assets/images/static/s1.png" alt="">
@@ -71,22 +71,20 @@
             <li class="item">
                 <a href="#" class="link">
                     <img class="img" src="/client/assets/images/static/s2.png" alt="">
-                    <strong>Рання діагностика раку</strong>
-                    <span class="sub-text">MiR-TECT<br/> ОНКО Check-Up</span>
+                    <strong>Індивідуальна чутливість до протипухлинних препаратів </strong>
+                    <span class="sub-text">ОНКО Drug Test</span>
                 </a>
             </li>
             <li class="item">
                 <a href="#" class="link">
                     <img class="img" src="/client/assets/images/static/s3.png" alt="">
-                    <strong>Рання діагностика раку</strong>
-                    <span class="sub-text">MiR-TECT<br/> ОНКО Check-Up</span>
+                    <strong>Онкогематологічні дослідження</strong>
                 </a>
             </li>
             <li class="item">
                 <a href="#" class="link">
                     <img class="img" src="/client/assets/images/static/s4.png" alt="">
-                    <strong>Рання діагностика раку</strong>
-                    <span class="sub-text">MiR-TECT<br/> ОНКО Check-Up</span>
+                    <strong>Загальноклінічні аналізи</strong>
                 </a>
             </li>
         </ul>
@@ -94,80 +92,7 @@
     </section>
     <!-- /#services-2 -->
 
-    <section id="rnk" class="section rnk">
-        <div class="container">
-            <h2 class="rnk-title">МікроРНК <span class="sub-title">Новітній тренд біомаркерів раку</span></h2>
-            <div class="content">
-               <div class="main">
-                   <p>МікроРНК –  це новий клас нещодавно відкритих молекул малих регуляторних РНК, які контролюють експресію генів та беруть участь у всіх ключових процесах
-                       у клітині.</p>
-
-                   <p>МікроРНК не лише асоційовані з різними типами пухлин, але можуть самі виступати в ролі онкогенів і супресорів пухлинного росту та представляти собою потенційні мішені для протипухлинної терапії.</p>
-
-                   <div class="main-list d-md-block">
-                       <h4 class="main-list-title">Успішно використовується в виявленні та прогнозуванні перебігу таких видів раку як:</h4>
-                       <ul class="main-ul">
-                           <li>Рак сечового міхура</li>
-                           <li>Рак нирки</li>
-                           <li>Рак печінки</li>
-                           <li>Рак підшлункової залози</li>
-                           <li>Рак кишечнику</li>
-                           <li>Рак шлунку</li>
-                           <li>Рак щитовидної залози</li>
-                           <li>Рак легені</li>
-                           <li>Рак молочної залози</li>
-                           <li>Рак шийки матки</li>
-                           <li>Рак яєчника</li>
-                           <li>Рак передміхурової залози</li>
-                       </ul>
-                       <a href="#" class="main-btn">дізнатися детальніше</a>
-                   </div>
-                   <!-- /.list -->
-               </div>
-               <!-- /.main -->
-                <div class="banner">
-                    <h4 class="banner-title">МікроРНК</h4>
-                    <ul class="ul">
-                        <li class="item">
-                            Рання та уточнююча діагностика пухлинної хвороби
-                            <span class="sub-text">Рівень у сироватці крові при розвитку пухлин змінюється та є специфічним для новоутворень різної локалізації</span>
-                        </li>
-                        <li class="item">
-                            Малоінвазивна діагностика
-                            <span class="sub-text">Знаходяться в крові, слині та сечі</span>
-                        </li>
-                        <li class="item">
-                            Прогноз чутливості до протипухлинної терапії:
-                            <span class="sub-text">іміопрепарати, гормональна терапія та таргетні препаратих</span>
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.banner -->
-                <div class="main-list d-block d-md-none">
-                    <h4 class="main-list-title">Успішно використовується в виявленні та прогнозуванні перебігу таких видів раку як:</h4>
-                    <ul class="main-ul">
-                        <li>Рак сечового міхура</li>
-                        <li>Рак нирки</li>
-                        <li>Рак печінки</li>
-                        <li>Рак підшлункової залози</li>
-                        <li>Рак кишечнику</li>
-                        <li>Рак шлунку</li>
-                        <li>Рак щитовидної залози</li>
-                        <li>Рак легені</li>
-                        <li>Рак молочної залози</li>
-                        <li>Рак шийки матки</li>
-                        <li>Рак яєчника</li>
-                        <li>Рак передміхурової залози</li>
-                    </ul>
-                    <a href="#" class="main-btn">дізнатися детальніше</a>
-                </div>
-                <!-- /.list -->
-            </div>
-        </div>
-        <!-- /.container -->
-
-    </section>
-    <!-- /#about -->
+    @include('client.components.rnk')
 
     <section class="section container team" id="team">
         <h2 class="section-title">Наша команда</h2>

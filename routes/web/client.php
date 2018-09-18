@@ -15,3 +15,4 @@ Route::view('/', 'client.pages.index')->name('client.index');
 Route::view('/team', 'client.pages.team')->name('client.team.index');
 Route::view('/news', 'client.pages.news')->name('client.news.index');
 Route::view('/news/item', 'client.pages.news-item')->name('client.news.item');
+Route::view('/services/', 'client.pages.services')->name('client.services.item');
