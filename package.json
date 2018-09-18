@@ -57,13 +57,15 @@
     "laravel-mix": "2.1.11",
     "lodash": "4.17.10",
     "moment-locales-webpack-plugin": "1.0.7",
+    "normalize.css": "8.0.0",
     "popper.js": "1.14.3",
     "postcss-preset-env": "5.3.0",
     "purgecss-webpack-plugin": "^1.2.0",
     "select2": "4.0.6-rc.1",
     "select2-bootstrap-css": "1.4.6",
     "summernote": "0.8.10",
-    "sweetalert2": "7.25.6"
+    "sweetalert2": "7.25.6",
+    "tiny-slider": "2.8.6"
   },
   "devDependencies": {
     "ava": "^0.25.0",

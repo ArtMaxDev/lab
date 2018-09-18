@@ -1,0 +1,26 @@
+.form-group {
+  margin-bottom: 10px;
+
+  label {
+    display: block;
+    margin-bottom: 15px;
+  }
+}
+
+.form-control {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 20px;
+
+  &:focus {
+    outline: 0;
+    border: 1px solid #0b939d;
+    box-shadow: 0 0 2px 0 rgba(#0b939d, .5);
+  }
+}
+
+textarea.form-control {
+  resize: vertical;
+}

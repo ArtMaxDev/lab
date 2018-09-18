@@ -1,0 +1,111 @@
+@import '../core/variables';
+@import "../components/news-item";
+@import "../components/pagination";
+
+.news-article {
+  font-family: 'Roboto Condensed', serif;
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 80px;
+
+  p {
+    line-height: 24px;
+    margin: 25px 0;
+
+    &.blue {
+      color: #17a3ad;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Roboto Slab', serif;
+    color: #ea5260;
+    margin: 35px 0;
+  }
+
+  a {
+    color: #ea5260;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  blockquote {
+    margin: 15px 0;
+    padding-left: 60px;
+    background: url('../../../images/client/rnk-blockquote.png') top left no-repeat;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 35px 0;
+
+    li {
+      margin-bottom: 5px;
+      display: block;
+      padding-left: 35px;
+      font-size: 18px;
+      line-height: 26px;
+      background: url('../../../images/client/rnk-list.png') left 2px no-repeat;
+    }
+  }
+
+  img {
+    display: inline-block;
+  }
+}
+
+h1.news-article-title {
+  font-family: 'Roboto Slab', serif;
+  font-weight: bold;
+  color: #3a4143;
+  font-size: 36px;
+  margin: 20px 0;
+
+  time {
+    font-family: 'Roboto Condensed', serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #17a3ad;
+    letter-spacing: -.5px;
+  }
+}
+
+img.news-article-img {
+  margin: 0 auto 30px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: 1024px) {
+  .news-article {
+    font-size: 16px;
+  }
+  h1.news-article-title {
+    text-align: center;
+    font-size: 30px;
+
+    time {
+      font-size: 18px;
+      margin-top: 15px;
+      display: block;
+    }
+  }
+
+  .news {
+    .item {
+      &:nth-child(n + 3) {
+        display: none;
+      }
+    }
+  }
+}
