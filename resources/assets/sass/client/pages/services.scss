@@ -2,6 +2,7 @@
 @import "../components/service-item";
 @import "../components/rnk";
 @import "../components/order";
+@import "../components/check-list";
 
 .service-2 {
   margin-bottom: 60px;
@@ -54,21 +55,6 @@
     margin: 5px 0 15px;
     text-align: center;
   }
-
-  .ul {
-    list-style: none;
-    padding: 0;
-    margin: 0 0 15px;
-
-    .item {
-      display: block;
-      padding-left: 35px;
-      font-size: 18px;
-      line-height: 36px;
-      background: url('../../../images/client/service-list.png') left center no-repeat;
-    }
-  }
-
 
 }
 

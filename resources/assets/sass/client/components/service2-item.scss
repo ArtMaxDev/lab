@@ -1,0 +1,41 @@
+$service-color-1: #6a7070;
+$service-color-2: #17a3ad;
+
+.services {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 0 -15px;
+
+  .item {
+    padding: 0 15px;
+    margin: 0;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30px;
+    max-width: 306px;
+    font-family: 'Roboto Slab', sans-serif;
+  }
+
+  .img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .main-text {
+    color: $service-color-1;
+    font-size: 24px;
+  }
+
+  .sub-text {
+    margin: 5px 0 0 0;
+    color: $service-color-2;
+    font-size: 22px;
+  }
+}

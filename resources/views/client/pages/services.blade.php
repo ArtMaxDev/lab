@@ -125,7 +125,7 @@
                 <div class="card card-pink">
                     <h4 class="header">miR-ТЕСТ «Пані»</h4>
                     <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul">
+                    <ul class="ul check-list">
                         <li class="item">раку молочної залози</li>
                         <li class="item">раку шийки матки</li>
                         <li class="item">раку яєчника</li>
@@ -136,7 +136,7 @@
                 <div class="card card-pink">
                     <h4 class="header">miR-ТЕСТ «Пані+»</h4>
                     <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul">
+                    <ul class="ul check-list">
                         <li class="item">раку молочної залози</li>
                         <li class="item">раку шийки матки</li>
                         <li class="item">раку яєчника</li>
@@ -150,7 +150,7 @@
                 <div class="card card-blue">
                     <h4 class="header">miR-ТЕСТ «Пан»</h4>
                     <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul">
+                    <ul class="ul check-list">
                         <li class="item">раку легені</li>
                         <li class="item">раку передміхурової залози</li>
                         <li class="item">раку шлунку</li>
@@ -161,7 +161,7 @@
                 <div class="card card-blue">
                     <h4 class="header">miR-ТЕСТ «Пан+»</h4>
                     <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul">
+                    <ul class="ul check-list">
                         <li class="item">раку легені</li>
                         <li class="item">раку передміхурової залози</li>
                         <li class="item">раку шлунку</li>
@@ -175,7 +175,7 @@
                 <div class="card">
                     <h4 class="header">miR-ТЕСТ «МОНО»</h4>
                     <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul">
+                    <ul class="ul check-list">
                         <li class="item">одна будь-яка локалізація на вибір.</li>
                     </ul>
                     <div class="bottom">від 3000 грн.</div>
@@ -184,7 +184,7 @@
                 <div class="card">
                     <h4 class="header">miR-ТЕСТ «МАКСІ» </h4>
                     <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul">
+                    <ul class="ul check-list">
                         <li class="item"></li>
                         <li class="item">раку кишечнику</li>
                         <li class="item">раку шлунку</li>

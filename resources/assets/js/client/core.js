@@ -1,6 +1,6 @@
 import fontLoader from 'common/fontLoader';
 
-const token = $('meta[name="csrf-token"]');
+const token = document.querySelector('meta[name="csrf-token"]');
 
 fontLoader([
   {

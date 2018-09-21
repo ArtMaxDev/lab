@@ -1,0 +1,70 @@
+@import '../core/variables';
+@import "../components/service2-item";
+@import "../components/order";
+@import "../components/check-list";
+
+.order {
+  background-color: #f3f4f5;
+}
+.services {
+  margin-bottom: 100px;
+}
+.block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px 12px;
+  margin-bottom: 50px;
+  border: 2px solid #17a3ad;
+  border-radius: 8px;
+  font-size: 24px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  .name {
+    color: #333;
+    width: 55%;
+    text-transform: uppercase;
+  }
+
+  .period {
+    color: #17a3ad;
+    width: 18%;
+  }
+
+  .price {
+    color: #ea5260;
+    width: 18%;
+  }
+}
+
+.expanded {
+  margin-top: -35px;
+  margin-bottom: 25px;
+  width: 100%;
+
+  .title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0b959f;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+      width: 32%;
+    }
+  }
+
+  .check-list {
+    margin: 15px 0;
+    b {
+      color: #333;
+      font-size: 24px;
+    }
+  }
+}
