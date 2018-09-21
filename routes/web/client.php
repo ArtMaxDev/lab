@@ -11,9 +11,9 @@
 |
 */
 
-Route::view('/', 'client.pages.index')->name('client.index');
+Route::get('/', 'MainController')->name('client.index');
 Route::view('/team', 'client.pages.team')->name('client.team.index');
-Route::view('/news', 'client.pages.news')->name('client.news.index');
-Route::view('/news/item', 'client.pages.news-item')->name('client.news.item');
+Route::get('/news', 'NewsController@index')->name('client.news.index');
+Route::get('/news/item', 'NewsController@item')->name('client.news.item');
 Route::view('/services/', 'client.pages.services')->name('client.services.item');
 Route::view('/services-2/', 'client.pages.services-2')->name('client.services-2.item');

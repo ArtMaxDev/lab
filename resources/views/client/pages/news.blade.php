@@ -11,7 +11,7 @@
             <!-- /.breadcrumbs -->
 
             <div class="news">
-                @each('client.components.news-item', [1,2,3,4,5,6,7,8,9,10], 'news')
+                @each('client.components.news-item', $news, 'news')
             </div>
             <ul class="pagination">
                 <li><a href="#" class="link active">1</a></li>
