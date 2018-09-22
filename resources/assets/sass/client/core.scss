@@ -16,3 +16,10 @@ a {
 button {
   cursor: pointer;
 }
+
+.btn {
+  &.disabled,
+  &[disabled] {
+    background-color: #8e8e8e !important;
+  }
+}

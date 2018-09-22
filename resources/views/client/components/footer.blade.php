@@ -26,22 +26,22 @@
         <!-- /.info -->
         <div class="form">
             <h5 class="title">зворотний зв’язок</h5>
-            <form action="#">
+            <form action="#" id="feedback-form" method="post">
                 <div class="row">
                     <div class="form-group">
                         <label for="footer-name">Ваше ім’я</label>
-                        <input type="text" class="form-control" id="footer-name">
+                        <input type="text" class="form-control" id="footer-name" name="fullname" required>
                     </div>
                     <div class="form-group">
                         <label for="footer-phone">Ваше телефон</label>
-                        <input type="text" class="form-control" id="footer-phone" placeholder="(0XX) XXX-XX-XX">
+                        <input type="text" class="form-control" id="footer-phone" placeholder="(0XX) XXX-XX-XX" name="phone" required>
                     </div>
                     <div class="form-group">
                         <label for="footer-text">Ваше e-mail</label>
-                        <input type="text" class="form-control">
+                        <input type="email" class="form-control" id="footer-text" name="email">
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" rows="4" id="footer-text"></textarea>
+                        <textarea class="form-control" rows="4" id="footer-text" name="message" maxlength="1000"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn">Відправити</button>
@@ -60,3 +60,6 @@
     <!-- /.map -->
 
 </footer>
+@push('scripts')
+    <script defer src="{{mix('/assets/pages/footer.js', 'client')}}"></script>
+@endpush

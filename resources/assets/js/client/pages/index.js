@@ -48,11 +48,3 @@ tns({
   mouseDrag: true,
   controlsText: ['', '<img src="/client/assets/images/static/arr-right.png" />']
 });
-
-const map = document.querySelector('#map');
-Array.from(document.querySelectorAll('.js-open-map')).forEach((node) => {
-  node.addEventListener('click', (e) => {
-    e.preventDefault();
-    map.classList.toggle('open');
-  });
-});
