@@ -29,6 +29,7 @@ Route::middleware(['auth', 'role:root'])->group(function () {
     Route::get('/publications/{publication}', 'PublicationController@edit')->name('publications.edit');
     Route::post('/publications', 'PublicationController@store')->name('publications.store');
     Route::put('/publications/{publication}', 'PublicationController@update')->name('publications.update');
+    Route::delete('/publications/{publication}', 'PublicationController@destroy')->name('publications.destroy');
 
     Route::view('/settings', 'admin.pages.settings')->name('settings.index');
     Route::view('/sliders', 'admin.pages.sliders')->name('sliders.index');
