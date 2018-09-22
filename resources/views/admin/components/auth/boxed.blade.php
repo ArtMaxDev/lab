@@ -7,7 +7,8 @@
         <!-- Header -->
         <div class="py-30 px-5 text-center">
             <a class="link-effect font-w700" href="{{route('admin.index')}}">
-                <i class="si si-fire"></i>
+                <img src="/admin/assets/images/static/logotype.png" alt="ОНКОТЕРАНОСТИКА" class="img-fluid">
+                <!-- /.img-fluid -->
                 <span class="font-size-xl text-primary-dark">ОНКО</span><span class="font-size-xl">ТЕРАНОСТИКА</span>
             </a>
             <h1 class="h2 font-w700 mt-50 mb-10">Добро пожаловать в административную панель </h1>

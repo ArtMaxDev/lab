@@ -12,9 +12,8 @@
             <div class="content content-full">
                 <!-- Header -->
                 <div class="px-30 py-10">
-                    <a class="link-effect font-w700" href="{{route('admin.index')}}">
-                        <i class="si si-fire"></i>
-                        <span class="font-size-xl text-primary-dark">ОНКО</span><span class="font-size-xl">ТЕРА</span>
+                    <a href="{{route('admin.index')}}">
+                        <img src="/client/assets/images/static/logo.png" alt="">
                     </a>
                     <h1 class="h3 font-w700 mt-30 mb-10">Добро пожаловать в административную панель</h1>
                     <h2 class="h5 font-w400 text-muted mb-0">Выполните вход</h2>

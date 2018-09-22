@@ -39,8 +39,7 @@
                     <!-- Logo -->
                     <div class="content-header-item">
                         <a class="link-effect font-w700" href="{{route('admin.index')}}">
-                            <i class="si si-fire text-primary"></i>
-                            <span class="font-size-xl text-dual-primary-dark">ОНКО</span><span class="font-size-xl text-primary">ТЕРА</span>
+                            <span class="text-dual-primary-dark">ОНКО</span><span class="text-primary">ТЕРАНОСТИКА</span>
                         </a>
                     </div>
                     <!-- END Logo -->
@@ -53,14 +52,14 @@
             <div class="content-side content-side-full content-side-user px-10 align-parent">
                 <!-- Visible only in mini mode -->
                 <div class="sidebar-mini-visible-b align-v animated fadeIn">
-                    <img class="img-avatar img-avatar32" src="/admin/assets/images/static/avatar.jpg" alt="">
+                    <img class="img-avatar img-avatar32" src="/admin/assets/images/static/logotype.png" alt="">
                 </div>
                 <!-- END Visible only in mini mode -->
 
                 <!-- Visible only in normal mode -->
                 <div class="sidebar-mini-hidden-b text-center">
                     <a class="img-link" href="{{route('admin.index')}}">
-                        <img class="img-avatar" src="/admin/assets/images/static/avatar.jpg" alt="">
+                        <img class="img-avatar" src="/admin/assets/images/static/logotype.png" alt="">
                     </a>
                     <ul class="list-inline mt-10">
                         <li class="list-inline-item">
