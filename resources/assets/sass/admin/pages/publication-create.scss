@@ -1,4 +1,5 @@
 @import "../core/variables";
+@import "../../client/pages/news-item";
 
 #preview {
   display: block;
@@ -7,3 +8,4 @@
 #preview[src=""] {
   display: none;
 }
+

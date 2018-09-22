@@ -17,8 +17,8 @@ class CreatePublicationsTable extends Migration
             $table->increments('id');
             $table->string('title_uk');
             $table->string('title_en');
-            $table->text('description_uk');
-            $table->text('description_en');
+            $table->text('text_uk');
+            $table->text('text_en');
             $table->string('image');
             $table->string('image_alt')->nullable();
             $table->string('meta_title_uk')->nullable();

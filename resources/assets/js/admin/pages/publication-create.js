@@ -1,6 +1,7 @@
 import 'codemirror';
 import 'codemirror/mode/xml/xml';
 import 'summernote/dist/summernote-bs4';
+import 'summernote/lang/summernote-ru-RU';
 import 'bootstrap-datepicker';
 import 'jquery-validation';
 import 'jquery-validation/dist/additional-methods';
@@ -16,6 +17,8 @@ const editors = (() => {
     $('.js-summernote').each((i, node) => {
       const el = $(node);
       el.summernote({
+        fontNames: ['Roboto', 'Roboto Condensed', 'Roboto Slab'],
+        lang: 'ru-RU',
         height: 350,
         minHeight: null,
         maxHeight: null,
@@ -26,10 +29,15 @@ const editors = (() => {
             // the validation consistent and in sync with the value.
             el.val(el.summernote('isEmpty') ? '' : contents);
 
+            $('.js-create').prop('disabled', el.summernote('isEmpty'));
+
             // You should re-validate your element after change, because the plugin will have
             // no way to know that the value of your `textarea` has been changed if the change
             // was done programmatically.
             validator.element(el);
+          },
+          onInit() {
+            $('.note-editable').addClass('news-article');
           }
         }
       });
@@ -137,14 +145,19 @@ const validation = (() => {
   const initValidationAdd = (rulesOverride = {}) => {
     const $validator = $('#formApi').validate({
       submitHandler(form) {
+        console.log($(form).serializeArray());
+        return;
         Codebase.blocks('state_loading');
         const id = $('.js-remove').data('id');
         const isEdit = id > 0;
         const promise = isEdit ? PublicationsAPI.update(id, form) : PublicationsAPI.store(form);
         promise
-          .then(() => {
+          .then((response) => {
             Codebase.blocks('state_normal');
             showSuccess(isEdit);
+            if (!isEdit) {
+              PublicationsAPI.edit(response.id);
+            }
           }).catch((response) => {
             Codebase.blocks('state_normal');
             showErrors(response.responseJSON || response, $validator);

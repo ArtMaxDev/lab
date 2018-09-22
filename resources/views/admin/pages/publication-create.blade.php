@@ -38,12 +38,12 @@
                     <div class="row">
                         <div class="form-group col-xl-6">
                             <label for="text_uk">Текст [UK] <span class="text-danger">*</span></label>
-                            <textarea class="js-summernote form-control" id="text_uk">{!! $publication->text_uk  ?? null!!}</textarea>
+                            <textarea class="js-summernote form-control" id="text_uk" name="text_uk">{!! $publication->text_uk  ?? null!!}</textarea>
                         </div>
 
                         <div class="form-group col-xl-6">
                             <label for="text_en">Текст [EN] <span class="text-danger">*</span></label>
-                            <textarea class="js-summernote form-control" id="text_en">{!! $publication->text_en  ?? null!!}</textarea>
+                            <textarea class="js-summernote form-control" id="text_en" name="text_en">{!! $publication->text_en  ?? null!!}</textarea>
                         </div>
                     </div>
                     <!-- /.row -->

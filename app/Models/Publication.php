@@ -17,8 +17,8 @@ class Publication extends Model
         'meta_description_en',
         'title_uk',
         'title_en',
-        'description_uk',
-        'description_en',
+        'text_uk',
+        'text_en',
         'status',
     ];
 }
