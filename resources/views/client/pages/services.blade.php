@@ -64,7 +64,7 @@
 
                 <h2>ОНКО Check-Up</h2>
 
-                <b style="font-size: 24px">Для цього потрібно</b>>
+                <b style="font-size: 24px">Для цього потрібно</b>
 
                 <ul>
                     <li>звернутися до клініки</li>

@@ -13,3 +13,12 @@
     background: url('../../../images/client/service-list.png') left center no-repeat;
   }
 }
+
+
+@media all and (max-width: 1024px) {
+  .check-list {
+    .item {
+      font-size: 16px;
+    }
+  }
+}

@@ -29,19 +29,19 @@
             <form action="#">
                 <div class="row">
                     <div class="form-group">
-                        <label for="">Ваше ім’я</label>
+                        <label for="footer-name">Ваше ім’я</label>
+                        <input type="text" class="form-control" id="footer-name">
+                    </div>
+                    <div class="form-group">
+                        <label for="footer-phone">Ваше телефон</label>
+                        <input type="text" class="form-control" id="footer-phone" placeholder="(0XX) XXX-XX-XX">
+                    </div>
+                    <div class="form-group">
+                        <label for="footer-text">Ваше e-mail</label>
                         <input type="text" class="form-control">
                     </div>
                     <div class="form-group">
-                        <label for="">Ваше телефон</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Ваше e-mail</label>
-                        <input type="text" class="form-control">
-                    </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="4"></textarea>
+                        <textarea class="form-control" rows="4" id="footer-text"></textarea>
                     </div>
                 </div>
                 <button type="submit" class="btn">Відправити</button>

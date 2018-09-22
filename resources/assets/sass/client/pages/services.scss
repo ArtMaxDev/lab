@@ -77,3 +77,9 @@
     color: #0b959f;
   }
 }
+
+@media all and (max-width: 1024px) {
+  .card {
+    width: 50%;
+  }
+}

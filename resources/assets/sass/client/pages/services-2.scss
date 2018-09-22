@@ -68,3 +68,16 @@
     }
   }
 }
+
+@media all and (max-width: 1024px) {
+  .block {
+    font-size: 20px;
+  }
+  .expanded {
+    .check-list {
+      b {
+        font-size: 18px;
+      }
+    }
+  }
+}

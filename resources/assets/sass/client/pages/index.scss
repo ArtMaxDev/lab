@@ -151,6 +151,53 @@ $slider-dot-color-active: #3a4652;
 
 }
 
+.about {
+  background: #0b939d url('../../../images/client/about-bg.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  font-family: 'Roboto Slab', serif;
+
+  .about-title {
+    font-size: 46px;
+    margin-top: 0;
+    font-weight: bold;
+  }
+
+  .img {
+    display: block;
+    max-width: 380px;
+    width: 100%;
+    height: auto;
+    border: 9px solid #b1c7c9;
+  }
+
+  .article {
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .content {
+    padding-left: 55px;
+    font-size: 18px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    line-height: 30px;
+
+    .title {
+      margin-top: 0;
+      font-size: 22px;
+      font-family: 'Roboto Slab', serif;
+      font-weight: bold;
+      line-height: 30px;
+    }
+
+    p {
+      margin-top: 0;
+      margin-bottom: 35px;
+    }
+  }
+}
+
 @import "../components/service2-item";
 
 @import "../components/service-item";
