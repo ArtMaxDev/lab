@@ -9,13 +9,18 @@ tns({
   navAsThumbnails: true,
   viewportMax: true,
   arrowKeys: true,
-  autoplay: false,
-  autoplayTimeout: 3000,
+  autoplay: true,
+  autoplayTimeout: 5000,
   autoplayButton: false,
   autoplayHoverPause: true,
   autoplayButtonOutput: false,
   lazyload: true,
-  mouseDrag: true,
+  rewind: true,
+  onInit(instance) {
+    Array.from(instance.navItems).forEach((node, i) => {
+      node.textContent = i + 1;
+    });
+  }
 });
 
 tns({
