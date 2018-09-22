@@ -1,0 +1,85 @@
+@import '../core/variables';
+@import "../components/service-item";
+@import "../components/rnk";
+@import "../components/order";
+@import "../components/check-list";
+
+.service-2 {
+  margin-bottom: 60px;
+}
+
+.news-article:first-child {
+  margin-bottom: 30px;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 50px -15px 30px;
+}
+
+.card {
+  width: 25%;
+  padding: 0 15px;
+  margin-bottom: 30px;
+  font-family: 'Roboto Condensed', sans-serif;
+
+  .header,
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 20px;
+    height: 50px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .header {
+    color: #fff;
+    background-color: #3a4143;
+  }
+
+  .bottom {
+    background-color: #fff;
+    color: #ea5260;
+    border: 1px solid #ccc;
+  }
+
+  .title {
+    color: #3a4143;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px 0 15px;
+    text-align: center;
+  }
+
+}
+
+.card-pink {
+  .header {
+    background-color: #ea5260;
+  }
+
+  .title {
+    color: #ea5260;
+  }
+}
+
+.card-blue {
+  .header {
+    background-color: #0b959f;
+  }
+
+  .title {
+    color: #0b959f;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .card {
+    width: 50%;
+  }
+}

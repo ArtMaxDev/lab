@@ -11,10 +11,6 @@
   p {
     line-height: 24px;
     margin: 25px 0;
-
-    &.blue {
-      color: #17a3ad;
-    }
   }
 
   h1,
@@ -40,6 +36,8 @@
   blockquote {
     margin: 15px 0;
     padding-left: 60px;
+    padding-top: 10px;
+    min-height: 50px;
     background: url('../../../images/client/rnk-blockquote.png') top left no-repeat;
   }
 
@@ -59,7 +57,18 @@
   }
 
   img {
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
     display: inline-block;
+  }
+
+  .blue {
+    color: #17a3ad;
+  }
+
+  .pink {
+    color: #ea5260;
   }
 }
 
@@ -89,7 +98,14 @@ img.news-article-img {
 @media all and (max-width: 1024px) {
   .news-article {
     font-size: 16px;
+
+    ul {
+      li {
+        line-height: 26px;
+      }
+    }
   }
+
   h1.news-article-title {
     text-align: center;
     font-size: 30px;
