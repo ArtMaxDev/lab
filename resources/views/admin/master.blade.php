@@ -22,15 +22,15 @@
     <!-- Icons -->
     <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
     {{-- Favicon --}}
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/admin/apple-touch-icon.png?v=2">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/admin/favicon-32x32.png?v=2">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/admin/android-chrome-192x192.png?v=2">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/admin/favicon-16x16.png?v=2">
-    <link rel="manifest" href="/favicon/admin/manifest.json?v=2">
-    <link rel="mask-icon" color="#1b1d1" href="/favicon/admin/safari-pinned-tab.svg?v=2">
-    <link rel="shortcut icon" href="/favicon/admin/favicon.ico?v=2">
-    <meta name="msapplication-config" content="/favicon/admin/browserconfig.xml?v=2">
-    <meta name="theme-color" content="#1b1d1e">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/admin/apple-touch-icon.png?v=bOM3Wbnj2j">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/admin/favicon-32x32.png?v=bOM3Wbnj2j">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/admin/favicon-16x16.png?v=bOM3Wbnj2j">
+    <link rel="manifest" href="/favicon/admin/site.webmanifest?v=bOM3Wbnj2j">
+    <link rel="mask-icon" href="/favicon/admin/safari-pinned-tab.svg?v=bOM3Wbnj2j" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/admin/favicon.ico?v=bOM3Wbnj2j">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="/favicon/admin/browserconfig.xml?v=bOM3Wbnj2j">
+    <meta name="theme-color" content="#ffffff">
     {{-- /Favicon --}}
     <!-- END Icons -->
 
