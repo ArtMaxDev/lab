@@ -102,14 +102,16 @@
         <!-- /#slider-team -->
     </section>
     <!-- /#team -->
-
+    @if($news->count())
     <section class="section container news" id="news">
         <h2 class="section-title">Новини</h2>
         <div id="slider-news">
-            @each('client.components.news-item', [1,2,3,4,5], 'news')
+
+            @each('client.components.news-item', $news, 'news')
         </div>
         <!-- /#slider-team -->
     </section>
+    @endif
     <!-- /#news -->
 @endsection
 @push('scripts')
