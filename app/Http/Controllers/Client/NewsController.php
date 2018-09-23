@@ -9,7 +9,7 @@ class NewsController extends BaseController
     public function index(Publication $publication)
     {
         return view('client.pages.news')->with([
-            'news' => $publication->all(),
+            'news' => $publication->published()->all(),
         ]);
     }
 
@@ -17,7 +17,7 @@ class NewsController extends BaseController
     {
         return view('client.pages.news-item')->with([
             'item' => $publication,
-            'news' => $publication->all()->take(3),
+            'news' => $publication->published()->all()->take(3),
         ]);
     }
 }

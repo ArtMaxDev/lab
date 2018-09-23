@@ -24,4 +24,9 @@ class Publication extends Model
         'text_en',
         'status',
     ];
+
+    public function scopePublished($query)
+    {
+        return $query->where('status', '!=', 0);
+    }
 }
