@@ -28,7 +28,7 @@ $slider-dot-color-active: #3a4652;
       outline: none;
       border: 0;
       transition: none;
-      font-family: 'Roboto Slab', serif;
+
       font-size: 18px;
       color: #fff;
       line-height: 17px;
@@ -112,7 +112,7 @@ $slider-dot-color-active: #3a4652;
   .content {
     margin-top: 134px;
     margin-bottom: 100px;
-    font-family: 'Roboto Slab', serif;
+
     font-weight: bold;
 
     &.light {
@@ -156,7 +156,7 @@ $slider-dot-color-active: #3a4652;
     color: $slider-button-text-color;
     text-transform: uppercase;
     border-radius: 8px;
-    font-family: 'Roboto Condensed', sans-serif;
+
     font-weight: 400;
     text-decoration: none;
 
@@ -176,7 +176,6 @@ $slider-dot-color-active: #3a4652;
   background: #0b939d url('../../../images/client/about-bg.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
-  font-family: 'Roboto Slab', serif;
 
   .about-title {
     font-size: 46px;
@@ -200,14 +199,14 @@ $slider-dot-color-active: #3a4652;
   .content {
     padding-left: 55px;
     font-size: 18px;
-    font-family: 'Roboto Condensed', sans-serif;
+
     font-weight: 400;
     line-height: 30px;
 
     .title {
       margin-top: 0;
       font-size: 22px;
-      font-family: 'Roboto Slab', serif;
+
       font-weight: bold;
       line-height: 30px;
     }
@@ -242,7 +241,7 @@ $slider-dot-color-active: #3a4652;
     }
 
     .name {
-      font-family: 'Roboto Slab', serif;
+
       font-size: 18px;
       font-weight: bold;
       color: #3a4143;
@@ -250,7 +249,7 @@ $slider-dot-color-active: #3a4652;
 
     .sub-text {
       display: block;
-      font-family: 'Roboto Condensed', sans-serif;
+
       font-size: 16px;
       font-weight: normal;
       color: #0b959f;

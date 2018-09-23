@@ -70,3 +70,28 @@ $p-roboto-slab-path: '#{$p-fonts-path}/Roboto_Slab';
   font-style: normal;
 }
 
+.fonts-loaded {
+  body {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .slider .tns-nav button,
+  .slider .content,
+  .about,
+  .about .content .title,
+  .team .item .name,
+  .team .item .name,
+  .section-title,
+  .page-title,
+  .news-article h1,
+  .news-article h2,
+  .news-article h3,
+  .news-article h4,
+  .news-article h5,
+  .news-article h6,
+  .services .item,
+  h1.news-article-title,
+  .service-list .link,
+  .rnk {
+    font-family: 'Roboto Slab', serif;
+  }
+}

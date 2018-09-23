@@ -1,10 +1,15 @@
 @import '../../fonts/client/icons/style';
 
+.fonts-loaded {
+  .icon {
+    font-family: '#{$icomoon-font-family}' !important;
+  }
+}
 .footer {
   position: relative;
   background-color: #e0e3e6;
   color: #3a4143;
-  font-family: 'Roboto Condensed', sans-serif;
+
   font-size: 18px;
   z-index: 2;
 
@@ -100,7 +105,7 @@
     text-transform: uppercase;
     border-radius: 8px;
     border: none;
-    font-family: 'Roboto Condensed', sans-serif;
+
     font-weight: 400;
     text-decoration: none;
 

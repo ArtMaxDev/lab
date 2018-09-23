@@ -3,7 +3,6 @@
 @import "../components/pagination";
 
 .news-article {
-  font-family: 'Roboto Condensed', serif;
   color: #333;
   font-size: 18px;
   margin-bottom: 80px;
@@ -19,7 +18,7 @@
   h4,
   h5,
   h6 {
-    font-family: 'Roboto Slab', serif;
+
     color: #ea5260;
     margin: 35px 0;
   }
@@ -73,14 +72,13 @@
 }
 
 h1.news-article-title {
-  font-family: 'Roboto Slab', serif;
+
   font-weight: bold;
   color: #3a4143;
   font-size: 36px;
   margin: 20px 0;
 
   time {
-    font-family: 'Roboto Condensed', serif;
     font-weight: 300;
     font-size: 18px;
     color: #17a3ad;

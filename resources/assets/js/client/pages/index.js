@@ -1,6 +1,7 @@
 import { tns } from 'tiny-slider/src/tiny-slider';
 import '../core';
 
+const arrowImg = 'Next Item<img src="/client/assets/images/static/arr-right.png" alt="Next Item"/>';
 // Init sliders
 tns({
   container: '#slider',
@@ -35,7 +36,7 @@ if (window.screen && window.screen.width > 768) {
     autoplayButtonOutput: false,
     nav: false,
     mouseDrag: true,
-    controlsText: ['', '<img src="/client/assets/images/static/arr-right.png" />']
+    controlsText: ['', arrowImg]
   });
 }
 
@@ -50,6 +51,6 @@ if (document.querySelector('#slider-news')) {
     autoplayButtonOutput: false,
     nav: false,
     mouseDrag: true,
-    controlsText: ['', '<img src="/client/assets/images/static/arr-right.png" />']
+    controlsText: ['', arrowImg]
   });
 }

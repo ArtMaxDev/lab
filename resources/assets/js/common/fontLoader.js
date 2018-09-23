@@ -17,13 +17,13 @@ export default function (config) {
     if (isArray(font.weight)) {
       fonts.push(
         ...font.weight.map(
-          weight => new FontFaceObserver(font.name, { weight })
+          weight => new FontFaceObserver(font.name, { weight }).load()
         )
       );
     } else {
       fonts.push(new FontFaceObserver(font.name, {
         weight: font.weight
-      }));
+      }).load());
     }
   });
 

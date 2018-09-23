@@ -37,8 +37,8 @@
                         <input type="text" class="form-control" id="footer-phone" placeholder="(0XX) XXX-XX-XX" name="phone" required>
                     </div>
                     <div class="form-group">
-                        <label for="footer-text">Ваш e-mail</label>
-                        <input type="email" class="form-control" id="footer-text" name="email" placeholder="Ваш e-mail">
+                        <label for="footer-email">Ваш e-mail</label>
+                        <input type="email" class="form-control" id="footer-email" name="email" placeholder="Ваш e-mail">
                     </div>
                     <div class="form-group">
                         <textarea class="form-control" rows="4" id="footer-text" name="message" maxlength="1000" placeholder="Повiдомлення.."></textarea>
