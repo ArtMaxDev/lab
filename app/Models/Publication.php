@@ -25,4 +25,9 @@ class Publication extends Model
         'status',
         'publicated_at',
     ];
+
+    public function scopePublished($query)
+    {
+        return $query->where('status', '!=', 0);
+    }
 }

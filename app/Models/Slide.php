@@ -21,4 +21,9 @@ class Slide extends Model
         'status',
         'sorting',
     ];
+
+    public function scopeActive($query)
+    {
+        return $query->where('status', '!=', 0);
+    }
 }

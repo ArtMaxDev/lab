@@ -8,10 +8,22 @@ use Illuminate\Http\Request;
 
 class SliderController extends Controller
 {
+    protected const STATUS_LIST = [
+        0 => 'Не активный',
+        1 => 'Активный',
+    ];
+
+    protected const STYLE_LIST = [
+        0 => 'Темный',
+        1 => 'Светлый'
+    ];
+
     public function index(Slide $slide)
     {
         return view('admin.pages.sliders')->with([
             'sliders' => $slide->get(),
+            'statusList' => self::STATUS_LIST,
+            'styleList' => self::STYLE_LIST,
         ]);
     }
 

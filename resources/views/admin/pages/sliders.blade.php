@@ -1,12 +1,4 @@
 @extends('admin.master')
-@php($statusList = [
-    0 => 'Активный',
-    1 => 'Не активный'
-])
-@php($styleList = [
-    0 => 'Темный',
-    1 => 'Светлый'
-])
 @section('content')
     <!-- Page Content -->
     <div class="content">
