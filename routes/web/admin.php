@@ -26,7 +26,7 @@ Route::middleware(['auth', 'role:root'])->group(function () {
 
     Route::get('/feedback', 'FeedbackController@index')->name('feedback.index');
     Route::put('/feedback/{feedback}', 'FeedbackController@update')->name('feedback.update');
-    Route::delete('/feedback/{feedback}', 'FeedbackController@destroy')->name('feedback.update');
+    Route::delete('/feedback/{feedback}', 'FeedbackController@destroy')->name('feedback.destroy');
 
     Route::get('/publications', 'PublicationController@index')->name('publications.index');
     Route::get('/publications/create', 'PublicationController@create')->name('publications.create');
