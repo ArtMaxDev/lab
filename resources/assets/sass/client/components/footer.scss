@@ -205,3 +205,43 @@
     }
   }
 }
+
+@media all and (max-width: 576px) {
+  .footer {
+    > .section {
+      padding-bottom: 0;
+      flex-flow: column nowrap;
+
+      .info {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+
+        > div, > ul {
+          width: 100%;
+          margin: 0 auto;
+          padding: 0 25px;
+        }
+      }
+
+      .form {
+        text-align: center;
+        background: #fff;
+        margin: 25px -15px 0;
+        padding: 15px 25px 25px;
+
+        .form-group {
+          width: 100%;
+
+          label {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .map {
+      top: 0;
+    }
+  }
+}
