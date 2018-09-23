@@ -23,5 +23,6 @@ class Publication extends Model
         'text_uk',
         'text_en',
         'status',
+        'publicated_at',
     ];
 }
