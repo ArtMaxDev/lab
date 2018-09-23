@@ -11,7 +11,13 @@
 |
 */
 
-Route::group(['prefix' => LaravelLocalization::setLocale()], function () {
+Route::group([
+    'prefix' => LaravelLocalization::setLocale(),
+    'middleware' => [
+        'localeSessionRedirect',
+        'localizationRedirect',
+    ]
+], function () {
     Route::get('/', 'MainController')->name('client.index');
     Route::view('/team', 'client.pages.team')->name('client.team.index');
     Route::get('/news', 'NewsController@index')->name('client.news.index');

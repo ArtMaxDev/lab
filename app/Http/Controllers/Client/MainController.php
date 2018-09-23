@@ -10,7 +10,7 @@ class MainController extends BaseController
     public function __invoke(Publication $publication, Slide $slide)
     {
         return view('client.pages.index')->with([
-            'news' => $publication->all(),
+            'news' => $publication->all()->take(8),
             'slides' => $slide->all(),
         ]);
     }
