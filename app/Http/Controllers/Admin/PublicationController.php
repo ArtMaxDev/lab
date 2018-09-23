@@ -8,7 +8,6 @@ use App\Http\Controllers\Controller;
 
 class PublicationController extends Controller
 {
-    //TODO: вынести в переводы
     protected const STATUS_LIST = [
         0 => "Не опубликованно",
         1 => "Опубликованно",
