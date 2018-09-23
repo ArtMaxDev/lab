@@ -3,9 +3,8 @@
 namespace App\Http\Controllers\Client;
 
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 
-class FeedbackController extends Controller
+class FeedbackController extends BaseController
 {
     public function __invoke(Request $request)
     {

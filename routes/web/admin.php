@@ -31,8 +31,9 @@ Route::middleware(['auth', 'role:root'])->group(function () {
     Route::put('/publications/{publication}', 'PublicationController@update')->name('publications.update');
     Route::delete('/publications/{publication}', 'PublicationController@destroy')->name('publications.destroy');
 
-    Route::view('/settings', 'admin.pages.settings')->name('settings.index');
-    Route::view('/sliders', 'admin.pages.sliders')->name('sliders.index');
+    Route::get('/settings', 'SettingsController@index')->name('settings.index');
+    Route::put('/settings', 'SettingsController@update')->name('settings.update');
+
     Route::post('/image', 'ImageController')->name('image.upload');
 
     Route::get('/sliders', 'SliderController@index')->name('sliders.index');
