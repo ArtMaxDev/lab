@@ -1,12 +1,17 @@
 @extends('client.master')
+
+@section('title', 'Прес-релiзи')
+@section('meta-title', 'Прес-релiзи')
+@section('description', 'Список новин вiд ОНКОТЕРАНОСТИКИ')
+@section('keywords', 'Прес-релiзи, Новини')
 @section('content')
 
     <main class="page" id="news">
         <h1 class="page-title">Прес-релiзи</h1>
         <div class="container">
             <ul class="breadcrumbs">
-                <li><a href="#">One</a></li>
-                <li>Two</li>
+                <li><a href="{{URL::to('/')}}">Головна</a></li>
+                <li>Новини</li>
             </ul>
             <!-- /.breadcrumbs -->
 

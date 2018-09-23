@@ -2,31 +2,46 @@
     <div class="container section">
         <div class="info">
             <div>
-                <address class="address">Україна, Київ, 03022 вул. Васильківська, 45</address>
+                @isset($settings->address)
+                <address class="address">{{$settings->address}}</address>
                 <a href="#" class="js-open-map">Показати на мапі</a>
+                @endisset
             </div>
             <div>
                 <ul class="phone">
-                    <li><a href="#"><strong>+38 068 412 21 54</strong></a></li>
-                    <li><a href="#"><strong>+38 066 992 39 81</strong></a></li>
-                    <li><a href="#"><strong>+38 066 922 39 46</strong></a></li>
+                    @isset($settings->phone1)
+                    <li><a href="tel:{{$settings->phone1}}"><strong>{{$settings->phone1}}</strong></a>
+                    @endisset
+                    @isset($settings->phone2)
+                    <li><a href="tel:{{$settings->phone2}}"><strong>{{$settings->phone2}}</strong></a>
+                    @endisset
                 </ul>
                 <!-- /.phone -->
-                <a href="#">help@oncotheranostics.com.ua</a>
-                <a href="#" class="skype"><b>Skype:</b> oncotheranostics</a>
+                @isset($settings->email)
+                <a href="mailto:{{$settings->email}}">{{$settings->email}}</a>
+                @endisset
+                @isset($settings->skype)
+                <a href="skype:{{$settings->skype}}" class="skype"><b>Skype:</b> {{$settings->skype}}</a>
+                @endisset
             </div>
 
             <ul class="socials">
-                <li><a href="#"><i class="icon icon-facebook"></i>Facebook</a></li>
-                <li><a href="#"><i class="icon icon-linkedin"></i>Linked In</a></li>
-                <li><a href="#"><i class="icon icon-googleplus"></i>Google</a></li>
+                @isset($settings->facebook)
+                <li><a href="{{$settings->facebook}}" target="_blank"><i class="icon icon-facebook"></i>Facebook</a></li>
+                @endisset
+                @isset($settings->linkedin)
+                <li><a href="{{$settings->linkedin}}" target="_blank"><i class="icon icon-linkedin"></i>Linked In</a></li>
+                @endisset
+                @isset($settings->google)
+                <li><a href="{{$settings->google}}" target="_blank"><i class="icon icon-googleplus"></i>Google</a></li>
+                @endisset
             </ul>
             <!-- /.socials -->
         </div>
         <!-- /.info -->
         <div class="form">
             <h5 class="title">зворотний зв’язок</h5>
-            <form action="#" id="feedback-form" method="post">
+            <form action="{{route('client.feedback.store')}}" id="feedback-form" method="post">
                 <div class="row">
                     <div class="form-group">
                         <label for="footer-name">Ваше ім’я</label>

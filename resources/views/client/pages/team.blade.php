@@ -1,12 +1,16 @@
 @extends('client.master')
+@section('title', 'Наша команда')
+@section('meta-title', 'Команда')
+@section('description', 'Команда ОНКОТЕРАНОСТИКА')
+@section('keywords', 'Наша команда, ОНКОТЕРАНОСТИКА')
 @section('content')
 
     <main class="page" id="team">
         <h1 class="page-title">Наша команда</h1>
         <div class="container">
             <ul class="breadcrumbs">
-                <li><a href="#">One</a></li>
-                <li>Two</li>
+                <li><a href="{{URL::to('/')}}">Головна</a></li>
+                <li>Наша команда</li>
             </ul>
             <!-- /.breadcrumbs -->
 
