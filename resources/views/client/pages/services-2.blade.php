@@ -54,19 +54,19 @@
 
                 <div class="services">
                     <figure class="item">
-                        <img src="/client/assets/images/static/s2-1.png" alt="" class="img">
+                       <div> <img src="/client/assets/images/static/s2-1.png" alt="" class="img"></div>
                         <figcaption>
                             <strong class="main-text">«Онко Drug Test» на крові</strong>
                         </figcaption>
                     </figure>
                     <figure class="item">
-                        <img src="/client/assets/images/static/s2-2.png" alt="" class="img">
+                        <div><img src="/client/assets/images/static/s2-2.png" alt="" class="img"></div>
                         <figcaption>
                             <strong class="main-text">«Онко Drug Test» на пухлинних клітинах</strong>
                         </figcaption>
                     </figure>
                     <figure class="item">
-                        <img src="/client/assets/images/static/s2-3.png" alt="" class="img">
+                        <div><img src="/client/assets/images/static/s2-3.png" alt="" class="img"></div>
                         <figcaption>
                             <strong class="main-text">«Онко Drug Test» на парфінових блоках</strong>
                         </figcaption>
@@ -74,7 +74,7 @@
                 </div>
                 <!-- /.services -->
 
-                <h2 class="pink">Що ми пропонуємо в нашій клініці</h2>
+                <h2 class="pink text-xs-center">Що ми пропонуємо в нашій клініці</h2>
 
                 <div class="block">
                     <b class="name">Прогнозування перебігу онкологічного процесу</b>
@@ -88,7 +88,7 @@
                     <b class="price">2250 - 12750 грн.</b>
                 </div>
                 <div class="expanded">
-                    <strong class="title">Ціна залежить від кількості препаратів для оцінки</strong>
+                    <strong class="title text-xs-center">Ціна залежить від кількості препаратів для оцінки</strong>
                     <div class="list">
                         <div>
                             <ul class="check-list">
@@ -139,7 +139,7 @@
 
             <!-- /.container -->
             <article class="news-article">
-                <h1 class="blue" style="text-transform: uppercase;">Перевірка активності протипухлинних препаратів in vitro</h1>
+                <h1 class="blue text-xs-center" style="text-transform: uppercase;">Перевірка активності протипухлинних препаратів in vitro</h1>
 
                 <blockquote>
                     <div>ДЛЯ ЧОГО?</div>
@@ -163,7 +163,7 @@
                     </div>
                     <p class="text">Залиште свій телефон та електронну адресу. Найближчим часом ми зв’яжемося з вами, допоможемо обрати найліпший для Вас варіант діагностики та зручний час для процедури.</p>
                     <div>
-                        <button class="btn">заявка</button>
+                        <button  class="btn js-scroll" data-target="#footer">заявка</button>
                     </div>
                 </div>
                 <!-- /.order-inner -->

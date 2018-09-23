@@ -17,7 +17,8 @@ class NewsController extends Controller
     public function item(Publication $publication)
     {
         return view('client.pages.news-item')->with([
-            'news' => $publication,
+            'item' => $publication,
+            'news' => $publication->all()->take(3),
         ]);
     }
 }

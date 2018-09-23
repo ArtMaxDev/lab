@@ -55,3 +55,11 @@
     }
   }
 }
+
+@media all and (max-width: 576px) {
+  .team {
+    .item {
+      width: 50%;
+    }
+  }
+}

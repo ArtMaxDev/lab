@@ -112,4 +112,16 @@ nav {
       font-size: 33px;
     }
   }
+
+  .page {
+    &-title {
+      padding: 15px 0;
+      font-size: 33px;
+    }
+
+    .section {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+  }
 }

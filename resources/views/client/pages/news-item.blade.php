@@ -45,7 +45,7 @@
             <h5 class="section-title">Подборка</h5>
             <!-- /.section-title -->
             <div class="news">
-                @each('client.components.news-item', [1,2,3], 'news')
+                @each('client.components.news-item', $news, 'news')
             </div>
             <!-- /.pagination -->
         </div>

@@ -15,7 +15,7 @@ fontLoader([
 Array.from(document.querySelectorAll('.js-scroll')).forEach((node) => {
   node.addEventListener('click', (e) => {
     e.preventDefault();
-    const target = e.target.getAttribute('href') || e.target.getAttribute('target');
+    const target = e.target.getAttribute('href') || e.target.getAttribute('data-target');
     const element = document.querySelector(target);
     if (typeof element === 'object') {
       window.scrollTo({

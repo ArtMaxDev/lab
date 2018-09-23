@@ -14,3 +14,9 @@
     display: none !important;
   }
 }
+
+.text-xs-center {
+  @media all and (max-width: 768px) {
+    text-align: center;
+  }
+}

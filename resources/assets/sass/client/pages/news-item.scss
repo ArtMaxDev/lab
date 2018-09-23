@@ -125,3 +125,29 @@ img.news-article-img {
     }
   }
 }
+
+@media all and (max-width: 576px) {
+  .news-article {
+    ul {
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+
+  h1.news-article-title {
+    font-size: 24px;
+
+    time {
+      font-size: 16px;
+    }
+  }
+
+  .news {
+    .item {
+      &:nth-child(n + 1) {
+        display: none;
+      }
+    }
+  }
+}
