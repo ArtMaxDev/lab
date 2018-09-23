@@ -1,5 +1,6 @@
+import picoModal from 'picomodal';
 import '../core';
-import FeedbackAPI from '../Api/Feedback'
+import FeedbackAPI from '../Api/Feedback';
 
 // Map toggle
 const map = document.querySelector('#map');
@@ -16,10 +17,10 @@ document.querySelector('#feedback-form').addEventListener('submit', (e) => {
   const button = e.target.querySelector('[type=submit]');
   button.setAttribute('disabled', 'disabled');
   FeedbackAPI.store(e.target).then(() => {
-    alert('Форма успешно отправленна');
+    picoModal('<p>Форма успешно отправлена<p>').show();
     button.removeAttribute('disabled');
   }).catch(() => {
-    alert('Ошибка. Попробуйте снова');
+    picoModal('<p>Ошибка. Попробуйте снова<p>').show();
     button.removeAttribute('disabled');
   });
 });
