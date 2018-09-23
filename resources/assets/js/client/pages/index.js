@@ -1,6 +1,7 @@
 import { tns } from 'tiny-slider/src/tiny-slider';
 import '../core';
 
+// Init sliders
 tns({
   container: '#slider',
   items: 1,
@@ -36,15 +37,17 @@ tns({
   controlsText: ['', '<img src="/client/assets/images/static/arr-right.png" />']
 });
 
-tns({
-  container: '#slider-news',
-  items: 3,
-  slideBy: 1,
-  controls: true,
-  viewportMax: true,
-  arrowKeys: true,
-  autoplayButtonOutput: false,
-  nav: false,
-  mouseDrag: true,
-  controlsText: ['', '<img src="/client/assets/images/static/arr-right.png" />']
-});
+if (document.querySelector('#slider-news')) {
+  tns({
+    container: '#slider-news',
+    items: 3,
+    slideBy: 1,
+    controls: true,
+    viewportMax: true,
+    arrowKeys: true,
+    autoplayButtonOutput: false,
+    nav: false,
+    mouseDrag: true,
+    controlsText: ['', '<img src="/client/assets/images/static/arr-right.png" />']
+  });
+}

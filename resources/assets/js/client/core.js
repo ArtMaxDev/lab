@@ -1,7 +1,5 @@
 import fontLoader from 'common/fontLoader';
 
-const token = document.querySelector('meta[name="csrf-token"]');
-
 fontLoader([
   {
     name: 'Roboto Condensed',
@@ -13,13 +11,18 @@ fontLoader([
   },
 ]);
 
-if (token) {
-  // $.ajaxSetup({
-  //   headers: {
-  //     'X-Requested-With': 'XMLHttpRequest',
-  //     'X-CSRF-TOKEN': token.attr('content')
-  //   }
-  // });
-} else {
-  console.error('CSRF token not found: https://laravel.com/docs/csrf#csrf-x-csrf-token');
-}
+// Init smooth scroll behavior
+Array.from(document.querySelectorAll('.js-scroll')).forEach((node) => {
+  node.addEventListener('click', (e) => {
+    e.preventDefault();
+    const target = e.target.getAttribute('href') || e.target.getAttribute('target');
+    const element = document.querySelector(target);
+    if (typeof element === 'object') {
+      window.scrollTo({
+        behavior: 'smooth',
+        left: 0,
+        top: element.offsetTop
+      });
+    }
+  });
+});

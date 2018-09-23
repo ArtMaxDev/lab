@@ -1,7 +1,7 @@
 @extends('client.master')
 @section('content')
 
-    <main class="page" id="team">
+    <main class="page" id="news">
         <h1 class="page-title">Прес-релiзи</h1>
         <div class="container">
             <ul class="breadcrumbs">
@@ -26,7 +26,7 @@
     <!-- /#team -->
 @endsection
 @push('scripts')
-    {{--<script defer src="{{mix('/assets/pages/index.js', 'client')}}"></script>--}}
+    <script defer src="{{mix('/assets/pages/news.js', 'client')}}"></script>
 @endpush
 @push('critical-css')
     <link rel="stylesheet" href="{{mix('/assets/pages/news.css', 'client')}}">

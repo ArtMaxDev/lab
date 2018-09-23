@@ -63,7 +63,7 @@
                     <li>Рак яєчника</li>
                     <li>Рак передміхурової залози</li>
                 </ul>
-                <a href="#" class="main-btn">дізнатися детальніше</a>
+                <a href="{{route('client.services-2.index')}}" class="main-btn">дізнатися детальніше</a>
             </div>
             <!-- /.list -->
         </div>

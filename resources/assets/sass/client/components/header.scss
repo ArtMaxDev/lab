@@ -24,6 +24,7 @@ $p-link-font-size: 24px;
   top: 0;
   display: flex;
   left: 122px;
+  margin: 0;
 }
 
 .nav-lang-item {
@@ -36,6 +37,7 @@ $p-link-font-size: 24px;
 
 .nav-menu {
   display: flex;
+  margin: 15px 0 0;
 }
 
 .nav-item {
@@ -46,7 +48,6 @@ $p-link-font-size: 24px;
 .nav-lang {
   list-style: none;
   padding: 0;
-  margin: 15px 0 0;
 }
 
 .nav-link {

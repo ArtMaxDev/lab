@@ -62,27 +62,27 @@
         <h2 class="section-title">Послуги</h2>
         <ul class="service-list">
             <li class="item">
-                <a href="#" class="link">
+                <a href="{{route('client.services.index')}}" class="link">
                     <img class="img" src="/client/assets/images/static/s1.png" alt="Рання діагностика раку">
                     <strong>Рання діагностика раку</strong>
                     <span class="sub-text">MiR-TECT<br/> ОНКО Check-Up</span>
                 </a>
             </li>
             <li class="item">
-                <a href="#" class="link">
+                <a href="{{route('client.services.index')}}" class="link">
                     <img class="img" src="/client/assets/images/static/s2.png" alt="Індивідуальна чутливість до протипухлинних препаратів ">
                     <strong>Індивідуальна чутливість до протипухлинних препаратів </strong>
                     <span class="sub-text">ОНКО Drug Test</span>
                 </a>
             </li>
             <li class="item">
-                <a href="#" class="link">
+                <a href="{{route('client.services.index')}}" class="link">
                     <img class="img" src="/client/assets/images/static/s3.png" alt="Онкогематологічні дослідження">
                     <strong>Онкогематологічні дослідження</strong>
                 </a>
             </li>
             <li class="item">
-                <a href="#" class="link">
+                <a href="{{route('client.services.index')}}" class="link">
                     <img class="img" src="/client/assets/images/static/s4.png" alt="Загальноклінічні аналізи">
                     <strong>Загальноклінічні аналізи</strong>
                 </a>

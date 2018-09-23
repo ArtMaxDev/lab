@@ -9,11 +9,11 @@
         </ul>
     </div>
     <ul class="nav-menu">
-        <li class="nav-item"><a href="#" class="nav-link">Про нас</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Послуги</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Корисна інформація</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Команда</a></li>
-        <li class="nav-item"><a href="#" class="nav-link">Контакти</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link js-scroll">Про нас</a></li>
+        <li class="nav-item"><a href="{{route('client.services.index')}}" class="nav-link">Послуги</a></li>
+        <li class="nav-item"><a href="{{route('client.news.index')}}" class="nav-link">Корисна інформація</a></li>
+        <li class="nav-item"><a href="{{route('client.team.index')}}" class="nav-link">Команда</a></li>
+        <li class="nav-item"><a href="#footer" class="nav-link js-scroll">Контакти</a></li>
     </ul>
 </nav>
 <!-- /.container -->

@@ -1,4 +1,4 @@
-<a href="#" class="item">
+<a href="{{route('client.team.index')}}" class="item">
     @include('client.components.team-member', [
            'image' => '/client/assets/images/static/doctor.jpg'
        ])

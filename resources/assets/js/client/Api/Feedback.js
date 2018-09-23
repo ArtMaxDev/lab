@@ -1,5 +1,5 @@
-import fetchival from 'fetchival';
 import Router from 'common/Router';
+import fetchival from './Api';
 import '../core';
 import serialize from './shared/form-serialize';
 
