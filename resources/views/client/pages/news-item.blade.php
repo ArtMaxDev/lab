@@ -18,7 +18,7 @@
             <!-- /.breadcrumbs -->
 
             <article class="news-article">
-                <h1 class="news-article-title">{{$item->title}} <time datetime="{{$item->created_at}}">{{$carbon::createFromTimeString($item->publicated_at)->format('d.m.Y')}}</time></h1>
+                <h1 class="news-article-title">{{$item->title}} <time datetime="{{$item->created_at}}">{{$carbon::parse($item->publicated_at)->format('d.m.Y')}}</time></h1>
                 <picture>
                     <source srcset="{{$item->image}}_small.jpg" media="(max-width: 768px)">
                     <img class="news-article-img" src="{{$item->image}}.jpg" alt="{{$item->image_alt}}">

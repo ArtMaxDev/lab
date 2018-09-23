@@ -19,10 +19,10 @@ Route::group([
     ]
 ], function () {
     Route::get('/', 'MainController')->name('client.index');
-    Route::view('/team', 'client.pages.team')->name('client.team.index');
+    Route::get('/team', 'BaseController@team')->name('client.team.index');
     Route::get('/news', 'NewsController@index')->name('client.news.index');
     Route::get('/news/{publication}', 'NewsController@item')->name('client.news.item');
-    Route::view('/services/', 'client.pages.services')->name('client.services.index');
-    Route::view('/services-2/', 'client.pages.services-2')->name('client.services-2.index');
+    Route::get('/services/', 'BaseController@services')->name('client.services.index');
+    Route::get('/services-2/', 'BaseController@services2')->name('client.services-2.index');
     Route::post('/feedback', 'FeedbackController')->name('client.feedback.store');
 });
