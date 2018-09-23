@@ -33,6 +33,7 @@ const actions = (() => {
         if (isEditMode) {
           const id = $(e.relatedTarget).data('id');
           const data = dataObject.find(o => +o.id === +id) || {};
+          data.image += '.jpg';
           $('#preview').attr('src', data.image);
           setFormData(jQuery(config.formTarget), data);
         } else {
