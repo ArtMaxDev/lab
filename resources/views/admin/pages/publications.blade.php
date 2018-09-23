@@ -38,8 +38,8 @@
                         @foreach($publications as $item)
                             <tr>
                                 <td class="text-center" hidden>{{$item->id}}</td>
-                                <td>{{"$item->image.jpg"}}</td>
-                                <td class="nowrap">{{$item->date}}</td>
+                                <td>{{"{$item->image}_small.jpg"}}</td>
+                                <td class="nowrap">{{$item->publicated_at}}</td>
                                 <td class="font-w600">{{$item->title_uk}}</td>
                                 <td>{{$item->status}}</td>
                             </tr>

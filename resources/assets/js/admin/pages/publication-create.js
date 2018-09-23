@@ -101,7 +101,7 @@ const actions = (() => {
         const reader = new FileReader();
 
         reader.onload = (ev) => {
-          $('#preview').attr('src', ev.target.result);
+          $('#preview').attr('src', `${ev.target.result}.jpg`);
         };
 
         reader.readAsDataURL(input.files[0]);
@@ -154,7 +154,7 @@ const validation = (() => {
             Codebase.blocks('state_normal');
             showSuccess(isEdit);
             if (!isEdit) {
-              PublicationsAPI.edit(response.id);
+              PublicationsAPI.edit(response.data.id);
             }
           }).catch((response) => {
             Codebase.blocks('state_normal');
