@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use App\Traits\LocalizedProperty;
 use Illuminate\Database\Eloquent\Model;
 
 class Setting extends Model
 {
+    use LocalizedProperty;
+
     protected $fillable = [
         'email',
         'phone1',
@@ -16,9 +19,9 @@ class Setting extends Model
         'facebook',
         'google',
         'linkedin',
-        'meta_description',
+        'meta_description_uk',
         'meta_description_en',
-        'meta_keywords',
+        'meta_keywords_uk',
         'meta_keywords_en',
     ];
 }
