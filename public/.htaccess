@@ -19,6 +19,7 @@
     RewriteCond %{HTTP:Authorization} .
     RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
 </IfModule>
+# MIME TYPES
 <IfModule mod_expires.c>
 # Feed
   ExpiresByType application/atom+xml      "access plus 10 hours"
@@ -44,6 +45,7 @@
   ExpiresByType application/vnd.ms-fontobject "access plus 1 month"
   ExpiresByType application/x-font-ttf    "access plus 1 month"
   ExpiresByType application/x-font-woff   "access plus 1 month"
+  ExpiresByType application/font-woff2    "access plus 1 month"
   ExpiresByType font/opentype             "access plus 1 month"
   ExpiresByType image/svg+xml             "access plus 1 month"
 
@@ -54,7 +56,7 @@
 
 </IfModule>
 <IfModule mod_headers.c>
-        <FilesMatch "\\.(ico|jpg|jpeg|png|gif|swf)$">
+        <FilesMatch "\\.(ico|jpg|jpeg|png|gif|swf|woff|woff2)$">
                 Header set Cache-Control "max-age=2678400, public"
         </FilesMatch>
         <FilesMatch "\\.(css)$">
