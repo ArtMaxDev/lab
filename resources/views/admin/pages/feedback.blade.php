@@ -1,11 +1,4 @@
 @extends('admin.master')
-@php($feedback = [])
-@php($statusList = [
-    0 => "Новая",
-    1 => "В работе",
-    2 => "Завершенная",
-    3 => "Отклоненная",
-])
 @section('content')
     <!-- Page Content -->
     <div class="content">
@@ -14,7 +7,7 @@
         <div class="block">
             <div class="block-header block-header-default d-block d-md-flex">
                 <h3 class="block-title pr-3">Обратная связь
-                    <small>({{count($feedback)}})</small>
+                    <small>({{$feedback->count()}})</small>
                 </h3>
                 <div class="block-options form-inline pl-0">
                     <button type="button" class="btn btn-sm btn-danger js-remove" data-remove="true" disabled><i
@@ -41,7 +34,7 @@
                         @foreach($feedback as $item)
                             <tr>
                                 <td class="text-center" hidden>{{$item->id}}</td>
-                                <td class="nowrap">{{$item->date}}</td>
+                                <td class="nowrap">{{$item->created_at}}</td>
                                 <td class="font-w600">{{$item->fullname}}</td>
                                 <td class="font-w600">{{$item->phone}}</td>
                                 <td>{{$item->email}}</td>
