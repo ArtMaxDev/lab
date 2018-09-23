@@ -27,14 +27,6 @@ class UsersSeeder extends Seeder
                     'password' => bcrypt('10101010'),
                 ]);
             }
-
-            if (!User::where('email', 'client@artmax.dev')->exists()) {
-                User::create([
-                    'name' => 'client',
-                    'email' => 'client@artmax.dev',
-                    'password' => bcrypt('10101010'),
-                ]);
-            }
         }
     }
 }

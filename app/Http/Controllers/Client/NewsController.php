@@ -3,9 +3,8 @@
 namespace App\Http\Controllers\Client;
 
 use App\Models\Publication;
-use App\Http\Controllers\Controller;
 
-class NewsController extends Controller
+class NewsController extends BaseController
 {
     public function index(Publication $publication)
     {

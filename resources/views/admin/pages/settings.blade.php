@@ -23,7 +23,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="email"><i class="fa fa-at"></i> E-mail <span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <input type="email" class="form-control" id="email" name="email" placeholder="..." required>
+                              <input type="email" class="form-control" id="email" name="email" placeholder="..." required value="{{$settings->email}}">
                               <div class="form-text text-muted">Этот e-mail будет отображен в футере сайта</div>
                           </div>
                       </div>
@@ -36,7 +36,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="phone1"><i class="fa fa-phone-square"></i> Контактный номер №1 <span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <input type="tel" class="form-control js-masked-phoneUA" id="phone1" name="phone1" placeholder=".." required>
+                              <input type="tel" class="form-control js-masked-phoneUA" id="phone1" name="phone1" placeholder=".." required value="{{$settings->phone1}}">
                           </div>
                       </div>
                   </div>
@@ -45,7 +45,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="phone2"><i class="fa fa-phone-square"></i> Контактный номер №2</label>
                           <div class="col-md-12">
-                              <input type="tel" class="form-control js-masked-phoneUA" id="phone2" name="phone2" placeholder="..">
+                              <input type="tel" class="form-control js-masked-phoneUA" id="phone2" name="phone2" placeholder=".." value="{{$settings->phone2}}">
                           </div>
                       </div>
                   </div>
@@ -57,7 +57,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="address_uk"><i class="fa fa-home"></i> Адрес [UK] <span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <input type="text" class="form-control" id="address_uk" name="address_uk" placeholder=".." required>
+                              <input type="text" class="form-control" id="address_uk" name="address_uk" placeholder=".." required value="{{$settings->address_uk}}">
                           </div>
                       </div>
                   </div>
@@ -66,7 +66,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="address_en"><i class="fa fa-home"></i> Адрес [EN] <span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <input type="text" class="form-control" id="address_en" name="address_en" placeholder=".." required>
+                              <input type="text" class="form-control" id="address_en" name="address_en" placeholder=".." required value="{{$settings->address_en}}">
                           </div>
                       </div>
                   </div>
@@ -80,7 +80,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="skype"><i class="fab fa-skype"></i> Skype</label>
                           <div class="col-md-12">
-                              <input type="text" class="form-control" id="skype" name="skype" placeholder="..">
+                              <input type="text" class="form-control" id="skype" name="skype" placeholder=".." value="{{$settings->skype}}">
                           </div>
                       </div>
                   </div>
@@ -89,7 +89,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="facebook"><i class="fab fa-facebook"></i> Facebook</label>
                           <div class="col-md-12">
-                              <input type="text" class="form-control" id="facebook" name="facebook" placeholder="..">
+                              <input type="text" class="form-control" id="facebook" name="facebook" placeholder=".." value="{{$settings->facebook}}">
                           </div>
                       </div>
                   </div>
@@ -99,7 +99,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="google"><i class="fab fa-google"></i> Google</label>
                           <div class="col-md-12">
-                              <input type="text" class="form-control" id="google" name="google" placeholder="..">
+                              <input type="text" class="form-control" id="google" name="google" placeholder=".." value="{{$settings->google}}">
                           </div>
                       </div>
                   </div>
@@ -108,7 +108,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="linkedin"><i class="fab fa-linkedin"></i> LinkedIn</label>
                           <div class="col-md-12">
-                              <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder="..">
+                              <input type="text" class="form-control" id="linkedin" name="linkedin" placeholder=".." value="{{$settings->linkedin}}">
                           </div>
                       </div>
                   </div>
@@ -123,7 +123,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="meta_description">Meta-description [UK]<span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <textarea class="form-control" id="meta_description" name="meta_description" placeholder="..." required></textarea>
+                              <textarea class="form-control" id="meta_description" name="meta_description" placeholder="..." required>{{$settings->meta_description}}</textarea>
                               <div class="form-text text-muted">Описание сайта для поисковых систем. Обычно это 50-250 символов.</div>
                           </div>
                       </div>
@@ -133,7 +133,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="meta_description_en">Meta-description [EN]<span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <textarea class="form-control" id="meta_description_en" name="meta_description_en" placeholder="..." required></textarea>
+                              <textarea class="form-control" id="meta_description_en" name="meta_description_en" placeholder="..." required>{{$settings->meta_description_en}}</textarea>
                           </div>
                       </div>
                   </div>
@@ -146,7 +146,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="meta_keywords">Meta-keywords [UK] <span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <textarea class="form-control" id="meta_keywords" name="meta_keywords" placeholder="..." required></textarea>
+                              <textarea class="form-control" id="meta_keywords" name="meta_keywords" placeholder="..." required>{{$settings->meta_keywords}}</textarea>
                               <div class="form-text text-muted">Слова или словосочетания описывающие сайт, вводимые через запятую.</div>
                           </div>
                       </div>
@@ -156,7 +156,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="meta_keywords_en">Meta-keywords [EN] <span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <textarea class="form-control" id="meta_keywords_en" name="meta_keywords_en" placeholder="..." required></textarea>
+                              <textarea class="form-control" id="meta_keywords_en" name="meta_keywords_en" placeholder="..." required>{{$settings->meta_keywords_en}}</textarea>
                           </div>
                       </div>
                   </div>
