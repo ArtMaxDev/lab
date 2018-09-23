@@ -8,6 +8,6 @@ trait LocalizedProperty
     {
         $property = $path . '_' . \LaravelLocalization::getCurrentLocale();
 
-        return $this->$$property;
+        return $this->$property;
     }
 }
