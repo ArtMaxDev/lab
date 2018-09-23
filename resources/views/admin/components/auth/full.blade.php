@@ -13,7 +13,7 @@
                 <!-- Header -->
                 <div class="px-30 py-10">
                     <a href="{{route('admin.index')}}">
-                        <img src="/client/assets/images/static/logo.png" alt="">
+                        <img src="/client/assets/images/static/logo.png" alt="" class="img-fluid">
                     </a>
                     <h1 class="h3 font-w700 mt-30 mb-10">Добро пожаловать в административную панель</h1>
                     <h2 class="h5 font-w400 text-muted mb-0">Выполните вход</h2>

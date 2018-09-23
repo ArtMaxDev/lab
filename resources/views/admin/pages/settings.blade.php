@@ -121,9 +121,9 @@
               <div class="row">
                   <div class="col-xl-6">
                       <div class="form-group row">
-                          <label class="col-12" for="meta_description">Meta-description [UK]<span class="text-danger">*</span></label>
+                          <label class="col-12" for="meta_description_uk">Meta-description [UK]<span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <textarea class="form-control" id="meta_description" name="meta_description" placeholder="..." required>{{$settings->meta_description}}</textarea>
+                              <textarea class="form-control" id="meta_description_uk" name="meta_description_uk" placeholder="..." required>{{$settings->meta_description_uk}}</textarea>
                               <div class="form-text text-muted">Описание сайта для поисковых систем. Обычно это 50-250 символов.</div>
                           </div>
                       </div>
@@ -144,9 +144,9 @@
               <div class="row">
                   <div class="col-xl-6">
                       <div class="form-group row">
-                          <label class="col-12" for="meta_keywords">Meta-keywords [UK] <span class="text-danger">*</span></label>
+                          <label class="col-12" for="meta_keywords_uk">Meta-keywords [UK] <span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <textarea class="form-control" id="meta_keywords" name="meta_keywords" placeholder="..." required>{{$settings->meta_keywords}}</textarea>
+                              <textarea class="form-control" id="meta_keywords_uk" name="meta_keywords_uk" placeholder="..." required>{{$settings->meta_keywords}}</textarea>
                               <div class="form-text text-muted">Слова или словосочетания описывающие сайт, вводимые через запятую.</div>
                           </div>
                       </div>

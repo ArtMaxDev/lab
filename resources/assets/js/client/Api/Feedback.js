@@ -1,6 +1,5 @@
 import Router from 'common/Router';
 import fetchival from './Api';
-import '../core';
 import serialize from './shared/form-serialize';
 
 export default class {

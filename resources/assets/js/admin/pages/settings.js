@@ -29,9 +29,9 @@ const validation = (() => {
       phone1: { required: true, phonesRUS_UA: true },
       address_uk: { required: true },
       address_en: { required: true },
-      meta_description: { required: true },
+      meta_description_uk: { required: true },
       meta_description_en: { required: true },
-      meta_keywords: { required: true },
+      meta_keywords_uk: { required: true },
       meta_keywords_en: { required: true }
     }
   };

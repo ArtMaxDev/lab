@@ -86,11 +86,11 @@
 
                     <div class="row">
                         <div class="form-group col-md-6">
-                            <label for="date">Дата публикации</label>
-                            <input type="text" class="form-control js-datepicker" id="date" name="date" placeholder="DD-MM-YYYY" data-date-format="dd-mm-yyyy" value="{{$publication->publicated_at ?? null}}">
+                            <label for="publicated_at">Дата публикации</label>
+                            <input type="text" class="form-control js-datepicker" id="publicated_at" name="publicated_at" placeholder="DD.MM.YYYY" data-date-format="dd.mm.yyyy" value="{{$publication->publicated_at ?? null}}">
                         </div>
                         <div class="form-group col-md-6">
-                            <label for="date">Изображение<span class="text-danger">*</span></label>
+                            <label>Изображение<span class="text-danger">*</span></label>
                             <div>
                                 <button class="btn btn-alt-info mr-20" type="button" data-toggle="modal" data-target="#modal-image">Изменить</button>
                                 <label class="css-control css-control css-control-success css-switch">

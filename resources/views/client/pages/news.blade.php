@@ -15,14 +15,14 @@
             </ul>
             <!-- /.breadcrumbs -->
 
-            <div class="news">
+            <div class="news" id="news-container">
                 @each('client.components.news-item', $news, 'news')
             </div>
             <ul class="pagination">
-                <li><a href="#" class="link active">1</a></li>
-                <li><a href="#" class="link">2</a></li>
-                <li><a href="#" class="link">3</a></li>
-                <li><a href="#">Показать еще</a></li>
+                <li><a href="#" class="js-news-page link active">1</a></li>
+                <li><a href="#" class="js-news-page link">2</a></li>
+                <li><a href="#" class="js-news-page link">3</a></li>
+                <li><a href="#" class="js-news-next">Показать еще</a></li>
             </ul>
             <!-- /.pagination -->
         </div>
