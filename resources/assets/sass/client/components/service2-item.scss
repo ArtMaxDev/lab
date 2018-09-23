@@ -40,7 +40,7 @@ $service-color-2: #17a3ad;
   }
 }
 
-@media all and (max-width: 576px) {
+@media all and (max-width: 768px) {
   .services {
     margin: 0;
     flex-flow: column nowrap;

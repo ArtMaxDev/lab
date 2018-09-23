@@ -1,7 +1,7 @@
 <nav class="container nav">
     <div class="nav-brand">
         <a href="/" >
-            <img src="/client/assets/images/static/logo.png" alt="" class="nav-logo">
+            <img src="/client/assets/images/static/logo.png" alt="Логотип ОНКОТераностика" class="nav-logo">
         </a>
         <ul class="nav-lang">
             <li class="nav-lang-item"><a href="#" class="nav-lang-link">Укр</a></li>
