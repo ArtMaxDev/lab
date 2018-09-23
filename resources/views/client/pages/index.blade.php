@@ -1,4 +1,7 @@
 @extends('client.master')
+
+@section('title', 'Головна')
+@section('meta-title', 'Головна')
 @section('content')
 
     <section class="slider">

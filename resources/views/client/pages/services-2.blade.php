@@ -1,11 +1,16 @@
 @extends('client.master')
+
+@section('title', 'ОНКО Drug Test')
+@section('meta-title', 'ОНКО Drug Test')
+@section('description', 'Послуга - ОНКО Drug Test')
+@section('keywords', 'ОНКО Drug Test')
 @section('content')
 
     <main class="page" id="services">
         <div class="page-title">ОНКО Drug Test</div>
         <div class="container">
             <ul class="breadcrumbs">
-                <li><a href="#">Головна</a></li>
+                <li><a href="{{URL::to('/')}}">Головна</a></li>
                 <li>ОНКО Drug Test</li>
             </ul>
             <!-- /.breadcrumbs -->

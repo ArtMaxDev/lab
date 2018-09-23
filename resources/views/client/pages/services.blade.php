@@ -1,12 +1,17 @@
 @extends('client.master')
+
+@section('meta-title', 'Послуги')
+@section('description', 'Послуги')
+@section('keywords', 'Послуги')
+
 @section('content')
 
     <main class="page" id="services">
         <div class="page-title">Послуги</div>
         <div class="container">
             <ul class="breadcrumbs">
-                <li><a href="#">One</a></li>
-                <li>Two</li>
+                <li><a href="{{URL::to('/')}}">Головна</a></li>
+                <li>Послуги</li>
             </ul>
             <!-- /.breadcrumbs -->
 

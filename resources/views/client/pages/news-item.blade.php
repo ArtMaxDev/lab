@@ -1,13 +1,19 @@
 @extends('client.master')
 @inject('carbon', '\Carbon\Carbon')
+
+@section('title', $item->title)
+@section('meta-title', $item->title)
+@section('description', $item->meta_description)
+@section('keywords', $item->meta_keywords)
 @section('content')
 
     <main class="page" id="team">
         <div class="page-title">Прес-релiзи</div>
         <div class="container">
             <ul class="breadcrumbs">
-                <li><a href="#">One</a></li>
-                <li>Two</li>
+                <li><a href="{{URL::to('/')}}">Головна</a></li>
+                <li><a href="{{route('client.news.index')}}">Новини</a></li>
+                <li>{{$item->title}}</li>
             </ul>
             <!-- /.breadcrumbs -->
 
