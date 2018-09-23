@@ -60,5 +60,9 @@ class Kernel extends HttpKernel
         'role' => \Ultraware\Roles\Middleware\VerifyRole::class,
         'permission' => \Ultraware\Roles\Middleware\VerifyPermission::class,
         'level' => \Ultraware\Roles\Middleware\VerifyLevel::class,
+        'localize' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRoutes::class,
+        'localizationRedirect' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationRedirectFilter::class,
+        'localeSessionRedirect' => \Mcamara\LaravelLocalization\Middleware\LocaleSessionRedirect::class,
+        'localeViewPath' => \Mcamara\LaravelLocalization\Middleware\LaravelLocalizationViewPath::class,
     ];
 }

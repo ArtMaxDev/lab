@@ -3,8 +3,8 @@
     <div class="content">
         <div class="container">
             <div class="content-right">
-                <h3 class="title">Цени свою жизнь</h3>
-                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing eli</p>
+                <h3 class="title">{{$slide->title}}</h3>
+                <p class="description">{{$slide->description}}</p>
                 <a href="#" class="btn">Узнать подробнее</a>
             </div>
         </div>

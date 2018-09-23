@@ -145,8 +145,6 @@ const validation = (() => {
   const initValidationAdd = (rulesOverride = {}) => {
     const $validator = $('#formApi').validate({
       submitHandler(form) {
-        console.log($(form).serializeArray());
-        return;
         Codebase.blocks('state_loading');
         const id = $('.js-remove').data('id');
         const isEdit = id > 0;

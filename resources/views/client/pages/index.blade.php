@@ -3,7 +3,7 @@
 
     <section class="slider">
         <div id="slider">
-            @each('client.components.slide-item', [0,1,2], 'slide')
+            @each('client.components.slide-item', $slides, 'slide')
         </div>
     </section>
 
