@@ -92,7 +92,6 @@ $slider-dot-color-active: #3a4652;
     display: none;
     position: relative;
 
-
     &.tns-slide-active {
       .image {
         opacity: 1;
@@ -115,6 +114,15 @@ $slider-dot-color-active: #3a4652;
     margin-bottom: 100px;
     font-family: 'Roboto Slab', serif;
     font-weight: bold;
+
+    &.light {
+      .title {
+        color: #fff;
+      }
+      .description {
+        color: #16e4e4;
+      }
+    }
   }
 
   .content-right {
@@ -317,4 +325,48 @@ $slider-dot-color-active: #3a4652;
   .tns-controls {
     display: none !important;
   }
+}
+
+
+@media all and (max-width: 576px) {
+  .slider {
+    .content-right {
+      padding: 0;
+    }
+  }
+  .about {
+    .content {
+      padding-left: 0;
+      font-size: 16px;
+
+      .title {
+        font-size: 18px;
+        margin: 40px 0;
+      }
+    }
+
+    .about-title {
+      font-size: 24px;
+    }
+  }
+
+  .team {
+    > div {
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .item {
+      width: 50%;
+      display: block;
+      word-break: break-word;
+      .name {
+        font-size: 16px;
+      }
+
+      .sub-text {
+        font-size: 14px;
+      }
+    }
+  }
+
 }

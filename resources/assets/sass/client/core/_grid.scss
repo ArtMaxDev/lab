@@ -102,3 +102,14 @@ nav {
     text-align: center;
   }
 }
+
+@media all and (max-width: 576px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &-title {
+      font-size: 33px;
+    }
+  }
+}

@@ -24,23 +24,25 @@ tns({
   }
 });
 
-tns({
-  container: '#slider-team',
-  items: 4,
-  slideBy: 1,
-  controls: true,
-  viewportMax: true,
-  arrowKeys: true,
-  autoplayButtonOutput: false,
-  nav: false,
-  mouseDrag: true,
-  controlsText: ['', '<img src="/client/assets/images/static/arr-right.png" />']
-});
+if (window.screen && window.screen.width > 768) {
+  tns({
+    container: '#slider-team',
+    items: 4,
+    slideBy: 1,
+    controls: true,
+    viewportMax: true,
+    arrowKeys: true,
+    autoplayButtonOutput: false,
+    nav: false,
+    mouseDrag: true,
+    controlsText: ['', '<img src="/client/assets/images/static/arr-right.png" />']
+  });
+}
 
 if (document.querySelector('#slider-news')) {
   tns({
     container: '#slider-news',
-    items: 3,
+    items: window.screen && window.screen.width > 768 ? 3 : 1,
     slideBy: 1,
     controls: true,
     viewportMax: true,

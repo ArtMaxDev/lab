@@ -1,4 +1,5 @@
 @extends('client.master')
+@inject('carbon', '\Carbon\Carbon')
 @section('content')
 
     <main class="page" id="team">

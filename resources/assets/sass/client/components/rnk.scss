@@ -138,3 +138,39 @@
     }
   }
 }
+
+@media all and (max-width: 576px) {
+  .rnk {
+    .rnk-title {
+      font-size: 36px;
+    }
+
+    .sub-title {
+      font-size: 24px;
+    }
+
+    .content {
+      .main {
+        font-size: 16px;
+      }
+    }
+
+    .main-list-title {
+      font-size: 24px;
+    }
+
+    .main-list-title,
+    .main-ul {
+      color: #fff;
+    }
+
+    .banner-title {
+      font-size: 36px;
+      text-align: center;
+    }
+
+    .banner .ul .item {
+      font-size: 16px;
+    }
+  }
+}
