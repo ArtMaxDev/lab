@@ -2,10 +2,13 @@
 
 namespace App\Models;
 
+use App\Traits\LocalizedProperty;
 use Illuminate\Database\Eloquent\Model;
 
 class Publication extends Model
 {
+    use LocalizedProperty;
+
     protected $fillable = [
         'image',
         'image_alt',
