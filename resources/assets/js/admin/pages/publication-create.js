@@ -101,7 +101,7 @@ const actions = (() => {
         const reader = new FileReader();
 
         reader.onload = (ev) => {
-          $('#preview').attr('src', `${ev.target.result}.jpg`);
+          $('#preview').attr('src', ev.target.result);
         };
 
         reader.readAsDataURL(input.files[0]);
@@ -148,7 +148,8 @@ const validation = (() => {
         Codebase.blocks('state_loading');
         const id = $('.js-remove').data('id');
         const isEdit = id > 0;
-        const promise = isEdit ? PublicationsAPI.update(id, form) : PublicationsAPI.store(form);
+        const isPublicated = Number($('#publication-status').is(':checked'));
+        const promise = isEdit ? PublicationsAPI.update(id, form, isPublicated) : PublicationsAPI.store(form, isPublicated);
         promise
           .then((response) => {
             Codebase.blocks('state_normal');

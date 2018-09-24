@@ -15,11 +15,17 @@ export default class {
     return $.delete(Router.name('admin.publications.destroy', id));
   }
 
-  static store(data) {
-    return $.post(Router.name('admin.publications.store'), makeForm(data));
+  static store(data, status) {
+    return $.post(Router.name('admin.publications.store'), {
+      ...makeForm(data),
+      status
+    });
   }
 
-  static update(id, data) {
-    return $.put(Router.name('admin.publications.update', id), makeForm(data));
+  static update(id, data, status) {
+    return $.put(Router.name('admin.publications.update', id), {
+      ...makeForm(data),
+      status
+    });
   }
 }

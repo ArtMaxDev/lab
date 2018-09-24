@@ -94,7 +94,7 @@
                             <div>
                                 <button class="btn btn-alt-info mr-20" type="button" data-toggle="modal" data-target="#modal-image">Изменить</button>
                                 <label class="css-control css-control css-control-success css-switch">
-                                    <input type="checkbox" class="css-control-input" {{ isset($publication) && $publication->status ? 'checked' : ''}}>
+                                    <input type="checkbox" class="css-control-input" {{ isset($publication) && $publication->status ? 'checked' : ''}} name="status" value="true" id="publication-status">
                                     <span class="css-control-indicator"></span> Статус публикации
                                 </label>
                             </div>
@@ -135,7 +135,7 @@
                             </div>
                         </div>
                         <!-- /.form-group -->
-                        <img src="{{$publication->image ?? null}}" id="preview" alt="Загрузите изображение" class="img-fluid mx-auto">
+                        <img src="{{$publication->image ? "$publication->image.jpg" : null}}" id="preview" alt="Загрузите изображение" class="img-fluid mx-auto">
                     </div>
                 </div>
                 <div class="modal-footer">
