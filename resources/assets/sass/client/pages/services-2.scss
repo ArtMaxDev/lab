@@ -9,6 +9,33 @@
 .services {
   margin-bottom: 100px;
 }
+
+.news-article {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  blockquote {
+    > div {
+      color: #0b959f;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .ul-title {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+}
+
+
 .block {
   display: flex;
   flex-flow: row wrap;
@@ -19,7 +46,6 @@
   border: 2px solid #17a3ad;
   border-radius: 8px;
   font-size: 24px;
-
 
   .name {
     color: #333;
@@ -80,6 +106,27 @@
       }
     }
   }
+
+  .news-article {
+
+    .subtitle {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+
+    .ul-title {
+      font-size: 24px;
+    }
+  }
+
+  .news-article {
+    blockquote {
+      > div {
+        font-size: 24px;
+      }
+    }
+  }
+
 }
 
 @media all and (max-width: 768px) {
@@ -113,6 +160,22 @@
       b {
         font-size: 16px;
       }
+    }
+  }
+
+  .news-article {
+    blockquote {
+      > div {
+        font-size: 20px;
+      }
+    }
+    .subtitle {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .ul-title {
+      font-size: 20px;
     }
   }
 }

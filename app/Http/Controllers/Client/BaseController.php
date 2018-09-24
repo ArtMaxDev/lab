@@ -31,4 +31,9 @@ class BaseController extends Controller
     {
         return view('client.pages.services-2');
     }
+
+    public function services3()
+    {
+        return view('client.pages.services-3');
+    }
 }

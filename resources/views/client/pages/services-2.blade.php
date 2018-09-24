@@ -180,9 +180,6 @@
     </main>
     <!-- /#team -->
 @endsection
-@push('scripts')
-    {{--<script defer src="{{mix('/assets/pages/index.js', 'client')}}"></script>--}}
-@endpush
 @push('critical-css')
     <link rel="stylesheet" href="{{mix('/assets/pages/news-item.css', 'client')}}">
     <link rel="stylesheet" href="{{mix('/assets/pages/services-2.css', 'client')}}">
