@@ -4,7 +4,7 @@
         <feColorMatrix type="matrix" values="0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0" />
     </filter>
     <defs>
-        <pattern  id="hexagon-{{$id}}" patternUnits="userSpaceOnUse" width="100" height="100">
+        <pattern id="hexagon-{{$id}}" patternUnits="userSpaceOnUse" width="100" height="100">
             <image class="team-hexagon__img" xlink:href="{{$image}}" x="-25" width="150" height="100" />
         </pattern>
     </defs>

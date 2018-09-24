@@ -2,8 +2,8 @@
     <div class="container section">
         <div class="info">
             <div>
-                @isset($settings->address)
-                <address class="address">{{$settings->address}}</address>
+                @if($settings->getLocalizedProperty('address') !== null)
+                <address class="address">{{$settings->getLocalizedProperty('address')}}</address>
                 <a href="#" class="js-open-map">Показати на мапі</a>
                 @endisset
             </div>

@@ -1,10 +1,11 @@
 @extends('client.master')
 @inject('carbon', '\Carbon\Carbon')
 
-@section('title', $item->title)
-@section('meta-title', $item->title)
-@section('description', $item->meta_description)
-@section('keywords', $item->meta_keywords)
+@section('title', $item->getLocalizedProperty('title'))
+@section('meta-title', $item->getLocalizedProperty('title'))
+@section('description', $item->getLocalizedProperty('meta_description'))
+@section('keywords', $item->getLocalizedProperty('meta_keywords'))
+
 @section('content')
 
     <main class="page" id="team">
@@ -13,18 +14,18 @@
             <ul class="breadcrumbs">
                 <li><a href="{{URL::to('/')}}">Головна</a></li>
                 <li><a href="{{route('client.news.index')}}">Новини</a></li>
-                <li>{{$item->title}}</li>
+                <li>{{$item->getLocalizedProperty('title')}}</li>
             </ul>
             <!-- /.breadcrumbs -->
 
             <article class="news-article">
-                <h1 class="news-article-title">{{$item->title}} <time datetime="{{$item->created_at}}">{{$carbon::parse($item->publicated_at)->format('d.m.Y')}}</time></h1>
+                <h1 class="news-article-title">{{$item->getLocalizedProperty('title')}} <time datetime="{{$item->publicated_at}}">{{$item->publicated_at}}</time></h1>
                 <picture>
                     <source srcset="{{$item->image}}_small.jpg" media="(max-width: 768px)">
                     <img class="news-article-img" src="{{$item->image}}.jpg" alt="{{$item->image_alt}}">
                 </picture>
 
-                {!! $item->title !!}
+                {!! $item->getLocalizedProperty('text') !!}
             </article>
 
             <h5 class="section-title">Подборка</h5>

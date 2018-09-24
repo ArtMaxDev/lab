@@ -3,10 +3,6 @@
         <a href="/" >
             <img src="/client/assets/images/static/logo.png" alt="Логотип ОНКОТераностика" class="nav-logo">
         </a>
-        {{--<ul class="nav-lang">--}}
-            {{--<li class="nav-lang-item"><a href="#" class="nav-lang-link">Укр</a></li>--}}
-            {{--<li class="nav-lang-item disabled"><a href="#" class="nav-lang-link">Eng</a></li>--}}
-        {{--</ul>--}}
         <ul class="nav-lang">
             @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                 <li class="nav-lang-item @if($localeCode === $currentLocale) disabled @endif">
