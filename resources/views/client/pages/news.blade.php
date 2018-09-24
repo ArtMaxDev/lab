@@ -18,13 +18,8 @@
             <div class="news" id="news-container">
                 @each('client.components.news-item', $news, 'news')
             </div>
-            <ul class="pagination">
-                <li><a href="#" class="js-news-page link active">1</a></li>
-                <li><a href="#" class="js-news-page link">2</a></li>
-                <li><a href="#" class="js-news-page link">3</a></li>
-                <li><a href="#" class="js-news-next">Показать еще</a></li>
-            </ul>
-            <!-- /.pagination -->
+
+            {{ $news->links('client.components.custom-paginator') }}
         </div>
         <!-- /.container -->
     </main>

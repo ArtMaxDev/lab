@@ -9,7 +9,7 @@ class NewsController extends BaseController
     public function index(Publication $publication)
     {
         return view('client.pages.news')->with([
-            'news' => $publication->published()->get(),
+            'news' => $publication->published()->paginate(9),
         ]);
     }
 
