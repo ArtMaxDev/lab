@@ -16,7 +16,7 @@ export default class {
   static edit(id, form, file) {
     const data = makeForm(form);
     if (!file) {
-      return $.put(Router.name('admin.sliders.update'), data);
+      return $.put(Router.name('admin.sliders.update', id), data);
     }
     return ImageAPI.store(file)
       .then(({ link }) => {

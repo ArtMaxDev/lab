@@ -21,10 +21,10 @@
                 <div class="row items-push">
                     @foreach($sliders as $slider)
                         <div class="col-md-3 animated fadeIn">
-                            <div class="options-container fx-item-zoom-in {{$slider->status === 0 ? 'ribbon-success' : 'ribbon-danger'}}">
+                            <div class="options-container fx-item-zoom-in {{$slider->status === 1 ? 'ribbon-success' : 'ribbon-danger'}}">
                                 <img class="img-fluid options-item d-block mx-auto" src="{{"$slider->image.jpg"}}" alt="{{$slider->image_alt}}" style="min-height: 150px">
                                 <div class="ribbon-box">
-                                    <i class="fa fa-fw fa-lg {{$slider->status === 0 ? 'fa-eye' : 'fa-eye-slash'}}"></i>
+                                    <i class="fa fa-fw fa-lg {{$slider->status === 1 ? 'fa-eye' : 'fa-eye-slash'}}"></i>
                                 </div>
                                 <div class="options-overlay bg-black-op">
                                     <div class="options-overlay-content">

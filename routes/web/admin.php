@@ -42,6 +42,6 @@ Route::middleware(['auth', 'role:root'])->group(function () {
 
     Route::get('/sliders', 'SliderController@index')->name('sliders.index');
     Route::post('/sliders', 'SliderController@store')->name('sliders.store');
-    Route::put('/sliders', 'SliderController@update')->name('sliders.update');
+    Route::put('/sliders/{slide}', 'SliderController@update')->name('sliders.update');
     Route::delete('/sliders/{slide}', 'SliderController@destroy')->name('sliders.destroy');
 });
