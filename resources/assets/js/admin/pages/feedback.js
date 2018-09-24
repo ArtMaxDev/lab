@@ -38,11 +38,11 @@ const dataTables = (() => {
         },
         {
           data: 'message',
-          render: text => text.length > 100 ? `${text.substr(0, textLength)}...` : text, // eslint-disable-line
+          render: text => text && text.length > 100 ? `${text.substr(0, textLength)}...` : text, // eslint-disable-line
         },
         {
           data: 'admin_message',
-          render: text => text.length > 100 ? `${text.substr(0, textLength)}...` : text, // eslint-disable-line
+          render: text => text && text.length > 100 ? `${text.substr(0, textLength)}...` : text, // eslint-disable-line
         },
         {
           data: 'status',
@@ -76,7 +76,7 @@ const validation = (() => {
     const $validator = $('#formApi').validate({
       submitHandler(form) {
         $(form).addClass('is-loading');
-        const id = $(form).find('[name=id]').val().trim();
+        const id = $('#feedbackId').val().trim();
         FeedbackAPI.edit(id, form)
           .then((response) => {
             const row = table.row({ selected: true });
@@ -147,7 +147,8 @@ const actions = (() => {
       e.preventDefault();
 
       const data = cell.row().data();
-      $('#feedbackId, #feedbackNumber').text(data.id);
+      cell.row().select();
+      $('#feedbackId, #feedbackNumber').text(data.id).val(data.id);
       $('#userName').text(data.fullname);
       $('#userDate').text(data.date);
       $('#userEmail').text(data.email);

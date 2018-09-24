@@ -24,6 +24,7 @@
                             <th class="text-center" hidden>№</th>
                             <th class="nowrap">Дата</th>
                             <th class="font-w600">Ф.И.О.</th>
+                            <th>Телефон</th>
                             <th>Email</th>
                             <th>Сообщение</th>
                             <th>Ответ</th>
@@ -59,7 +60,6 @@
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <form id="formApi" method="post">
-                    <input type="hidden" name="id">
                     <div class="block block-themed block-transparent mb-0">
                         <div class="block-header bg-gd-leaf">
                             <h3 class="block-title">Редактирование заявки №<small id="feedbackNumber"></small></h3>

@@ -27,7 +27,9 @@ class FeedbackController extends Controller
     {
         $feedback->update($request->all());
 
-        return response()->json($feedback->toArray());
+        return response()->json([
+            'data' => $feedback->toArray()
+        ]);
     }
 
     public function destroy(Feedback $feedback)
