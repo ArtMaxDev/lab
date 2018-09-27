@@ -20,7 +20,7 @@ const dataTables = (() => {
     };
     const table = $('.js-dataTable-full').DataTable(dtSettings({
       columns: [
-        { data: 'id', visible: false },
+        { data: 'id' },
         { data: 'date', className: 'nowrap' },
         {
           data: 'fullname',

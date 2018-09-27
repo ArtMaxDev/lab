@@ -21,7 +21,7 @@
                     <table class="table table-vcenter js-dataTable-full">
                         <thead>
                         <tr>
-                            <th class="text-center" hidden>№</th>
+                            <th class="text-center" style="width: 1%">№</th>
                             <th class="nowrap">Дата</th>
                             <th class="font-w600">Ф.И.О.</th>
                             <th>Телефон</th>
@@ -34,7 +34,7 @@
                         <tbody>
                         @foreach($feedback as $item)
                             <tr>
-                                <td class="text-center" hidden>{{$item->id}}</td>
+                                <td class="text-center">{{$item->id}}</td>
                                 <td class="nowrap">{{$item->created_at}}</td>
                                 <td class="font-w600">{{$item->fullname}}</td>
                                 <td class="font-w600">{{$item->phone}}</td>
