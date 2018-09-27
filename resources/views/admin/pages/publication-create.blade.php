@@ -135,7 +135,7 @@
                             </div>
                         </div>
                         <!-- /.form-group -->
-                        <img src="{{$publication->image ? "$publication->image.jpg" : null}}" id="preview" alt="Загрузите изображение" class="img-fluid mx-auto">
+                        <img src="{{($publication->image ?? null) ? "$publication->image.jpg" : null}}" id="preview" alt="Загрузите изображение" class="img-fluid mx-auto">
                     </div>
                 </div>
                 <div class="modal-footer">
