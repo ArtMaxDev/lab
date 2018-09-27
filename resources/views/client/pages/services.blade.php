@@ -20,7 +20,7 @@
                     <li class="item">
                         <a href="#" class="link">
                             <img class="img" src="/client/assets/images/static/services/s1.png" alt="">
-                            <strong>Рання діагностика раку</strong>
+                            <strong>Скринінг та рання діагностика</strong>
                             <span class="sub-text">MiR-TECT<br/> ОНКО Check-Up</span>
                         </a>
                     </li>
@@ -65,7 +65,11 @@
                     <a href="#">сечі</a>, що в поєднанні з консультацією генетика забезпечує системний діагностичний підхід!
                 </blockquote>
 
-                <img src="//placehold.it/1200x300" alt="">
+                <picture>
+                    <source srcset="/client/assets/images/static/services/img-1_tablet.jpg" media="(max-width: 768px)">
+                    <source srcset="/client/assets/images/static/services/img-1_mobile.jpg" media="(max-width: 576px)">
+                    <img src="/client/assets/images/static/services/img-1.jpg" alt="Онкологічне захворювання">
+                </picture>
 
                 <h2 class="text-xs-center">ОНКО Check-Up</h2>
 
@@ -112,7 +116,11 @@
             <article class="news-article">
                 <p><b>Якщо Ви не можете приїхати особисто до клініки, або у Вас вже є генетична карта та результати загальноклінічних аналізів  ми пропонуємо пройти інший варіант скринінгового дослідження miR-ТЕСТ</b></p>
 
-                <img src="//placehold.it/1200x300" alt="">
+                <picture>
+                    <source srcset="/client/assets/images/static/services/img-2_tablet.jpg" media="(max-width: 768px)">
+                    <source srcset="/client/assets/images/static/services/img-2_mobile.jpg" media="(max-width: 576px)">
+                    <img src="/client/assets/images/static/services/img-2.jpg" alt="miR-ТЕСТ">
+                </picture>
 
                 <h2 class="text-xs-center">miR-ТЕСТ</h2>
 

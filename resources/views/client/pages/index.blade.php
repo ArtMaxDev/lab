@@ -68,8 +68,8 @@
         <ul class="service-list">
             <li class="item">
                 <a href="{{route('client.services.index')}}" class="link">
-                    <img class="img" src="/client/assets/images/static/s1.png" alt="Рання діагностика раку">
-                    <strong>Рання діагностика раку</strong>
+                    <img class="img" src="/client/assets/images/static/s1.png" alt="Скринінг та рання діагностика">
+                    <strong>Скринінг та рання діагностика</strong>
                     <span class="sub-text">MiR-TECT<br/> ОНКО Check-Up</span>
                 </a>
             </li>
