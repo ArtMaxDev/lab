@@ -89,20 +89,20 @@
                             <div class="row gutters-tiny">
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label for="user_password" class="col-12">Пароль <span
+                                        <label for="password" class="col-12">Пароль <span
                                                 class="text-danger js-pass-required">*</span></label>
                                         <div class="col-12">
-                                            <input type="password" class="form-control" id="user_password"
+                                            <input type="password" class="form-control" id="password"
                                                    name="password">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-group row">
-                                        <label for="user_password_confirm" class="col-12">Подтверждение пароля <span
+                                        <label for="password_confirmation" class="col-12">Подтверждение пароля <span
                                                 class="text-danger js-pass-required">*</span></label>
                                         <div class="col-12">
-                                            <input type="password" class="form-control" id="user_password_confirm"
+                                            <input type="password" class="form-control" id="password_confirmation"
                                                    name="password_confirmation">
                                         </div>
                                     </div>

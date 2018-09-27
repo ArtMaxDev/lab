@@ -51,11 +51,11 @@ const validation = (() => {
     rules: {
       name: { required: true, minlength: 3 },
       email: { required: true, email: true, minlength: 6 },
-      user_password: {
+      password: {
         minlength: 8
       },
-      user_password_confirm: {
-        equalTo: '#user_password'
+      password_confirmation: {
+        equalTo: '#password'
       },
     }
   };
@@ -111,13 +111,13 @@ const validation = (() => {
         } else {
           $requiredFields.show();
           validator = initValidationAdd(table, {
-            user_password: {
+            password: {
               required: true,
               minlength: 8
             },
-            user_password_confirm: {
+            password_confirmation: {
               required: true,
-              equalTo: '#user_password'
+              equalTo: '#password'
             },
           });
         }
