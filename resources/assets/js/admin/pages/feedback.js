@@ -146,8 +146,10 @@ const actions = (() => {
       e.stopPropagation();
       e.preventDefault();
 
-      const data = cell.row().data();
-      cell.row().select();
+      const rowIndex = cell[0][0].row;
+
+      const data = cell.row(rowIndex).data();
+      cell.row(rowIndex).select();
       $('#feedbackId, #feedbackNumber').text(data.id).val(data.id);
       $('#userName').text(data.fullname);
       $('#userDate').text(data.date);
