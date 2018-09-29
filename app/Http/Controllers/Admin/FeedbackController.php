@@ -18,7 +18,7 @@ class FeedbackController extends Controller
     public function index(Feedback $feedback)
     {
         return view('admin.pages.feedback')->with([
-            'feedback' => $feedback->get(),
+            'feedback' => $feedback->orderBy('id', 'desc')->get(),
             'statusList' => self::STATUS_LIST,
         ]);
     }
