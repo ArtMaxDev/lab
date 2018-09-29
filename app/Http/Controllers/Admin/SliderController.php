@@ -21,7 +21,7 @@ class SliderController extends Controller
     public function index(Slide $slide)
     {
         return view('admin.pages.sliders')->with([
-            'sliders' => $slide->get(),
+            'sliders' => $slide->orderBy('sorting')->get(),
             'statusList' => self::STATUS_LIST,
             'styleList' => self::STYLE_LIST,
         ]);

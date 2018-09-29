@@ -11,7 +11,7 @@ class MainController extends BaseController
     {
         return view('client.pages.index')->with([
             'news' => $publication->published()->get()->take(8),
-            'slides' => $slide->active()->get(),
+            'slides' => $slide->active()->orderBy('sorting')->get(),
         ]);
     }
 }
