@@ -43,4 +43,9 @@ class User extends Authenticatable
             $model->attachRole($role);
         });
     }
+
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = bcrypt($value);
+    }
 }
