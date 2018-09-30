@@ -16,7 +16,7 @@
     <label for="nav-toggle" class="nav-toggle-button">Toggle Navigation</label>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <ul class="nav-menu">
-        <li class="nav-item"><a href="#about" class="nav-link js-scroll">Про нас</a></li>
+        <li class="nav-item"><a href="{{URL::current() === URL::to('/') ? '#about' : '/#about'}}" class="nav-link {{URL::current() !== URL::to('/') ?: 'js-scroll'}}">Про нас</a></li>
         <li class="nav-item"><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.services.index'), [], false)}}" class="nav-link">Послуги</a></li>
         <li class="nav-item"><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.news.index'), [], false)}}" class="nav-link">Корисна інформація</a></li>
         <li class="nav-item"><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.team.index'), [], false)}}" class="nav-link">Команда</a></li>
