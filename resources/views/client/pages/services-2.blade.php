@@ -1,17 +1,18 @@
 @extends('client.master')
 
-@section('title', 'ОНКО Drug Test')
-@section('meta-title', 'ОНКО Drug Test')
-@section('description', 'Послуга - ОНКО Drug Test')
-@section('keywords', 'ОНКО Drug Test')
+@section('title', 'Чутливість до хіміотерапії')
+@section('meta-title', 'Чутливість до хіміотерапії')
+@section('description', 'Чутливість до хіміотерапії')
+@section('keywords', 'хіміотерапія, ОНКО Drug Test')
 @section('content')
 
     <main class="page" id="services">
-        <div class="page-title">ОНКО Drug Test</div>
+        <div class="page-title">Чутливість до хіміотерапії</div>
         <div class="container">
             <ul class="breadcrumbs">
                 <li><a href="{{URL::to('/')}}">Головна</a></li>
-                <li>ОНКО Drug Test</li>
+                <li><a href="/#services-2">Послуги</a></li>
+                <li>Чутливість до хіміотерапії</li>
             </ul>
             <!-- /.breadcrumbs -->
 

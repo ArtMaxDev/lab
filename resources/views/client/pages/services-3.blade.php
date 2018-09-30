@@ -11,6 +11,7 @@
         <div class="container">
             <ul class="breadcrumbs">
                 <li><a href="{{URL::to('/')}}">Головна</a></li>
+                <li><a href="/#services-2">Послуги</a></li>
                 <li>Онкогематологічні дослідження</li>
             </ul>
             <!-- /.breadcrumbs -->

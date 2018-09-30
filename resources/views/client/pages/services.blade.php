@@ -1,17 +1,18 @@
 @extends('client.master')
 
-@section('meta-title', 'Послуги')
-@section('description', 'Послуги')
-@section('keywords', 'Послуги')
+@section('meta-title', 'Cкринінг та рання діагностика')
+@section('description', 'СКРИНІНГ ТА РАННЯ ДІАГНОСТИКА')
+@section('keywords', 'СКРИНІНГ, РАННЯ ДІАГНОСТИКА')
 
 @section('content')
 
     <main class="page" id="services">
-        <div class="page-title">Послуги</div>
+        <div class="page-title">СКРИНІНГ ТА РАННЯ ДІАГНОСТИКА</div>
         <div class="container">
             <ul class="breadcrumbs">
                 <li><a href="{{URL::to('/')}}">Головна</a></li>
-                <li>Послуги</li>
+                <li><a href="/#services-2">Послуги</a></li>
+                <li>СКРИНІНГ ТА РАННЯ ДІАГНОСТИКА</li>
             </ul>
             <!-- /.breadcrumbs -->
 

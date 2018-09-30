@@ -12,7 +12,6 @@
 
     <section class="container section" id="services">
         <div class="services">
-            <a href="{{route('client.services.index')}}">
                 <figure class="item">
                     <div>
                         <img src="/client/assets/images/static/service-1.png" alt="Індивідуальна програма ранньої діагностики" class="img">
@@ -22,16 +21,12 @@
                         <p class="sub-text">Попереджений - означає озброєний!</p>
                     </figcaption>
                 </figure>
-            </a>
-            <a href="{{route('client.services-2.index')}}">
                 <figure class="item">
                     <div><img src="/client/assets/images/static/service-2.png" alt="Молекулярно-епігенетична оцінка стану організму" class="img"></div>
                     <figcaption>
                         <strong class="main-text">Молекулярно-епігенетична оцінка стану організму</strong>
                     </figcaption>
                 </figure>
-            </a>
-            <a href="{{route('client.services-3.index')}}">
                 <figure class="item">
                     <div><img src="/client/assets/images/static/service-3.png" alt="Інноваційні діагностичні підходи" class="img"></div>
                     <figcaption>
@@ -39,7 +34,6 @@
                         <p class="sub-text">Малоінвазивні методи дослідження</p>
                     </figcaption>
                 </figure>
-            </a>
         </div>
         <!-- /.services -->
     </section>
@@ -80,20 +74,20 @@
                 </a>
             </li>
             <li class="item">
-                <a href="{{route('client.services.index')}}" class="link">
+                <a href="{{route('client.services-2.index')}}" class="link">
                     <img class="img" src="/client/assets/images/static/s2.png" alt="Індивідуальна чутливість до протипухлинних препаратів ">
                     <strong>Індивідуальна чутливість до протипухлинних препаратів </strong>
                     <span class="sub-text">ОНКО Drug Test</span>
                 </a>
             </li>
             <li class="item">
-                <a href="{{route('client.services.index')}}" class="link">
+                <a href="{{route('client.services-3.index')}}" class="link">
                     <img class="img" src="/client/assets/images/static/s3.png" alt="Онкогематологічні дослідження">
                     <strong>Онкогематологічні дослідження</strong>
                 </a>
             </li>
             <li class="item">
-                <a href="{{route('client.services.index')}}" class="link">
+                <a href="#" class="link">
                     <img class="img" src="/client/assets/images/static/s4.png" alt="Загальноклінічні аналізи">
                     <strong>Загальноклінічні аналізи</strong>
                 </a>
