@@ -36,7 +36,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="phone1"><i class="fa fa-phone-square"></i> Контактный номер №1 <span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <input type="tel" class="form-control js-masked-phoneUA" id="phone1" name="phone1" placeholder=".." required value="{{$settings->phone1}}">
+                              <input type="tel" class="form-control js-masked-phoneUA_Viber" id="phone1" name="phone1" placeholder=".." required value="{{$settings->phone1}}">
                           </div>
                       </div>
                   </div>
@@ -45,7 +45,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="phone2"><i class="fa fa-phone-square"></i> Контактный номер №2</label>
                           <div class="col-md-12">
-                              <input type="tel" class="form-control js-masked-phoneUA" id="phone2" name="phone2" placeholder=".." value="{{$settings->phone2}}">
+                              <input type="tel" class="form-control js-masked-phoneUA_Viber" id="phone2" name="phone2" placeholder=".." value="{{$settings->phone2}}">
                           </div>
                       </div>
                   </div>
@@ -146,7 +146,7 @@
                       <div class="form-group row">
                           <label class="col-12" for="meta_keywords_uk">Meta-keywords [UK] <span class="text-danger">*</span></label>
                           <div class="col-md-12">
-                              <textarea class="form-control" id="meta_keywords_uk" name="meta_keywords_uk" placeholder="..." required>{{$settings->meta_keywords}}</textarea>
+                              <textarea class="form-control" id="meta_keywords_uk" name="meta_keywords_uk" placeholder="..." required>{{$settings->meta_keywords_uk}}</textarea>
                               <div class="form-text text-muted">Слова или словосочетания описывающие сайт, вводимые через запятую.</div>
                           </div>
                       </div>

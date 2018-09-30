@@ -26,7 +26,7 @@ const validation = (() => {
     ...validationDefaults,
     rules: {
       email: { required: true, email: true },
-      phone1: { required: true, phonesRUS_UA: true },
+      phone1: { required: true, phonesRUS_UA_Viber: true },
       address_uk: { required: true },
       address_en: { required: true },
       meta_description_uk: { required: true },
