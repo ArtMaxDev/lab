@@ -3,15 +3,15 @@
         <a href="/" >
             <img src="/client/assets/images/static/logo.png" alt="Логотип ОНКОТераностика" class="nav-logo">
         </a>
-        <ul class="nav-lang">
-            @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                <li class="nav-lang-item @if($localeCode === $currentLocale) disabled @endif">
-                    <a class="nav-lang-link" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                        {{ $properties['native'] }}
-                    </a>
-                </li>
-            @endforeach
-        </ul>
+        {{--<ul class="nav-lang">--}}
+            {{--@foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)--}}
+                {{--<li class="nav-lang-item @if($localeCode === $currentLocale) disabled @endif">--}}
+                    {{--<a class="nav-lang-link" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">--}}
+                        {{--{{ $properties['native'] }}--}}
+                    {{--</a>--}}
+                {{--</li>--}}
+            {{--@endforeach--}}
+        {{--</ul>--}}
     </div>
     <label for="nav-toggle" class="nav-toggle-button">Toggle Navigation</label>
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
