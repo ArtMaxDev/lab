@@ -101,7 +101,7 @@
     <!-- /.container -->
 
     <div class="map" id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.5131238539216!2d30.51805691602726!3d50.45016887947527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce50966d68eb%3A0x818b61bfa0baa78a!2s3A%2C+Borysa+Hrinchenka+St%2C+3%D0%90%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1537127121067" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.824509806457!2d30.480247115729014!3d50.38846987946683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8dd278a7e5d%3A0x9b298682892d1b10!2sVasylkivska+St%2C+45%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1538336624186" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
         <div class="container text-right">
             <button type="submit" class="btn js-open-map">згорнути мапу</button>
         </div>
