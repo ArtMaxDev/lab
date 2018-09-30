@@ -48,7 +48,7 @@
   }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1023px) {
   .service-list {
     .link {
       font-size: 20px;
@@ -61,7 +61,7 @@
 }
 
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   .service-list {
     flex-flow: row wrap;
     .item {
@@ -71,7 +71,7 @@
 }
 
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   .service-list {
     .link {
       font-size: 16px;

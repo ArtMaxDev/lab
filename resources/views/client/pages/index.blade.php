@@ -12,28 +12,34 @@
 
     <section class="container section" id="services">
         <div class="services">
-            <figure class="item">
-                <div>
-                    <img src="/client/assets/images/static/service-1.png" alt="Індивідуальна програма ранньої діагностики" class="img">
-                </div>
-                <figcaption>
-                    <strong class="main-text">Індивідуальна програма ранньої діагностики</strong>
-                    <p class="sub-text">Попереджений - означає озброєний!</p>
-                </figcaption>
-            </figure>
-            <figure class="item">
-                <div><img src="/client/assets/images/static/service-2.png" alt="Молекулярно-епігенетична оцінка стану організму" class="img"></div>
-                <figcaption>
-                    <strong class="main-text">Молекулярно-епігенетична оцінка стану організму</strong>
-                </figcaption>
-            </figure>
-            <figure class="item">
-                <div><img src="/client/assets/images/static/service-3.png" alt="Інноваційні діагностичні підходи" class="img"></div>
-                <figcaption>
-                    <strong class="main-text">Інноваційні діагностичні підходи</strong>
-                    <p class="sub-text">Малоінвазивні методи дослідження</p>
-                </figcaption>
-            </figure>
+            <a href="{{route('client.services.index')}}">
+                <figure class="item">
+                    <div>
+                        <img src="/client/assets/images/static/service-1.png" alt="Індивідуальна програма ранньої діагностики" class="img">
+                    </div>
+                    <figcaption>
+                        <strong class="main-text">Індивідуальна програма ранньої діагностики</strong>
+                        <p class="sub-text">Попереджений - означає озброєний!</p>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="{{route('client.services-2.index')}}">
+                <figure class="item">
+                    <div><img src="/client/assets/images/static/service-2.png" alt="Молекулярно-епігенетична оцінка стану організму" class="img"></div>
+                    <figcaption>
+                        <strong class="main-text">Молекулярно-епігенетична оцінка стану організму</strong>
+                    </figcaption>
+                </figure>
+            </a>
+            <a href="{{route('client.services-3.index')}}">
+                <figure class="item">
+                    <div><img src="/client/assets/images/static/service-3.png" alt="Інноваційні діагностичні підходи" class="img"></div>
+                    <figcaption>
+                        <strong class="main-text">Інноваційні діагностичні підходи</strong>
+                        <p class="sub-text">Малоінвазивні методи дослідження</p>
+                    </figcaption>
+                </figure>
+            </a>
         </div>
         <!-- /.services -->
     </section>

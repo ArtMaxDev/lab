@@ -95,7 +95,7 @@
   }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1023px) {
   .block {
     font-size: 20px;
   }
@@ -129,7 +129,7 @@
 
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   .block {
     flex-flow: column nowrap;
     font-size: 18px;

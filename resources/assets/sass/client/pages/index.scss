@@ -292,7 +292,7 @@ $slider-dot-color-active: #3a4652;
   }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (max-width: 1023px) {
   .slider {
     .title {
       font-size: 60px;
@@ -328,7 +328,7 @@ $slider-dot-color-active: #3a4652;
 }
 
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 767px) {
   .slider {
     .content-right {
       padding: 0;
