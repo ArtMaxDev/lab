@@ -24,7 +24,7 @@
                 <li><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.services.index'), [], false)}}" class="nav-link">Скринінг та рання діагностика</a></li>
                 <li><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.services-2.index'), [], false)}}" class="nav-link">Чутливість до хіміотерапії</a></li>
                 <li><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.services-3.index'), [], false)}}" class="nav-link">Онкогематологічні дослідження</a></li>
-                <li><a href="{{URL::current() === URL::to('/') ? '#services-2' : '/#services-2'}}" class="nav-link">Загальноклінічні аналізи</a></li>
+                <li><a href="/storage/price.pdf" target="_blank" class="nav-link">Загальноклінічні аналізи</a></li>
             </ul>
         </li>
         <li class="nav-item"><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.news.index'), [], false)}}" class="nav-link">Корисна інформація</a></li>

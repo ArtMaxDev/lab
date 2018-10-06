@@ -15,7 +15,7 @@
             <!-- /.breadcrumbs -->
 
             <div class="team">
-                @each('client.components.team-item', [1,2,3,4,5,6,7,8,9,10], 'member')
+                @each('client.components.team-item', $team, 'member')
             </div>
         </div>
         <!-- /.container -->
@@ -23,9 +23,6 @@
     <!-- /#team -->
 
 @endsection
-@push('scripts')
-    {{--<script defer src="{{mix('/assets/pages/index.js', 'client')}}"></script>--}}
-@endpush
 @push('critical-css')
     <link rel="stylesheet" href="{{mix('/assets/pages/team.css', 'client')}}">
 @endpush

@@ -1,11 +1,9 @@
 <a href="{{route('client.team.index')}}" class="item">
     @include('client.components.team-member', [
-           'image' => '/client/assets/images/static/doctor.jpg'
+           'image' => $member['url']
        ])
     <div class="content">
-        <strong class="name">Петрова Елена
-            Викторовна</strong>
-        <span class="sub-text">Кандидат в доктор наук в области Гематологии</span>
+        <strong class="name">{{$member['name']}}</strong>
+        <span class="sub-text">{{$member['description']}}</span>
     </div>
-    <!-- /.item -->
 </a>

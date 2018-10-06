@@ -5,7 +5,7 @@
     </filter>
     <defs>
         <pattern id="hexagon-{{$id}}" patternUnits="userSpaceOnUse" width="100" height="100">
-            <image class="team-hexagon__img" xlink:href="{{$image}}" x="-25" width="150" height="100" />
+            <image class="team-hexagon__img" xlink:href="{{$image}}" x="-25" y="5" width="150" height="100" />
         </pattern>
     </defs>
     <polygon class="team-hexagon__hex" points="50 6 90 30 90 70 50 94 10 70 10 30" fill="url(#hexagon-{{$id}})"/>

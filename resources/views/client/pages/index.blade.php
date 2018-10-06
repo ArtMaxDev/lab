@@ -102,7 +102,7 @@
     <section class="section container team" id="team">
         <h2 class="section-title">Наша команда</h2>
         <div id="slider-team">
-            @each('client.components.team-item', [1,2,3,4,5,6], 'member')
+            @each('client.components.team-item', $team, 'member')
         </div>
         <!-- /#slider-team -->
     </section>

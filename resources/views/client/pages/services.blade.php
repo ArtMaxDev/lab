@@ -16,38 +16,6 @@
             </ul>
             <!-- /.breadcrumbs -->
 
-            {{--<section class="container section">--}}
-                {{--<ul class="service-list">--}}
-                    {{--<li class="item">--}}
-                        {{--<a href="#" class="link">--}}
-                            {{--<img class="img" src="/client/assets/images/static/services/s1.png" alt="">--}}
-                            {{--<strong>Скринінг та рання діагностика</strong>--}}
-                            {{--<span class="sub-text">MiR-TECT<br/> ОНКО Check-Up</span>--}}
-                        {{--</a>--}}
-                    {{--</li>--}}
-                    {{--<li class="item">--}}
-                        {{--<a href="#" class="link">--}}
-                            {{--<img class="img" src="/client/assets/images/static/services/s2.png" alt="">--}}
-                            {{--<strong>Індивідуальна чутливість до протипухлинних препаратів </strong>--}}
-                            {{--<span class="sub-text">ОНКО Drug Test</span>--}}
-                        {{--</a>--}}
-                    {{--</li>--}}
-                    {{--<li class="item">--}}
-                        {{--<a href="#" class="link">--}}
-                            {{--<img class="img" src="/client/assets/images/static/services/s3.png" alt="">--}}
-                            {{--<strong>Онкогематологічні дослідження</strong>--}}
-                        {{--</a>--}}
-                    {{--</li>--}}
-                    {{--<li class="item">--}}
-                        {{--<a href="#" class="link">--}}
-                            {{--<img class="img" src="/client/assets/images/static/services/s4.png" alt="">--}}
-                            {{--<strong>Загальноклінічні аналізи</strong>--}}
-                        {{--</a>--}}
-                    {{--</li>--}}
-                {{--</ul>--}}
-                {{--<!-- /.container -->--}}
-            {{--</section>--}}
-
             <article class="news-article">
                 <h1 class="news-article-title">СКРИНІНГ ТА РАННЯ ДІАГНОСТИКА </h1>
 
@@ -76,7 +44,7 @@
                 <ul>
                     <li>звернутися до клініки</li>
                     <li>записатися на зручний для Вас час</li>
-                    <li>прийти на консультацію до лікаря (без генетика, онколога)</li>
+                    <li>прийти на консультацію до лікаря</li>
                     <li>здати необхідні аналізи (кров, сеча)</li>
                 </ul>
 
@@ -151,7 +119,7 @@
                         <li class="item">раку молочної залози</li>
                         <li class="item">раку шийки матки</li>
                         <li class="item">раку яєчника</li>
-                        <li class="item">раку кишечнику</li>
+                        <li class="item">раку кішківнику</li>
                         <li class="item">раку шлунку</li>
                         <li class="item">раку щитовидної залози</li>
                     </ul>
@@ -176,7 +144,7 @@
                         <li class="item">раку легені</li>
                         <li class="item">раку передміхурової залози</li>
                         <li class="item">раку шлунку</li>
-                        <li class="item">раку кишечнику</li>
+                        <li class="item">раку кішківнику</li>
                         <li class="item">раку сечового міхура</li>
                         <li class="item">раку нирки</li>
                     </ul>
@@ -197,7 +165,7 @@
                     <p class="title">Оцінка ризику виникнення:</p>
                     <ul class="ul check-list">
                         <li class="item"></li>
-                        <li class="item">раку кишечнику</li>
+                        <li class="item">раку кішківнику</li>
                         <li class="item">раку шлунку</li>
                         <li class="item">раку щитовидної залози</li>
                         <li class="item">раку легені</li>
