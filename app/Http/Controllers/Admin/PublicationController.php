@@ -16,7 +16,7 @@ class PublicationController extends Controller
     public function index(Publication $publication)
     {
         return view('admin.pages.publications')->with([
-            'publications' => $publication->get(),
+            'publications' => $publication->orderBy('publicated_at', 'desc')->get(),
             'statusList' => self::STATUS_LIST,
         ]);
     }
