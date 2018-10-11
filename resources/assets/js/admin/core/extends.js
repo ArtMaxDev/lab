@@ -32,7 +32,8 @@ $.validator.addMethod('phonesRUS_UA_Viber', function (phone, element) { // eslin
   phone = phone.replace(/\(|\)|\s+|-/g, '');
   const firstCheck = this.optional(element) || phone.length > 9;
   return firstCheck && phone.match(/^((\+7|7|8|38|\+38|3|\+3)+([0-9]){10})(:v|:viber)?$/);
-}, 'Укажите верный телефонный номер в формате +380000000000. Так же можно указать :viber или :v в конце номера, что бы отобразить иконку вайбера');
+}, 'Укажите верный телефонный номер в формате +380000000000. '
+  + 'Так же можно указать :viber или :v в конце номера, что бы отобразить иконку вайбера');
 
 // Override jquery validation messages
 $.extend($.validator.messages, {

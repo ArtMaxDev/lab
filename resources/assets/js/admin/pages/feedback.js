@@ -19,6 +19,7 @@ const dataTables = (() => {
       3: 'secondary',
     };
     const table = $('.js-dataTable-full').DataTable(dtSettings({
+      order: [[0, 'desc']],
       columns: [
         { data: 'id' },
         { data: 'date', className: 'nowrap' },
