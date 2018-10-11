@@ -19,29 +19,13 @@ class UsersSeeder extends Seeder
      */
     public function run()
     {
-        if (in_array(config('app.env'), $this->env)) {
-            if (!User::where('email', 'root@stamax.ua')->exists()) {
-                $rootRole = Role::where('name', 'root')->first();
-
-                $rootUser = User::create([
+        if (in_array(config('app.env'), $this->env, true)) {
+            if (!User::where('email', 'root@artmax.dev')->exists()) {
+                User::create([
                     'name' => 'root',
-                    'email' => 'root@stamax.com.ua',
+                    'email' => 'root@artmax.dev',
                     'password' => bcrypt('10101010'),
                 ]);
-
-                $rootUser->attachRole($rootRole);
-            }
-
-            if (!User::where('email', 'client@stamax.com.ua')->exists()) {
-                $clientRole = Role::where('name', 'client')->first();
-
-                $clientUser = User::create([
-                    'name' => 'client',
-                    'email' => 'client@stamax.com.ua',
-                    'password' => bcrypt('10101010'),
-                ]);
-
-                $clientUser->attachRole($clientRole);
             }
         }
     }

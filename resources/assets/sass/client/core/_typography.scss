@@ -1,0 +1,98 @@
+$p-fonts-path: '../../fonts/client';
+$p-roboto-condensed-path: '#{$p-fonts-path}/Roboto_Condensed';
+$p-roboto-slab-path: '#{$p-fonts-path}/Roboto_Slab';
+
+// Roboto Conesed
+@font-face {
+  font-family: 'Roboto Condensed';
+  src:
+    local('Roboto Condensed Bold'),
+    local('RobotoCondensed-Bold'),
+    url('#{$p-roboto-condensed-path}/RobotoCondensed-Bold.woff2') format('woff2'),
+    url('#{$p-roboto-condensed-path}/RobotoCondensed-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src:
+    local('Roboto Condensed Light'),
+    local('RobotoCondensed-Light'),
+    url('#{$p-roboto-condensed-path}/RobotoCondensed-Light.woff2') format('woff2'),
+    url('#{$p-roboto-condensed-path}/RobotoCondensed-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  src:
+    local('Roboto Condensed'),
+    local('RobotoCondensed-Regular'),
+    url('#{$p-roboto-condensed-path}/RobotoCondensed-Regular.woff2') format('woff2'),
+    url('#{$p-roboto-condensed-path}/RobotoCondensed-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// Roboto Slab
+@font-face {
+  font-family: 'Roboto Slab';
+  src:
+    local('Roboto Slab Thin'),
+    local('RobotoSlab-Thin'),
+    url('#{$p-roboto-slab-path}/RobotoSlab-Thin.woff2') format('woff2'),
+    url('#{$p-roboto-slab-path}/RobotoSlab-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src:
+    local('Roboto Slab Regular'),
+    local('RobotoSlab-Regular'),
+    url('#{$p-roboto-slab-path}/RobotoSlab-Regular.woff2') format('woff2'),
+    url('#{$p-roboto-slab-path}/RobotoSlab-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto Slab';
+  src:
+    local('Roboto Slab Bold')
+    local('RobotoSlab-Bold'),
+    url('#{$p-roboto-slab-path}/RobotoSlab-Bold.woff2') format('woff2'),
+    url('#{$p-roboto-slab-path}/RobotoSlab-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+.fonts-loaded {
+  body {
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  .slider .tns-nav button,
+  .slider .content,
+  .about,
+  .about .content .title,
+  .team .item .name,
+  .team .item .name,
+  .section-title,
+  .page-title,
+  .news-article h1,
+  .news-article h2,
+  .news-article h3,
+  .news-article h4,
+  .news-article h5,
+  .news-article h6,
+  .news-article blockquote > div,
+  .services .item,
+  h1.news-article-title,
+  .service-list .link,
+  .rnk {
+    font-family: 'Roboto Slab', serif;
+  }
+}

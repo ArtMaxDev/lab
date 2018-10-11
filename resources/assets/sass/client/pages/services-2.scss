@@ -1,0 +1,181 @@
+@import '../core/variables';
+@import "../components/service2-item";
+@import "../components/order";
+@import "../components/check-list";
+
+.order {
+  background-color: #f3f4f5;
+}
+.services {
+  margin-bottom: 100px;
+}
+
+.news-article {
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  blockquote {
+    > div {
+      color: #0b959f;
+      font-size: 30px;
+      font-weight: bold;
+    }
+  }
+
+  .subtitle {
+    font-size: 24px;
+    margin: 20px 0 0;
+  }
+
+  .ul-title {
+    font-size: 30px;
+    text-transform: uppercase;
+  }
+}
+
+
+.block {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 35px 12px;
+  margin-bottom: 50px;
+  border: 2px solid #17a3ad;
+  border-radius: 8px;
+  font-size: 24px;
+
+  .name {
+    color: #333;
+    width: 55%;
+    text-transform: uppercase;
+  }
+
+  .period {
+    color: #17a3ad;
+    width: 18%;
+  }
+
+  .price {
+    color: #ea5260;
+    width: 18%;
+  }
+}
+
+.expanded {
+  margin-top: -35px;
+  margin-bottom: 25px;
+  width: 100%;
+
+  .title {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #0b959f;
+  }
+
+  .list {
+    display: flex;
+    justify-content: space-between;
+
+    > div {
+      width: 32%;
+    }
+  }
+
+  .check-list {
+    margin: 15px 0;
+    b {
+      color: #333;
+      font-size: 24px;
+    }
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .block {
+    font-size: 20px;
+  }
+  .expanded {
+    .check-list {
+      b {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .news-article {
+
+    .subtitle {
+      font-size: 20px;
+      margin: 5px 0;
+    }
+
+    .ul-title {
+      font-size: 24px;
+    }
+  }
+
+  .news-article {
+    blockquote {
+      > div {
+        font-size: 24px;
+      }
+    }
+  }
+
+}
+
+@media all and (max-width: 767px) {
+  .block {
+    flex-flow: column nowrap;
+    font-size: 18px;
+
+    .name {
+      margin-top: 5px;
+    }
+    .name,
+    .period,
+    .price {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+
+  .expanded {
+    .list {
+      flex-flow: column;
+
+      > div {
+        width: 100%;
+      }
+    }
+    .check-list {
+      display: block;
+      width: 205px;
+      margin: 0 auto;
+      b {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .news-article {
+    blockquote {
+      > div {
+        font-size: 20px;
+      }
+    }
+    .subtitle {
+      font-size: 18px;
+      margin: 10px 0;
+    }
+
+    .ul-title {
+      font-size: 20px;
+    }
+  }
+}

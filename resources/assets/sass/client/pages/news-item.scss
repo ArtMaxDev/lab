@@ -1,0 +1,151 @@
+@import '../core/variables';
+@import "../components/news-item";
+@import "../components/pagination";
+
+.news-article {
+  color: #333;
+  font-size: 18px;
+  margin-bottom: 80px;
+
+  p {
+    line-height: 24px;
+    margin: 25px 0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+
+    color: #ea5260;
+    margin: 35px 0;
+  }
+
+  a {
+    color: #ea5260;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  blockquote {
+    margin: 15px 0;
+    padding-left: 60px;
+    padding-top: 10px;
+    min-height: 50px;
+    background: url('../../../images/client/rnk-blockquote.png') 0 2px no-repeat;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 35px 0;
+
+    li {
+      margin-bottom: 5px;
+      display: block;
+      padding-left: 35px;
+      font-size: 18px;
+      line-height: 26px;
+      background: url('../../../images/client/rnk-list.png') left 2px no-repeat;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+
+  .blue {
+    color: #17a3ad;
+  }
+
+  .pink {
+    color: #ea5260;
+  }
+}
+
+h1.news-article-title {
+
+  font-weight: bold;
+  color: #3a4143;
+  font-size: 36px;
+  margin: 20px 0;
+
+  time {
+    font-weight: 300;
+    font-size: 18px;
+    color: #17a3ad;
+    letter-spacing: -.5px;
+  }
+}
+
+img.news-article-img {
+  margin: 0 auto 30px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media all and (max-width: 1023px) {
+  .news-article {
+    font-size: 16px;
+
+    ul {
+      li {
+        line-height: 26px;
+      }
+    }
+  }
+
+  h1.news-article-title {
+    text-align: center;
+    font-size: 30px;
+
+    time {
+      font-size: 18px;
+      margin-top: 15px;
+      display: block;
+    }
+  }
+
+  .news {
+    .item {
+      &:nth-child(n + 3) {
+        display: none;
+      }
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .news-article {
+    ul {
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+
+  h1.news-article-title {
+    font-size: 24px;
+
+    time {
+      font-size: 16px;
+    }
+  }
+
+  .news {
+    .item {
+      &:nth-child(n + 1) {
+        display: none;
+      }
+    }
+  }
+}

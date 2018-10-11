@@ -7,7 +7,8 @@
         <!-- Header -->
         <div class="py-30 px-5 text-center">
             <a class="link-effect font-w700" href="{{route('admin.index')}}">
-                <i class="si si-fire"></i>
+                <img src="/admin/assets/images/static/logotype.png" alt="ОНКОТЕРАНОСТИКА" class="img-fluid">
+                <!-- /.img-fluid -->
                 <span class="font-size-xl text-primary-dark">ОНКО</span><span class="font-size-xl">ТЕРАНОСТИКА</span>
             </a>
             <h1 class="h2 font-w700 mt-50 mb-10">Добро пожаловать в административную панель </h1>
@@ -20,7 +21,8 @@
             <div class="col-sm-8 col-md-6 col-xl-4">
                 <!-- jQuery Validation (.js-validation-signin class is initialized in pages/login.js) -->
                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                <form class="js-validation-signin" action="{{--route('login')--}}" method="post">
+                <form class="js-validation-signin" action="{{route('admin.users.login.post')}}" method="post">
+                    @csrf
                     <div class="form-group row">
                         <div class="col-12 {{$errors->any() ? ' invalid' : ''}}">
                             <div class="form-material floating">

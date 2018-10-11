@@ -1,0 +1,30 @@
+@import '../core/variables';
+@import "../components/news-item";
+@import "../components/pagination";
+
+.news {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 -15px;
+
+  .item {
+    width: 33.33%;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .news {
+    .item {
+      width: 50%;
+    }
+  }
+}
+
+@media all and (max-width: 767px) {
+  .news {
+    .item {
+      width: 100%;
+    }
+  }
+}

@@ -2,29 +2,30 @@
 <html lang="{{ app()->getLocale() }}">
 <head>
     {{-- Font loader --}}
-    {{--<script>--}}
-        {{--if (localStorage.fontsLoaded) {--}}
-            {{--window.document.documentElement.className += " fonts-loaded";--}}
-        {{--}--}}
-    {{--</script>--}}
+    <script>
+        if (localStorage.fontsLoaded) {
+            window.document.documentElement.className += " fonts-loaded";
+        }
+    </script>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', config('app.name') )</title>
-    <meta name="title" content="@yield('title', config('app.name') )">
-    <meta name="description" content="@yield('description', config('app.name') )">
+    <title>@yield('title', config('app.name')) - {{config('app.name')}}</title>
+    <meta name="title" content="@yield('meta-title', config('app.name')) - {{config('app.name')}}">
+    <meta name="description" content="@yield('description', $settings->getLocalizedProperty('meta_description'))">
+    <meta name="keywords" content="@yield('keywords', $settings->getLocalizedProperty('meta_keywords'))">
 
     {{-- Favicon --}}
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/client/apple-touch-icon.png?v=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/client/favicon-32x32.png?v=1">
-    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/client/android-chrome-192x192.png?v=1">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/client/favicon-16x16.png?v=1">
-    <link rel="manifest" href="/favicon/client/manifest.json?v=1">
-    <link rel="mask-icon" href="/favicon/client/safari-pinned-tab.svg?v=1" color="#1b1d1e">
-    <link rel="shortcut icon" href="/favicon/client/favicon.ico?v=1">
-    <meta name="msapplication-config" content="/favicon/client/browserconfig.xml?v=1">
-    <meta name="theme-color" content="#1b1d1e">
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/client/apple-touch-icon.png?v=bOM3Wbnj2j">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/client/favicon-32x32.png?v=bOM3Wbnj2j">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/client/favicon-16x16.png?v=bOM3Wbnj2j">
+    <link rel="manifest" href="/favicon/client/site.webmanifest?v=bOM3Wbnj2j">
+    <link rel="mask-icon" href="/favicon/client/safari-pinned-tab.svg?v=bOM3Wbnj2j" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/client/favicon.ico?v=bOM3Wbnj2j">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-config" content="/favicon/client/browserconfig.xml?v=bOM3Wbnj2j">
+    <meta name="theme-color" content="#ffffff">
     {{-- /Favicon --}}
 
     <link rel="preload" href="{{mixOptional('/assets/manifest.js', 'client')}}" as="script" crossorigin="anonymous">

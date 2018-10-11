@@ -15,12 +15,15 @@ export default function (config) {
   const fonts = [];
   config.forEach((font) => {
     if (isArray(font.weight)) {
-      fonts.push(...font.weight.map(weight =>
-        new FontFaceObserver(font.name, { weight })));
+      fonts.push(
+        ...font.weight.map(
+          weight => new FontFaceObserver(font.name, { weight }).load()
+        )
+      );
     } else {
       fonts.push(new FontFaceObserver(font.name, {
         weight: font.weight
-      }));
+      }).load());
     }
   });
 

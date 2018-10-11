@@ -3,8 +3,13 @@
 @import "~sweetalert2/dist/sweetalert2.css";
 @import "~select2/dist/css/select2.css";
 @import "~select2-bootstrap-css/select2-bootstrap.css";
-//@import "~bootstrap-datepicker/dist/css/bootstrap-datepicker3.css";
+@import "~bootstrap-datepicker/dist/css/bootstrap-datepicker3.css";
 //@import "~bootstrap-colorpicker/dist/css/bootstrap-colorpicker.css";
 //@import "~dropzone/dist/dropzone.css";
+@import "~summernote/dist/summernote-bs4.css";
+@import "~codemirror/lib/codemirror.css";
+@import "~codemirror/theme/cobalt.css";
 @import "../../codebase/scss/main";
 @import "vendor/datatables";
+@import "components/forms";
+@import "components/blocks";

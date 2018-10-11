@@ -1,5 +1,25 @@
-@import "core/bootstrap-variables";
-@import "~bootstrap/scss/bootstrap";
-@import "./core/helpers";
+@import "./core/variables";
+@import "./core/typography";
+@import "./core/grid";
+@import "./components/form";
 @import "./components/header";
 @import "./components/footer";
+@import "~normalize.css/normalize.css";
+@import "./core/helpers";
+
+a {
+  &:hover {
+    color: #ea6773;
+  }
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  &.disabled,
+  &[disabled] {
+    background-color: #8e8e8e !important;
+  }
+}

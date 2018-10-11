@@ -12,10 +12,7 @@ globify('sass/client/core.scss', 'assets', 'sass');
 globify('sass/client/pages/*.scss', 'assets/pages', 'sass');
 
 // Load Plugins
-mix.autoload({
-  jquery: ['$', 'jQuery', 'window.jQuery'],
-  'popper.js/dist/umd/popper.js': ['Popper']
-});
+mix.autoload({});
 
 // Copy files
 mix.copyDirectory('resources/assets/images/client/static', 'public/client/assets/images/static');

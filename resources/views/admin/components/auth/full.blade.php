@@ -3,11 +3,8 @@
     <div class="row mx-0 bg-black-op">
         <div class="hero-static col-md-6 col-xl-8 d-none d-md-flex align-items-md-end">
             <div class="p-30 invisible" data-toggle="appear">
-                <p class="font-size-h3 font-w600 text-white">
-                    Система управления интернет-магазином
-                </p>
                 <p class="font-italic text-white-op">
-                    Copyright &copy; Stamax <span class="js-year-copy">2017</span>
+                    Copyright &copy; ArtMaxDev <span class="js-year-copy">2018</span>
                 </p>
             </div>
         </div>
@@ -15,9 +12,8 @@
             <div class="content content-full">
                 <!-- Header -->
                 <div class="px-30 py-10">
-                    <a class="link-effect font-w700" href="{{route('admin.index')}}">
-                        <i class="si si-fire"></i>
-                        <span class="font-size-xl text-primary-dark">STA</span><span class="font-size-xl">MAX</span>
+                    <a href="{{route('admin.index')}}">
+                        <img src="/client/assets/images/static/logo.png" alt="" class="img-fluid">
                     </a>
                     <h1 class="h3 font-w700 mt-30 mb-10">Добро пожаловать в административную панель</h1>
                     <h2 class="h5 font-w400 text-muted mb-0">Выполните вход</h2>
@@ -27,7 +23,8 @@
                 <!-- Sign In Form -->
                 <!-- jQuery Validation (.js-validation-signin class is initialized in js/pages/login.js) -->
                 <!-- For more examples you can check out https://github.com/jzaefferer/jquery-validation -->
-                <form class="js-validation-signin px-30" action="{{--route('login')--}}" method="post">
+                <form class="js-validation-signin px-30" action="{{route('admin.users.login.post')}}" method="post">
+                    {{csrf_field()}}
                     <div class="form-group row">
                         <div class="col-12 {{$errors->any() ? ' invalid' : ''}}">
                             <div class="form-material floating">
