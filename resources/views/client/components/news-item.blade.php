@@ -1,4 +1,3 @@
-@inject('carbon', '\Carbon\Carbon')
 <a href="{{route('client.news.item', $news->id)}}" class="item news-item">
     <article class="content">
         <picture>

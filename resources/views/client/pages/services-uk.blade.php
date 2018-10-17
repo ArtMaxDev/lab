@@ -1,16 +1,16 @@
 @extends('client.master')
 
 @section('meta-title', 'Cкринінг та рання діагностика')
-@section('description', 'СКРИНІНГ ТА РАННЯ ДІАГНОСТИКА')
-@section('keywords', 'СКРИНІНГ, РАННЯ ДІАГНОСТИКА')
+@section('description', 'Cкринінг та рання діагностика')
+@section('keywords', 'Cкринінг, рання діагностика, рак, аналізи, miR-ТЕСТ')
 
 @section('content')
 
     <main class="page" id="services">
-        <div class="page-title">СКРИНІНГ ТА РАННЯ ДІАГНОСТИКА</div>
+        <div class="page-title">Cкринінг та рання діагностика</div>
         <div class="container">
             <ul class="breadcrumbs">
-                <li><a href="{{URL::to('/')}}">Головна</a></li>
+                <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
                 <li><a href="/#services-2">Послуги</a></li>
                 <li>СКРИНІНГ ТА РАННЯ ДІАГНОСТИКА</li>
             </ul>
@@ -206,9 +206,6 @@
     </main>
     <!-- /#team -->
 @endsection
-@push('scripts')
-    {{--<script defer src="{{mix('/assets/pages/index.js', 'client')}}"></script>--}}
-@endpush
 @push('critical-css')
     <link rel="stylesheet" href="{{mix('/assets/pages/news-item.css', 'client')}}">
     <link rel="stylesheet" href="{{mix('/assets/pages/services.css', 'client')}}">

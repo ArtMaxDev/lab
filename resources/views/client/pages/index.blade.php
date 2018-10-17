@@ -1,7 +1,7 @@
 @extends('client.master')
 
-@section('title', 'Головна')
-@section('meta-title', 'Головна')
+@section('title', __('main.title'))
+@section('meta-title', __('main.title'))
 @section('content')
 
     <section class="slider">
@@ -14,24 +14,24 @@
         <div class="services">
                 <figure class="item">
                     <div>
-                        <img src="/client/assets/images/static/service-1.png" alt="Індивідуальна програма ранньої діагностики" class="img">
+                        <img src="/client/assets/images/static/service-1.png" alt="@lang('main.services[0].title')" class="img">
                     </div>
                     <figcaption>
-                        <strong class="main-text">Індивідуальна програма ранньої діагностики</strong>
-                        <p class="sub-text">Попереджений - означає озброєний!</p>
+                        <strong class="main-text">@lang('main.services.0.title')</strong>
+                        <p class="sub-text">@lang('main.services.0.description')</p>
                     </figcaption>
                 </figure>
                 <figure class="item">
-                    <div><img src="/client/assets/images/static/service-2.png" alt="Молекулярно-епігенетична оцінка стану організму" class="img"></div>
+                    <div><img src="/client/assets/images/static/service-2.png" alt="@lang('main.services.1.title')" class="img"></div>
                     <figcaption>
-                        <strong class="main-text">Молекулярно-епігенетична оцінка стану організму</strong>
+                        <strong class="main-text">@lang('main.services.1.title')</strong>
                     </figcaption>
                 </figure>
                 <figure class="item">
-                    <div><img src="/client/assets/images/static/service-3.png" alt="Інноваційні діагностичні підходи" class="img"></div>
+                    <div><img src="/client/assets/images/static/service-3.png" alt="@lang('main.services.2.title')" class="img"></div>
                     <figcaption>
-                        <strong class="main-text">Інноваційні діагностичні підходи</strong>
-                        <p class="sub-text">Малоінвазивні методи дослідження</p>
+                        <strong class="main-text">@lang('main.services.2.title')</strong>
+                        <p class="sub-text">@lang('main.services.2.description')</p>
                     </figcaption>
                 </figure>
         </div>
@@ -41,19 +41,12 @@
 
     <section id="about" class="section about">
         <div class="container">
-            <h2 class="about-title">Клініка персоналізованого дизайну <br/> діагностики і терапії «Онкотераностика»</h2>
+            <h2 class="about-title">@lang('main.about.section-title')</h2>
             <article class="article">
-                <img src="/client/assets/images/static/about.jpg" alt="Клініка персоналізованого дизайну" class="img">
+                <img src="/client/assets/images/static/about.jpg" alt="@lang('main.about.section-title')" class="img">
                 <div class="content">
-                    <h3 class="title">Персоналізована медицина – це вже не забаганка, а нагальна необхідність сьогодення!</h3>
-                    <p>Ми надаємо унікальні в Українi послуги з використанням лабораторної, епігенетичної та молекулярно-генетичної діагностики:
-                    </p>
-                    <p>
-                        •   Стратегія  ранньої   діагностики   раку   –   програми дослідження ОНКО Check-Up та miR-ТЕСТ, які дозволяють виявити онкологічне захворювання ще до появи клінічних симптомів. <br/>
-                        •   Використання  нових  біомаркерів раку (циркулюючі та пухлинні мікроРНК) для дослідження чутливості до протипухлинної терапії та прогнозування  перебігу  захворювання
-                    </p>
-                    <p>Команда співробітників «Онкотераностика» складається із висококваліфікованих спеціалістів в галузях як клінічної, так і фундаментальної онкології, серед яких доктори та кандидати наук із значним стажем роботи, великими науковими та практичними досягненнями, автори більше 500 наукових статей, власники патентів, лауреати Премій та Грантів.
-                    </p>
+                    <h3 class="title">@lang('main.about.title')</h3>
+                    @lang('main.about.content')
                 </div>
                 <!-- /.content -->
             </article>
@@ -64,32 +57,32 @@
     <!-- /#about -->
 
     <section class="container section services-2" id="services-2">
-        <h2 class="section-title">Послуги</h2>
+        <h2 class="section-title">@lang('main.services-2.section-title')</h2>
         <ul class="service-list">
             <li class="item">
                 <a href="{{route('client.services.index')}}" class="link">
-                    <img class="img" src="/client/assets/images/static/s1.png" alt="Скринінг та рання діагностика">
-                    <strong>Скринінг та рання діагностика</strong>
-                    <span class="sub-text">MiR-TECT<br/> ОНКО Check-Up</span>
+                    <img class="img" src="/client/assets/images/static/s1.png" alt="@lang('main.services-2.list.0.title')">
+                    <strong>@lang('main.services-2.list.0.title')</strong>
+                    <span class="sub-text">@lang('main.services-2.list.0.description')</span>
                 </a>
             </li>
             <li class="item">
                 <a href="{{route('client.services-2.index')}}" class="link">
-                    <img class="img" src="/client/assets/images/static/s2.png" alt="Індивідуальна чутливість до протипухлинних препаратів ">
-                    <strong>Індивідуальна чутливість до протипухлинних препаратів </strong>
-                    <span class="sub-text">ОНКО Drug Test</span>
+                    <img class="img" src="/client/assets/images/static/s2.png" alt="@lang('main.services-2.list.1.title')">
+                    <strong>@lang('main.services-2.list.1.title')</strong>
+                    <span class="sub-text">@lang('main.services-2.list.1.description')</span>
                 </a>
             </li>
             <li class="item">
                 <a href="{{route('client.services-3.index')}}" class="link">
-                    <img class="img" src="/client/assets/images/static/s3.png" alt="Онкогематологічні дослідження">
-                    <strong>Онкогематологічні дослідження</strong>
+                    <img class="img" src="/client/assets/images/static/s3.png" alt="@lang('main.services-2.list.2.title')">
+                    <strong>@lang('main.services-2.list.2.title')</strong>
                 </a>
             </li>
             <li class="item">
-                <a href="#" class="link">
-                    <img class="img" src="/client/assets/images/static/s4.png" alt="Загальноклінічні аналізи">
-                    <strong>Загальноклінічні аналізи</strong>
+                <a href="/storage/price.pdf" target="_blank" class="link">
+                    <img class="img" src="/client/assets/images/static/s4.png" alt="@lang('main.services-2.list.3.title')">
+                    <strong>@lang('main.services-2.list.3.title')</strong>
                 </a>
             </li>
         </ul>
@@ -97,10 +90,10 @@
     </section>
     <!-- /#services-2 -->
 
-    @include('client.components.rnk')
+    @include('client.components.rnk-' . $currentLocale)
 
     <section class="section container team" id="team">
-        <h2 class="section-title">Наша команда</h2>
+        <h2 class="section-title">@lang('team.title')</h2>
         <div id="slider-team">
             @each('client.components.team-item', $team, 'member')
         </div>
@@ -109,7 +102,7 @@
     <!-- /#team -->
     @if($news->count())
     <section class="section container news" id="news">
-        <h2 class="section-title">Прес-реліз</h2>
+        <h2 class="section-title">@lang('news.title')</h2>
         <div id="slider-news">
             @each('client.components.news-item', $news, 'news')
         </div>

@@ -11,8 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
-    <title>@yield('title', config('app.name')) - {{config('app.name')}}</title>
-    <meta name="title" content="@yield('meta-title', config('app.name')) - {{config('app.name')}}">
+    <title>@yield('title', __('main.name')) - @lang('main.name')</title>
+    <meta name="title" content="@yield('meta-title', __('main.name')) - @lang('main.name')">
     <meta name="description" content="@yield('description', $settings->getLocalizedProperty('meta_description'))">
     <meta name="keywords" content="@yield('keywords', $settings->getLocalizedProperty('meta_keywords'))">
 
@@ -52,7 +52,7 @@
 <body class="layout">
 @include('client.components.header')
 @yield('content')
-@include('client.components.footer')
+@include('client.components.footer-' . $currentLocale)
 @stack('modals')
 {{-- Deffered style load --}}
 <noscript id="deferred-styles">
