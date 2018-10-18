@@ -21,11 +21,15 @@ class UsersSeeder extends Seeder
     {
         if (in_array(config('app.env'), $this->env, true)) {
             if (!User::where('email', 'root@artmax.dev')->exists()) {
-                User::create([
+                $rootRole = Role::where('name', 'root')->first();
+
+                $rootUser = User::create([
                     'name' => 'root',
                     'email' => 'root@artmax.dev',
-                    'password' => bcrypt('10101010'),
+                    'password' => '10101010',
                 ]);
+
+                $rootUser->attachRole($rootRole);
             }
         }
     }
