@@ -1,6 +1,6 @@
 <div class="slide">
     <picture>
-        <source srcset="{{$slide->image}}_small.jpg" media="(max-width: 768px)">
+        <source srcset="{{$slide->image}}_small.jpg" media="(max-width: 360px)">
         <img class="image tns-lazy-img" data-src="{{$slide->image}}.jpg" alt="{{$slide->image_alt}}">
     </picture>
 

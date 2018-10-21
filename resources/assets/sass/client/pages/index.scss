@@ -107,6 +107,11 @@ $slider-dot-color-active: #3a4652;
     top: 50%;
     transform: translate(-50%, -50%);
     transition: opacity .2s;
+
+    @supports (object-fit: cover) {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 
   .content {
@@ -330,6 +335,11 @@ $slider-dot-color-active: #3a4652;
 
 @media all and (max-width: 767px) {
   .slider {
+    .content {
+      margin-top: 80px;
+      margin-bottom: 50px;
+    }
+
     .content-right {
       padding: 0;
     }
