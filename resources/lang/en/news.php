@@ -2,8 +2,8 @@
 
 return [
 
-    'title' => 'Прес-реліз',
-    'meta-description' => 'Список новин вiд ОНКОТЕРАНОСТИКИ',
-    'meta-keywords' => 'Прес-релiзи, Новини',
-    'random' => 'Підбірка',
+    'title' => 'Press release',
+    'meta-description' => 'News from Oncotheranostics',
+    'meta-keywords' => 'Press release, news',
+    'random' => 'Other releases',
 ];

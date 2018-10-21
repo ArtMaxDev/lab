@@ -12,7 +12,7 @@ return [
         'services' => [
             'title' => 'Services',
             'screening' => 'Screening and early diagnosis',
-            'therapy' => 'Чутливість до хіміотерапії',
+            'therapy' => 'Sensitivity to chemotherapy',
             'onco' => 'Oncohematological clinical trials',
             'tests' => 'Basic clinical tests',
         ],
