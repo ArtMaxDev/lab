@@ -14,4 +14,5 @@ return [
 
     'previous' => '&laquo; Назад',
     'next' => 'Далі &raquo;',
+    'more' => 'Показати ще',
 ];

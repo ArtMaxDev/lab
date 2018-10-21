@@ -21,7 +21,7 @@
 
         {{-- Next Page Link --}}
         @if ($paginator->hasMorePages())
-            <li><a href="{{ $paginator->nextPageUrl() }}" class="js-news-next" rel="next" aria-label="@lang('pagination.next')">Показать еще</a></li>
+            <li><a href="{{ $paginator->nextPageUrl() }}" class="js-news-next" rel="next" aria-label="@lang('pagination.more')">@lang('pagination.more')</a></li>
         @endif
     </ul>
 @endif

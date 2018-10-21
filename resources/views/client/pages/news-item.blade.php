@@ -9,11 +9,11 @@
 @section('content')
 
     <main class="page" id="team">
-        <div class="page-title">Прес-релiзи</div>
+        <div class="page-title">@lang('news.title')</div>
         <div class="container">
             <ul class="breadcrumbs">
-                <li><a href="{{URL::to('/')}}">Головна</a></li>
-                <li><a href="{{route('client.news.index')}}">Новини</a></li>
+                <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
+                <li><a href="{{route('client.news.index')}}">@lang('news.title')</a></li>
                 <li>{{$item->getLocalizedProperty('title')}}</li>
             </ul>
             <!-- /.breadcrumbs -->
@@ -28,7 +28,7 @@
                 {!! $item->getLocalizedProperty('text') !!}
             </article>
 
-            <h5 class="section-title">Подборка</h5>
+            <h5 class="section-title">@lang('news.random')</h5>
             <!-- /.section-title -->
             <div class="news">
                 @each('client.components.news-item', $news, 'news')
