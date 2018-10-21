@@ -1,18 +1,18 @@
 @extends('client.master')
 
-@section('title', 'Чутливість до хіміотерапії')
-@section('meta-title', 'Чутливість до хіміотерапії')
-@section('description', 'Чутливість до хіміотерапії')
-@section('keywords', 'хіміотерапія, ONCO Drug Test')
+@section('title', 'Sensitivity to chemotherapy')
+@section('meta-title', 'Sensitivity to chemotherapy')
+@section('description', 'Sensitivity to chemotherapy')
+@section('keywords', 'chemotherapy, ONCO Drug Test')
 @section('content')
 
     <main class="page" id="services">
-        <div class="page-title">Чутливість до хіміотерапії</div>
+        <div class="page-title">Sensitivity to chemotherapy</div>
         <div class="container">
             <ul class="breadcrumbs">
                 <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
                 <li><a href="/#services-2">Services</a></li>
-                <li>Чутливість до хіміотерапії</li>
+                <li>Sensitivity to chemotherapy</li>
             </ul>
             <!-- /.breadcrumbs -->
 
@@ -46,7 +46,7 @@
                 <ul>
                     <li>Sensitivity analysis "BEFORE", "DURING" and "AFTER" therapy</li>
                     <li>Innovation and translational principles using European standards</li>
-                    <li>Специфічність та чутливість наших методик залежать від локалізації захворювання і варіюють від 73 до 98% та 79 до 96 % відповідно</li>
+                    <li>The specificity and sensitivity of our techniques depend on the localization of the disease and range from 73 to 98% and 79 to 96% respectively</li>
                     <li>Minimally invasive method (does not require tumor tissue) - is used to monitor the process of tumor growth taking into account individual characteristics of the patient’s body at the systemic level</li>
                 </ul>
 

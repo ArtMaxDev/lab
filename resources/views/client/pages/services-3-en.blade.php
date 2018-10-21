@@ -17,7 +17,7 @@
             <!-- /.breadcrumbs -->
 
             <article class="news-article">
-                <h1 class="news-article-title">Онкогематологічні дослідження</h1>
+                <h1 class="news-article-title">Oncohematological clinical trials</h1>
 
                 <picture>
                     <source srcset="/client/assets/images/static/s3-img-2_tablet-en.jpg" media="(max-width: 830px)">

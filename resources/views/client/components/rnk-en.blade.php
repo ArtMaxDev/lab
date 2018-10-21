@@ -5,7 +5,8 @@
             <div class="main">
                 <p>MicroRNAs are not only associated with different types of tumors, they can also act as oncogenes or tumor suppressors and represent potential targets for antitumor therapy.</p>
 
-                <p>Мікро-РНК підтримують клітинний гомеостаз, беруть участь у регуляції клітинного циклу, диференціюванні, в процесах запалення, апоптозу, інвазії та, що важливо, здатні виступати в якості біомаркерів, асоційованих з пухлинним ростом.</p>
+                <p>
+                    MicroRNAs support cellular homeostasis, participate in cell cycle regulation, differentiation, inflammation, apoptosis, invasion and, importantly, are able to act as biomarkers associated with tumor growth.</p>
 
                 <div class="main-list d-md-block">
                     <h4 class="main-list-title">Successfully used in detecting and predicting the course of the following cancer types:</h4>
