@@ -1,16 +1,16 @@
 @extends('client.master')
-@section('title', 'Team')
-@section('meta-title', 'Team')
-@section('description', 'Team')
-@section('keywords', 'Team')
+@section('title', __('team.title'))
+@section('meta-title', __('team.title'))
+@section('description', __('team.title'))
+@section('keywords', __('team.title'))
 @section('content')
 
     <main class="page" id="team">
-        <h1 class="page-title">Team</h1>
+        <h1 class="page-title">@lang('team.title')</h1>
         <div class="container">
             <ul class="breadcrumbs">
                 <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
-                <li>Team</li>
+                <li>@lang('team.title')</li>
             </ul>
             <!-- /.breadcrumbs -->
 

@@ -54,7 +54,7 @@ class BaseController extends Controller
 
     public function team()
     {
-        return view('client.pages.team-' . $this->currentLocale);
+        return view('client.pages.team');
     }
 
     public function services()

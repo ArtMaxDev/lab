@@ -2,6 +2,7 @@
 
 return [
 
+    'title' => 'Team',
     'members' => [
         [
             'name' => 'Bazas Volodymyr',
