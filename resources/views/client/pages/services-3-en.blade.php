@@ -1,23 +1,23 @@
 @extends('client.master')
 
-@section('title', 'Oncohematological clinical trials')
-@section('meta-title', 'Oncohematological clinical trials')
-@section('description', 'Oncohematological clinical trials - Clinic for Personalized Diagnostics and Therapy Design')
-@section('keywords', 'Oncohematological clinical trials')
+@section('title', 'Oncohematological studies')
+@section('meta-title', 'Oncohematological studies')
+@section('description', 'Oncohematological studies - Clinic for Personalized Diagnostics and Therapy Design')
+@section('keywords', 'Oncohematological studies')
 @section('content')
 
     <main class="page" id="services">
-        <div class="page-title">Oncohematological clinical trials</div>
+        <div class="page-title">Oncohematological studies</div>
         <div class="container">
             <ul class="breadcrumbs">
                 <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
                 <li><a href="/#services-2">Services</a></li>
-                <li>Oncohematological clinical trials</li>
+                <li>Oncohematological studies</li>
             </ul>
             <!-- /.breadcrumbs -->
 
             <article class="news-article">
-                <h1 class="news-article-title">Oncohematological clinical trials</h1>
+                <h1 class="news-article-title">Oncohematological studies</h1>
 
                 <picture>
                     <source srcset="/client/assets/images/static/s3-img-2_tablet-en.jpg" media="(max-width: 830px)">

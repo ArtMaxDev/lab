@@ -46,7 +46,7 @@
                 <img src="/client/assets/images/static/about.jpg" alt="@lang('main.about.section-title')" class="img">
                 <div class="content">
                     <h3 class="title">@lang('main.about.title')</h3>
-                    @lang('main.about.content')
+                    {!! __('main.about.content') !!}
                 </div>
                 <!-- /.content -->
             </article>
@@ -63,7 +63,7 @@
                 <a href="{{route('client.services.index')}}" class="link">
                     <img class="img" src="/client/assets/images/static/s1.png" alt="@lang('main.services-2.list.0.title')">
                     <strong>@lang('main.services-2.list.0.title')</strong>
-                    <span class="sub-text">@lang('main.services-2.list.0.description')</span>
+                    <span class="sub-text">{!! __('main.services-2.list.0.description') !!}</span>
                 </a>
             </li>
             <li class="item">

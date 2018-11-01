@@ -55,25 +55,25 @@
             </article>
             <ul class="service-list service-2">
                 <li class="item">
-                    <a href="#" class="link">
+                    <a href="javascript:void(0)" class="link">
                         <img class="img" src="/client/assets/images/static/services/s5.png" alt="sensitive and specific methods">
                         <strong class="sub-text-small">Applying most informative, sensitive and specific methods in clinical trials</strong>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="#" class="link">
+                    <a href="javascript:void(0)" class="link">
                         <img class="img" src="/client/assets/images/static/services/s6.png" alt="health status">
                         <strong class="sub-text-small">Using integrated approach to assess patient’s health status</strong>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="#" class="link">
+                    <a href="javascript:void(0)" class="link">
                         <img class="img" src="/client/assets/images/static/services/s7.png" alt="European standards">
                         <strong class="sub-text-small">Innovation and translational principles using European standards</strong>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="#" class="link">
+                    <a href="javascript:void(0)" class="link">
                         <img class="img" src="/client/assets/images/static/services/s8.png" alt="safe clinical methods">
                         <strong class="sub-text-small">Minimally invasive and safe clinical methods</strong>
                     </a>

@@ -54,25 +54,25 @@
             </article>
             <ul class="service-list service-2">
                 <li class="item">
-                    <a href="#" class="link">
+                    <a href="javascript:void(0)" class="link">
                         <img class="img" src="/client/assets/images/static/services/s5.png" alt="">
                         <strong class="sub-text-small">Застосування найбільш інформативних, чутливих та специфічних методів дослідження</strong>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="#" class="link">
+                    <a href="javascript:void(0)" class="link">
                         <img class="img" src="/client/assets/images/static/services/s6.png" alt="">
                         <strong class="sub-text-small">Використання комплексного підходу для оцінки стану організму</strong>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="#" class="link">
+                    <a href="javascript:void(0)" class="link">
                         <img class="img" src="/client/assets/images/static/services/s7.png" alt="">
                         <strong class="sub-text-small">Інноваційно-трансляційний принцип із застосуванням Європейських стандартів</strong>
                     </a>
                 </li>
                 <li class="item">
-                    <a href="#" class="link">
+                    <a href="javascript:void(0)" class="link">
                         <img class="img" src="/client/assets/images/static/services/s8.png" alt="">
                         <strong class="sub-text-small">Малоінвазивні та безпечні методи дослідження</strong>
                     </a>
