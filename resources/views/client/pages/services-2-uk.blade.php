@@ -18,11 +18,8 @@
 
             <article class="news-article">
                 <h1 class="news-article-title">ОНКО Drug Test</h1>
-                <b style="font-size: 24px">Визначення чутливості до протипухлинної терапії: хіміопрепарати, гормональна
-                    терапія, таргетні препарати.
-                </b>
 
-                <h3>Чи може бути в мене рак? Де я можу на це «перевіритися»?</h3>
+                <h3>Визначення чутливості до протипухлинної терапії : хіміопрепарати, гормональна терапія, таргетні препарати.</h3>
 
                 <blockquote>
                     <div>ДЛЯ ЧОГО?</div> «ОНКО Drug Test»  потрібен коли наступний етап лікування не зрозумілий
@@ -38,7 +35,11 @@
                     Своєчасний та індивідуальний підбір протипухлинних препаратів заощадить Ваші кошти та скоротить витрати на лікування!
                 </blockquote>
 
-                <img src="/client/assets/images/static/s-img-1.jpg" alt="">
+                <picture>
+                    <source srcset="/client/assets/images/static/s-img-1_tablet.jpg" media="(max-width: 830px)">
+                    <source srcset="/client/assets/images/static/s-img-1_mobile.jpg" media="(max-width: 555px)">
+                    <img src="/client/assets/images/static/s-img-1.jpg" alt="ОНКО Drug Test">
+                </picture>
 
                 <h2 class="pink">ОНКО Drug Test</h2>
 
@@ -143,13 +144,20 @@
                 <!-- /.block -->
             </article>
 
+            <picture>
+                <source srcset="/client/assets/images/static/s-img-2_tablet.jpg" media="(max-width: 830px)">
+                <source srcset="/client/assets/images/static/s-img-2_mobile.jpg" media="(max-width: 555px)">
+                <img src="/client/assets/images/static/s-img-2.jpg" alt="Principles and benefits" style="max-width: 100%">
+            </picture>
+
+
             <!-- /.container -->
             <article class="news-article">
                 <h1 class="blue text-xs-center" style="text-transform: uppercase;">Перевірка активності протипухлинних препаратів <em>in vitro</em></h1>
 
                 <blockquote>
                     <div>ДЛЯ ЧОГО?</div>
-                    Онкотераностика проводить оцінку біологічної ефективності протипухлинних препаратів за допомогою спеціальних чутливих тест-систем <em>in vitro</em> у тих випадках, коли у лікаря, або пацієнта виникають сумніви щодо придатності та/або «дієвості» того чи іншого препарату, яким проводиться, або ж планується проводитись лікування хворого.
+                    Якщо у Вас є сумніви щодо активності, придатності та «дієвості» протипухлинних препаратів, якими лікуєтеся або плануєте лікуватися, то ми проведемо аналіз їх біологічної активності за допомогою спеціальних чутливих тест-систем <em>in vitro</em>
                 </blockquote>
                 <blockquote>
                     <div>Кому?</div>
@@ -167,7 +175,7 @@
                     <div style="flex: 0 0 auto;">
                         <img src="/client/assets/images/static/order.png" alt="" class="img" width="137px">
                     </div>
-                    <p class="text">Залиште свій телефон та електронну адресу. Найближчим часом ми зв’яжемося з Вами, допоможемо обрати найліпший варіант діагностики та зручний час для процедури.</p>
+                    <p class="text">Якщо у вас залишились будь-які запитання, то залиште свій  номер телефону та електронну адресу. Найближчим часом ми зв’яжемося з вами, допоможемо обрати найліпший для Вас варіант.</p>
                     <div>
                         <button  class="btn js-scroll" data-target="#footer">заявка</button>
                     </div>

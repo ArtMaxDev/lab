@@ -10,7 +10,6 @@ $p-link-font-size: 24px;
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-
   font-weight: 300;
 }
 
@@ -36,7 +35,12 @@ $p-link-font-size: 24px;
 }
 
 .nav-lang-link {
+  color: #0ba2c7;
   padding: $p-lang-link-padding;
+
+  &:hover {
+    color: #ea6773;
+  }
 }
 
 .nav-toggle {
@@ -79,6 +83,7 @@ $p-link-font-size: 24px;
 .nav-item {
   &.dropdown {
     position: relative;
+
     input {
       display: none;
     }
@@ -107,7 +112,6 @@ $p-link-font-size: 24px;
     input:checked ~ ul.submenu {
       display: block;
     }
-
   }
 }
 
@@ -135,9 +139,11 @@ $p-link-font-size: 24px;
   }
 }
 
-.nav-lang-item, .nav-item {
+.nav-lang-item,
+.nav-item {
   &.disabled {
     pointer-events: none;
+
     .nav-lang-link,
     .nav-link {
       color: #abb3b5;
@@ -154,7 +160,6 @@ $p-link-font-size: 24px;
 @media all and (min-width: 1024px) {
   .nav-item {
     &.dropdown {
-
       &:hover {
         ul.submenu {
           display: block;
