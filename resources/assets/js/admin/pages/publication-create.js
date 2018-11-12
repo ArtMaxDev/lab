@@ -70,7 +70,7 @@ const actions = (() => {
           swal({
             title: 'Удача!',
             type: 'success',
-            html: 'Заявка успешно удалена!',
+            html: 'Публикация успешно удалена!',
             timer: 2500
           });
           PublicationsAPI.create();

@@ -10,7 +10,7 @@
                 </h3>
                 <div class="block-options form-inline pl-0">
                     <button type="submit" class="btn btn-sm btn-success mr-2 js-create" form="formApi">
-                        <i class="fa fa-user-plus mr-2"></i>Сохранить
+                        <i class="fa fa-check mr-2"></i>Сохранить
                     </button>
                     @isset($publication->id)
                     <button type="button" class="btn btn-sm btn-danger js-remove" data-id="{{$publication->id}}"><i
@@ -107,7 +107,7 @@
             <div class="block-content block-content-full block-content-sm bg-body-light d-flex justify-content-end">
                 <div class="block-options form-inline">
                     <button type="submit" class="btn btn-sm btn-success mr-2 js-create" form="formApi">
-                        <i class="fa fa-user-plus mr-2"></i>Сохранить
+                        <i class="fa fa-check mr-2"></i>Сохранить
                     </button>
                     @isset($publication->id)
                         <button type="button" class="btn btn-sm btn-danger js-remove" data-id="{{$publication->id}}"><i

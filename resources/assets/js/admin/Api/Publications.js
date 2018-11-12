@@ -1,6 +1,5 @@
 import '../core';
 import Router from 'common/Router';
-import makeForm from './shared/jsonFromJqueryForm';
 
 export default class {
   static create() {
@@ -15,16 +14,16 @@ export default class {
     return $.delete(Router.name('admin.publications.destroy', id));
   }
 
-  static store(data, status) {
+  static store(form, status) {
     return $.post(Router.name('admin.publications.store'), {
-      ...makeForm(data),
+      ...$(form).serializeJSON(),
       status
     });
   }
 
-  static update(id, data, status) {
+  static update(id, form, status) {
     return $.put(Router.name('admin.publications.update', id), {
-      ...makeForm(data),
+      ...$(form).serializeJSON(),
       status
     });
   }

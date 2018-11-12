@@ -71,7 +71,6 @@ const validation = (() => {
         const promise = isEdit ? UserAPI.edit(id, form) : UserAPI.store(form);
         promise
           .then((response) => {
-            console.log(response);
             $('#modalApi').modal('hide');
             $(form).removeClass('is-loading');
             if (isEdit) {
