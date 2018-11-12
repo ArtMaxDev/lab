@@ -9,7 +9,7 @@
       <div class="block-header block-header-default d-block d-md-flex">
         <h3 class="block-title pr-3">Настройки</h3>
         <div class="block-options form-inline pl-0">
-          <button type="submit" class="btn btn-sm btn-success mr-2" disabled id="btnSave" form="formSettings"><i class="fa fa-user-plus mr-2"></i>Сохранить</button>
+          <button type="submit" class="btn btn-sm btn-success mr-2" disabled id="btnSave" form="formSettings"><i class="fa fa-check mr-2"></i>Сохранить</button>
           <button type="reset" class="btn btn-sm btn-warning" disabled id="btnReset" form="formSettings"><i class="fa fa-pencil mr-2"></i>Сбросить</button>
         </div>
       </div>

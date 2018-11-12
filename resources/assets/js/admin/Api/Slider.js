@@ -1,11 +1,10 @@
 import '../core';
 import Router from '../../common/Router';
 import ImageAPI from './Image';
-import makeForm from './shared/jsonFromJqueryForm';
 
 export default class {
   static store(form, file) {
-    const data = makeForm(form);
+    const data = $(form).serializeJSON();
     return ImageAPI.store(file)
       .then(({ link }) => {
         data.image = link;
@@ -14,7 +13,7 @@ export default class {
   }
 
   static edit(id, form, file) {
-    const data = makeForm(form);
+    const data = $(form).serializeJSON();
     if (!file) {
       return $.put(Router.name('admin.sliders.update', id), data);
     }

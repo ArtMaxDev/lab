@@ -18,7 +18,7 @@ const validation = (() => {
       },
       onClean() {
         buttons.prop('disabled', true);
-      }
+      },
     });
   };
 
@@ -32,26 +32,29 @@ const validation = (() => {
       meta_description_uk: { required: true },
       meta_description_en: { required: true },
       meta_keywords_uk: { required: true },
-      meta_keywords_en: { required: true }
-    }
+      meta_keywords_en: { required: true },
+    },
   };
 
   // Init Add Form Validation, for more examples you can check out https://github.com/jzaefferer/$-validation
   const initValidationAdd = () => {
-    const $validator = $form.validate({
-      submitHandler(form) {
-        Codebase.layout('header_loader_on');
-        SettingsAPI.update(form)
-          .then(() => {
-            Codebase.layout('header_loader_off');
-            showSuccess(true);
-          }).catch((response) => {
-            $(form).removeClass('is-loading');
-            showErrors(response, $validator);
-          });
-      },
-      ...validationRules
-    });
+    const $validator = $form
+      .formDirty()
+      .validate({
+        submitHandler(form) {
+          Codebase.layout('header_loader_on');
+          SettingsAPI.update(form)
+            .then(() => {
+              $(form).trigger('formDirty.update');
+              Codebase.layout('header_loader_off');
+              showSuccess(true);
+            }).catch((response) => {
+              $(form).removeClass('is-loading');
+              showErrors(response, $validator);
+            });
+        },
+        ...validationRules,
+      });
   };
 
   return {
@@ -59,7 +62,7 @@ const validation = (() => {
       // Init Add Form Validation
       initFormTouch();
       initValidationAdd();
-    }
+    },
   };
 })();
 

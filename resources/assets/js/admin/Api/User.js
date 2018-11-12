@@ -1,14 +1,13 @@
 import '../core';
 import Router from 'common/Router';
-import makeForm from './shared/jsonFromJqueryForm';
 
 export default class {
-  static store(data) {
-    return $.post(Router.name('admin.users.store'), makeForm(data));
+  static store(form) {
+    return $.post(Router.name('admin.users.store'), $(form).serializeJSON());
   }
 
-  static edit(id, data) {
-    return $.put(Router.name('admin.users.update', id), makeForm(data));
+  static edit(id, form) {
+    return $.put(Router.name('admin.users.update', id), $(form).serializeJSON());
   }
 
   static remove(id) {

@@ -6,6 +6,7 @@ import 'jquery-slimscroll';
 import Cookies from 'js-cookie';
 import Codebase from 'codebase';
 import './core/extends';
+import '../common/plugins/jquery.dirtyForm';
 
 // Cookies should be on window
 window.Cookies = Cookies;

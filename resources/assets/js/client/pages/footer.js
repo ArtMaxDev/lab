@@ -11,16 +11,30 @@ Array.from(document.querySelectorAll('.js-open-map')).forEach((node) => {
   });
 });
 
+const feedbackMessages = {
+  en: {
+    success: 'Successfully sent',
+    error: 'Error. Try again later',
+  },
+  uk: {
+    success: 'Форму успішно відправлено',
+    error: 'Помилка. Спробуйте ще раз пізніше',
+  },
+};
 // Feedback
 document.querySelector('#feedback-form').addEventListener('submit', (e) => {
   e.preventDefault();
   const button = e.target.querySelector('[type=submit]');
   button.setAttribute('disabled', 'disabled');
+  let messages = feedbackMessages[document.documentElement.lang];
+  if (!messages) {
+    messages = feedbackMessages.uk;
+  }
   FeedbackAPI.store(e.target).then(() => {
-    picoModal('<p>Форма успешно отправлена<p>').show();
+    picoModal(`<p>${messages.success}<p>`).show();
     button.removeAttribute('disabled');
   }).catch(() => {
-    picoModal('<p>Ошибка. Попробуйте снова<p>').show();
+    picoModal(`<p>${messages.error}<p>`).show();
     button.removeAttribute('disabled');
   });
 });
