@@ -202,7 +202,7 @@
         </div>
         <!-- /.order -->
 
-        @include('client.components.rnk')
+        @include('client.components.rnk-' . $currentLocale)
     </main>
     <!-- /#team -->
 @endsection
