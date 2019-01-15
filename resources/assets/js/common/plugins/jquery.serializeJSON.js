@@ -10,7 +10,9 @@
       const object = {};
       const formData = new FormData(this);
       for (const [key, value] of formData.entries()) {
-        if (typeof object[key] !== 'undefined') {
+        if (value instanceof File) {
+          // skip files
+        } else if (typeof object[key] !== 'undefined') {
           if (Array.isArray(object[key])) {
             object[key].push(value);
           } else {
