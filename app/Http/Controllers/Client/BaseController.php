@@ -18,7 +18,6 @@ class BaseController extends Controller
         $setting = new Setting();
         $settings = $setting->first();
         View::share('settings', $settings);
-//        View::share('team', $team);
         View::share('currentLocale', $this->currentLocale);
     }
 
