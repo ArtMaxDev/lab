@@ -44,4 +44,9 @@ Route::middleware(['auth', 'role:root'])->group(function () {
     Route::post('/sliders', 'SliderController@store')->name('sliders.store');
     Route::put('/sliders/{slide}', 'SliderController@update')->name('sliders.update');
     Route::delete('/sliders/{slide}', 'SliderController@destroy')->name('sliders.destroy');
+
+    Route::get('/team', 'TeamController@index')->name('team.index');
+    Route::post('/team', 'TeamController@store')->name('team.store');
+    Route::put('/team/{team}', 'TeamController@update')->name('team.update');
+    Route::delete('/team/{team}', 'TeamController@destroy')->name('team.destroy');
 });

@@ -23,6 +23,11 @@
             'url'   => route('admin.sliders.index'),
         ),
         array(
+            'name'  => 'Комманда',
+            'icon'  => 'fa fa-users',
+            'url'   => route('admin.team.index'),
+        ),
+        array(
             'name'  => 'Публикации',
             'icon'  => 'fa fa-list',
             'sub'   => array(
