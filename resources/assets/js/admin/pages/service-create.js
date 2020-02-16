@@ -38,9 +38,9 @@ const editors = (() => {
             validator.element(el);
           },
           onInit() {
-            // if (el.summernote('isEmpty')) {
-            //   el.summernote('code', '<div class="ot-container"></div>');
-            // }
+            if (el.summernote('isEmpty')) {
+              el.summernote('code', '<div class="ot-container">Текс услуги...</div>');
+            }
           }
         }
       });
