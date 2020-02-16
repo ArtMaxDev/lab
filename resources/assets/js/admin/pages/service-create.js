@@ -16,7 +16,8 @@ const editors = (() => {
     $('.js-summernote').each((i, node) => {
       const el = $(node);
       el.summernote({
-        fontNames: ['Roboto', 'Roboto Condensed', 'Roboto Slab'],
+        fontNames: ['Roboto', 'Roboto Condensed', 'Roboto Slab', 'Times New Roman', 'Arial'],
+        fontNamesIgnoreCheck: ['Roboto', 'Roboto Condensed', 'Roboto Slab'],
         lang: 'ru-RU',
         height: 350,
         minHeight: null,
@@ -35,9 +36,9 @@ const editors = (() => {
             // was done programmatically.
             validator.element(el);
           },
-          onInit() {
-            $('.note-editable').addClass('news-article');
-          }
+          // onInit() {
+          //   $('.note-editable').addClass('news-article');
+          // }
         }
       });
     });

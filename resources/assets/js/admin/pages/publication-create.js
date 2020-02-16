@@ -17,7 +17,8 @@ const editors = (() => {
     $('.js-summernote').each((i, node) => {
       const el = $(node);
       el.summernote({
-        fontNames: ['Roboto', 'Roboto Condensed', 'Roboto Slab'],
+        fontNames: ['Roboto', 'Roboto Condensed', 'Roboto Slab', 'Times New Roman', 'Arial'],
+        fontNamesIgnoreCheck: ['Roboto', 'Roboto Condensed', 'Roboto Slab'],
         lang: 'ru-RU',
         height: 350,
         minHeight: null,
