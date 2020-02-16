@@ -6,18 +6,18 @@
 @section('keywords', 'chemotherapy, ONCO Drug Test')
 @section('content')
 
-    <main class="page" id="services">
-        <div class="page-title">Sensitivity to chemotherapy</div>
-        <div class="container">
-            <ul class="breadcrumbs">
+    <main class="ot-page" id="services">
+        <div class="ot-page-title">Sensitivity to chemotherapy</div>
+        <div class="ot-container">
+            <ul class="ot-breadcrumbs">
                 <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
                 <li><a href="/#services-2">Services</a></li>
                 <li>Sensitivity to chemotherapy</li>
             </ul>
             <!-- /.breadcrumbs -->
 
-            <article class="news-article">
-                <h1 class="news-article-title">ONCO Drug Test</h1>
+            <article class="ot-news-article">
+                <h1 class="ot-news-article-title">ONCO Drug Test</h1>
 
                 <h3>Evaluating sensitivity to antitumor therapy: chemo medications, hormonal therapy and targeted drugs</h3>
 
@@ -41,7 +41,7 @@
                     <img src="/client/assets/images/static/s-img-1-en.jpg" alt="Principles and benefits">
                 </picture>
 
-                <h2 class="pink">ONCO Drug Test</h2>
+                <h2 class="ot-pink">ONCO Drug Test</h2>
 
                 <ul>
                     <li>Sensitivity analysis "BEFORE", "DURING" and "AFTER" therapy</li>
@@ -50,83 +50,83 @@
                     <li>Minimally invasive method (does not require tumor tissue) - is used to monitor the process of tumor growth taking into account individual characteristics of the patient’s body at the systemic level</li>
                 </ul>
 
-                <h2 class="pink">What does the “ONCO Drug Test” program do?</h2>
+                <h2 class="ot-pink">What does the “ONCO Drug Test” program do?</h2>
 
                 <ul>
                     <li>Individualized evaluation of sensitivity to chemotherapy</li>
                     <li>Molecular epigenetic assessment of health status and pathological processes</li>
                 </ul>
 
-                <h2 class="pink">“ONCO Drug Test” program options at our clinic</h2>
+                <h2 class="ot-pink">“ONCO Drug Test” program options at our clinic</h2>
 
-                <div class="services">
-                    <figure class="item">
-                       <div> <img src="/client/assets/images/static/s2-1.png" alt="ONCO Drug Test" class="img"></div>
+                <div class="ot-services">
+                    <figure class="ot-item">
+                       <div> <img src="/client/assets/images/static/s2-1.png" alt="ONCO Drug Test" class="ot-img"></div>
                         <figcaption>
-                            <strong class="main-text">“ONCO Drug Test” on blood</strong>
+                            <strong class="ot-main-text">“ONCO Drug Test” on blood</strong>
                         </figcaption>
                     </figure>
-                    <figure class="item">
-                        <div><img src="/client/assets/images/static/s2-2.png" alt="ONCO Drug Test" class="img"></div>
+                    <figure class="ot-item">
+                        <div><img src="/client/assets/images/static/s2-2.png" alt="ONCO Drug Test" class="ot-img"></div>
                         <figcaption>
-                            <strong class="main-text">“ONCO Drug Test” on tumor cells</strong>
+                            <strong class="ot-main-text">“ONCO Drug Test” on tumor cells</strong>
                         </figcaption>
                     </figure>
-                    <figure class="item">
-                        <div><img src="/client/assets/images/static/s2-3.png" alt="ONCO Drug Test" class="img"></div>
+                    <figure class="ot-item">
+                        <div><img src="/client/assets/images/static/s2-3.png" alt="ONCO Drug Test" class="ot-img"></div>
                         <figcaption>
-                            <strong class="main-text">“ONCO Drug Test” on paraffin blocks</strong>
+                            <strong class="ot-main-text">“ONCO Drug Test” on paraffin blocks</strong>
                         </figcaption>
                     </figure>
                 </div>
                 <!-- /.services -->
 
-                <h2 class="pink text-xs-center">What we offer at our clinic</h2>
+                <h2 class="ot-pink ot-text-xs-center">What we offer at our clinic</h2>
 
-                <div class="block">
-                    <b class="name">Predicting the course of oncological processes</b>
-                    <b class="period">up to 10 working days</b>
-                    <b class="price">3950 UAH</b>
+                <div class="ot-block">
+                    <b class="ot-name">Predicting the course of oncological processes</b>
+                    <b class="ot-period">up to 10 working days</b>
+                    <b class="ot-price">3950 UAH</b>
                 </div>
                 <!-- /.block -->
-                <div class="block">
-                    <b class="name">Evaluating individual sensitivity to antitumor medications</b>
-                    <b class="period">up to 10 working days</b>
-                    <b class="price">2250 – 12750 UAH</b>
+                <div class="ot-block">
+                    <b class="ot-name">Evaluating individual sensitivity to antitumor medications</b>
+                    <b class="ot-period">up to 10 working days</b>
+                    <b class="ot-price">2250 – 12750 UAH</b>
                 </div>
-                <div class="expanded">
-                    <strong class="title text-xs-center">Price depends on the number of medication types</strong>
-                    <div class="list">
+                <div class="ot-expanded">
+                    <strong class="ot-title ot-text-xs-center">Price depends on the number of medication types</strong>
+                    <div class="ot-list">
                         <div>
-                            <ul class="check-list">
-                                <li class="item">1 panel – <b>2250 UAH</b></li>
-                                <li class="item">2 panel – <b>3000 UAH</b></li>
-                                <li class="item">3 panel – <b>3375 UAH</b></li>
-                                <li class="item">4 panel – <b>3750 UAH</b></li>
-                                <li class="item">5 panel – <b>4125 UAH</b></li>
-                                <li class="item">6 panel – <b>4500 UAH</b></li>
+                            <ul class="ot-check-list">
+                                <li class="ot-item">1 panel – <b>2250 UAH</b></li>
+                                <li class="ot-item">2 panel – <b>3000 UAH</b></li>
+                                <li class="ot-item">3 panel – <b>3375 UAH</b></li>
+                                <li class="ot-item">4 panel – <b>3750 UAH</b></li>
+                                <li class="ot-item">5 panel – <b>4125 UAH</b></li>
+                                <li class="ot-item">6 panel – <b>4500 UAH</b></li>
                             </ul>
                             <!-- /.check-list -->
                         </div>
                         <div>
-                            <ul class="check-list">
-                                <li class="item">7 panel – <b>5250 UAH</b></li>
-                                <li class="item">8 panel – <b>5700 UAH</b></li>
-                                <li class="item">9 panel – <b>6000 UAH</b></li>
-                                <li class="item">10 panel – <b>6750 UAH</b></li>
-                                <li class="item">11 panel – <b>7500 UAH</b></li>
-                                <li class="item">12 panel – <b>8250 UAH</b></li>
+                            <ul class="ot-check-list">
+                                <li class="ot-item">7 panel – <b>5250 UAH</b></li>
+                                <li class="ot-item">8 panel – <b>5700 UAH</b></li>
+                                <li class="ot-item">9 panel – <b>6000 UAH</b></li>
+                                <li class="ot-item">10 panel – <b>6750 UAH</b></li>
+                                <li class="ot-item">11 panel – <b>7500 UAH</b></li>
+                                <li class="ot-item">12 panel – <b>8250 UAH</b></li>
                             </ul>
                             <!-- /.check-list -->
                         </div>
                         <div>
-                            <ul class="check-list">
-                                <li class="item">13 panel – <b>9000 UAH</b></li>
-                                <li class="item">14 panel – <b>9750 UAH</b></li>
-                                <li class="item">15 panel – <b>10500 UAH</b></li>
-                                <li class="item">16 panel – <b>11250 UAH</b></li>
-                                <li class="item">17 panel – <b>12000 UAH</b></li>
-                                <li class="item">18 - 22 panel – <b>12750 UAH</b></li>
+                            <ul class="ot-check-list">
+                                <li class="ot-item">13 panel – <b>9000 UAH</b></li>
+                                <li class="ot-item">14 panel – <b>9750 UAH</b></li>
+                                <li class="ot-item">15 panel – <b>10500 UAH</b></li>
+                                <li class="ot-item">16 panel – <b>11250 UAH</b></li>
+                                <li class="ot-item">17 panel – <b>12000 UAH</b></li>
+                                <li class="ot-item">18 - 22 panel – <b>12750 UAH</b></li>
                             </ul>
                             <!-- /.check-list -->
                         </div>
@@ -135,10 +135,10 @@
                 </div>
                 <!-- /.expanded -->
                 <!-- /.block -->
-                <div class="block">
-                    <b class="name">Sample preparation for evaluating direct sensitivity</b>
-                    <b class="period">1 - 2 working days</b>
-                    <b class="price">750 – 1200 UAH</b>
+                <div class="ot-block">
+                    <b class="ot-name">Sample preparation for evaluating direct sensitivity</b>
+                    <b class="ot-period">1 - 2 working days</b>
+                    <b class="ot-price">750 – 1200 UAH</b>
                 </div>
                 <!-- /.block -->
             </article>
@@ -150,8 +150,8 @@
             </picture>
 
             <!-- /.container -->
-            <article class="news-article">
-                <h1 class="blue text-xs-center" style="text-transform: uppercase;">Testing the efficacy of antitumor drugs <em>in vitro</em></h1>
+            <article class="ot-news-article">
+                <h1 class="ot-blue ot-text-xs-center" style="text-transform: uppercase;">Testing the efficacy of antitumor drugs <em>in vitro</em></h1>
 
                 <blockquote>
                     <div>Why?</div>
@@ -167,15 +167,15 @@
         </div>
         <!-- /.container -->
 
-        <div class="order">
-            <div class="container">
-                <div class="inner">
+        <div class="ot-order">
+            <div class="ot-container">
+                <div class="ot-inner">
                     <div style="flex: 0 0 auto;">
-                        <img src="/client/assets/images/static/order.png" alt="" class="img" width="137px">
+                        <img src="/client/assets/images/static/order.png" alt="" class="ot-img" width="137px">
                     </div>
-                    <p class="text">If you have any questions, leave your phone number and email address. We will contact you soon and help choose the best option for you.</p>
+                    <p class="ot-text">If you have any questions, leave your phone number and email address. We will contact you soon and help choose the best option for you.</p>
                     <div>
-                        <button  class="btn js-scroll" data-target="#footer">Submit</button>
+                        <button  class="ot-btn js-scroll" data-target="#footer">Submit</button>
                     </div>
                 </div>
                 <!-- /.order-inner -->

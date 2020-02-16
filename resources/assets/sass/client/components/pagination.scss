@@ -2,7 +2,7 @@ $hexagon-color: #17a3ad;
 $hexagon-color-active: darken($hexagon-color, 5%);
 $hexagon-width: 44px;
 
-.pagination {
+.ot-pagination {
   display: flex;
   padding: 0;
   margin: 15px 0;
@@ -23,7 +23,7 @@ $hexagon-width: 44px;
     font-weight: bold;
   }
 
-  .link {
+  .ot-link {
     font-size: 24px;
     margin: 15px 15px;
     text-transform: none;
@@ -36,7 +36,7 @@ $hexagon-width: 44px;
       text-decoration: underline;
     }
 
-    &.active {
+    &.ot-active {
       color: #fff;
       pointer-events: none;
       background: url('../../../images/client/hexagon.png') center center no-repeat;

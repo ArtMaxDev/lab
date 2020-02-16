@@ -1,13 +1,13 @@
-.order {
+.ot-order {
   padding: 45px 0;
   background-color: #e0e3e6;
 
-  .inner {
+  .ot-inner {
     display: flex;
     justify-content: space-between;
   }
 
-  .text {
+  .ot-text {
     padding-left: 4%;
     padding-right: 3%;
     color: #333;
@@ -15,7 +15,7 @@
     font-size: 20px;
   }
 
-  .btn {
+  .ot-btn {
 
     text-transform: uppercase;
     display: flex;
@@ -30,12 +30,12 @@
     font-size: 22px;
   }
 
-  .text,
-  .btn {
+  .ot-text,
+  .ot-btn {
     margin: 30px auto 0;
   }
 
-  .img {
+  .ot-img {
     display: block;
     margin: 0 auto;
     max-width: 100%;
@@ -44,12 +44,12 @@
 }
 
 @media all and (max-width: 1023px) {
-  .order {
-    .inner {
+  .ot-order {
+    .ot-inner {
       flex-flow: column nowrap;
     }
 
-    .text {
+    .ot-text {
       padding: 0;
       text-align: center;
     }

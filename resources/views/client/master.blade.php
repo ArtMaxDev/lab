@@ -49,7 +49,7 @@
     {{-- Styleshets/custom --}}
     <link rel="stylesheet" href="{{mix('/assets/core.css', 'client')}}">
 </head>
-<body class="layout">
+<body class="ot-layout">
 @include('client.components.header')
 @yield('content')
 @include('client.components.footer-' . $currentLocale)

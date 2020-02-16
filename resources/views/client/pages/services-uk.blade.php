@@ -6,20 +6,20 @@
 
 @section('content')
 
-    <main class="page" id="services">
-        <div class="page-title">Cкринінг та рання діагностика</div>
-        <div class="container">
-            <ul class="breadcrumbs">
+    <main class="ot-page" id="services">
+        <div class="ot-page-title">Cкринінг та рання діагностика</div>
+        <div class="ot-container">
+            <ul class="ot-breadcrumbs">
                 <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
                 <li><a href="/#services-2">Послуги</a></li>
                 <li>СКРИНІНГ ТА РАННЯ ДІАГНОСТИКА</li>
             </ul>
             <!-- /.breadcrumbs -->
 
-            <article class="news-article">
-                <h1 class="news-article-title">СКРИНІНГ ТА РАННЯ ДІАГНОСТИКА </h1>
+            <article class="ot-news-article">
+                <h1 class="ot-news-article-title">СКРИНІНГ ТА РАННЯ ДІАГНОСТИКА </h1>
 
-                <h3 class="text-xs-center">Чи може бути в мене рак? Де я можу на це «перевіритися»?</h3>
+                <h3 class="ot-text-xs-center">Чи може бути в мене рак? Де я можу на це «перевіритися»?</h3>
 
                 <blockquote>
                     Рання діагностика та скринінг раку є надзвичайно важливими складовими боротьби з новоутвореннями. Основне завдання полягає в тому, щоб виявити захворювання на найбільш ранніх стадіях, встановити діагноз та розпочати лікування без зволікань
@@ -37,9 +37,9 @@
                     <img src="/client/assets/images/static/services/img-1.jpg" alt="Онкологічне захворювання">
                 </picture>
 
-                <h2 class="text-xs-center">ОНКО Check-Up</h2>
+                <h2 class="ot-text-xs-center">ОНКО Check-Up</h2>
 
-                <b class="text-xs-center" style="display: block; font-size: 24px">Для цього потрібно</b>
+                <b class="ot-text-xs-center" style="display: block; font-size: 24px">Для цього потрібно</b>
 
                 <ul>
                     <li>звернутися до клініки</li>
@@ -49,37 +49,37 @@
                 </ul>
 
                 <p>Результати аналізу видаються в зручній формі із детально описаним заключенням та найоптимальнішими рекомендаціями!
-                    <span class="pink"><b>Вартість дослідження - 3950 грн</b></span>
+                    <span class="ot-pink"><b>Вартість дослідження - 3950 грн</b></span>
                 </p>
             </article>
-            <ul class="service-list service-2">
-                <li class="item">
-                    <a href="javascript:void(0)" class="link">
-                        <img class="img" src="/client/assets/images/static/services/s5.png" alt="">
-                        <strong class="sub-text-small">Застосування найбільш інформативних, чутливих та специфічних методів дослідження</strong>
+            <ul class="ot-service-list ot-service-2">
+                <li class="ot-item">
+                    <a href="javascript:void(0)" class="ot-link">
+                        <img class="ot-img" src="/client/assets/images/static/services/s5.png" alt="">
+                        <strong class="ot-sub-text-small">Застосування найбільш інформативних, чутливих та специфічних методів дослідження</strong>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="javascript:void(0)" class="link">
-                        <img class="img" src="/client/assets/images/static/services/s6.png" alt="">
-                        <strong class="sub-text-small">Використання комплексного підходу для оцінки стану організму</strong>
+                <li class="ot-item">
+                    <a href="javascript:void(0)" class="ot-link">
+                        <img class="ot-img" src="/client/assets/images/static/services/s6.png" alt="">
+                        <strong class="ot-sub-text-small">Використання комплексного підходу для оцінки стану організму</strong>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="javascript:void(0)" class="link">
-                        <img class="img" src="/client/assets/images/static/services/s7.png" alt="">
-                        <strong class="sub-text-small">Інноваційно-трансляційний принцип із застосуванням Європейських стандартів</strong>
+                <li class="ot-item">
+                    <a href="javascript:void(0)" class="ot-link">
+                        <img class="ot-img" src="/client/assets/images/static/services/s7.png" alt="">
+                        <strong class="ot-sub-text-small">Інноваційно-трансляційний принцип із застосуванням Європейських стандартів</strong>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="javascript:void(0)" class="link">
-                        <img class="img" src="/client/assets/images/static/services/s8.png" alt="">
-                        <strong class="sub-text-small">Малоінвазивні та безпечні методи дослідження</strong>
+                <li class="ot-item">
+                    <a href="javascript:void(0)" class="ot-link">
+                        <img class="ot-img" src="/client/assets/images/static/services/s8.png" alt="">
+                        <strong class="ot-sub-text-small">Малоінвазивні та безпечні методи дослідження</strong>
                     </a>
                 </li>
             </ul>
             <!-- /.container -->
-            <article class="news-article">
+            <article class="ot-news-article">
                 <p><b>Якщо Ви не можете приїхати особисто до клініки, ми пропонуємо пройти інший варіант скринінгового дослідження miR-ТЕСТ</b></p>
 
                 <picture>
@@ -88,9 +88,9 @@
                     <img src="/client/assets/images/static/services/img-2.jpg" alt="miR-ТЕСТ">
                 </picture>
 
-                <h2 class="text-xs-center">miR-ТЕСТ</h2>
+                <h2 class="ot-text-xs-center">miR-ТЕСТ</h2>
 
-                <p class="text-xs-center" style="font-size: 24px"><b>В основі miR-ТЕСТу лежить аналіз <a href="#">мікроРНК</a></b></p>
+                <p class="ot-text-xs-center" style="font-size: 24px"><b>В основі miR-ТЕСТу лежить аналіз <a href="#">мікроРНК</a></b></p>
 
                 <ul>
                     <li>Оцінка рівнів мікроРНК в плазмі крові дозволяє визначити ризик розвитку новоутворень більшості локалізацій та передбачати  ризик розвитку рецидивів.</li>
@@ -100,100 +100,100 @@
                 </ul>
             </article>
 
-            <section class="cards" id="service-list">
-                <div class="card card-pink">
-                    <h4 class="header">miR-ТЕСТ «Пані»</h4>
-                    <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul check-list">
-                        <li class="item">раку молочної залози</li>
-                        <li class="item">раку шийки матки</li>
-                        <li class="item">раку яєчника</li>
+            <section class="ot-cards" id="service-list">
+                <div class="ot-card ot-card-pink">
+                    <h4 class="ot-header">miR-ТЕСТ «Пані»</h4>
+                    <p class="ot-title">Оцінка ризику виникнення:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item">раку молочної залози</li>
+                        <li class="ot-item">раку шийки матки</li>
+                        <li class="ot-item">раку яєчника</li>
                     </ul>
-                    <div class="bottom">4200 грн.</div>
+                    <div class="ot-bottom">4200 грн.</div>
                 </div>
                 <!-- /.card -->
-                <div class="card card-pink">
-                    <h4 class="header">miR-ТЕСТ «Пані+»</h4>
-                    <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul check-list">
-                        <li class="item">раку молочної залози</li>
-                        <li class="item">раку шийки матки</li>
-                        <li class="item">раку яєчника</li>
-                        <li class="item">раку кішківнику</li>
-                        <li class="item">раку шлунку</li>
-                        <li class="item">раку щитовидної залози</li>
+                <div class="ot-card ot-card-pink">
+                    <h4 class="ot-header">miR-ТЕСТ «Пані+»</h4>
+                    <p class="ot-title">Оцінка ризику виникнення:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item">раку молочної залози</li>
+                        <li class="ot-item">раку шийки матки</li>
+                        <li class="ot-item">раку яєчника</li>
+                        <li class="ot-item">раку кішківнику</li>
+                        <li class="ot-item">раку шлунку</li>
+                        <li class="ot-item">раку щитовидної залози</li>
                     </ul>
-                    <div class="bottom">6600 грн.</div>
+                    <div class="ot-bottom">6600 грн.</div>
                 </div>
                 <!-- /.card -->
-                <div class="card card-blue">
-                    <h4 class="header">miR-ТЕСТ «Пан»</h4>
-                    <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul check-list">
-                        <li class="item">раку легені</li>
-                        <li class="item">раку передміхурової залози</li>
-                        <li class="item">раку шлунку</li>
+                <div class="ot-card ot-card-blue">
+                    <h4 class="ot-header">miR-ТЕСТ «Пан»</h4>
+                    <p class="ot-title">Оцінка ризику виникнення:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item">раку легені</li>
+                        <li class="ot-item">раку передміхурової залози</li>
+                        <li class="ot-item">раку шлунку</li>
                     </ul>
-                    <div class="bottom">4200 грн.</div>
+                    <div class="ot-bottom">4200 грн.</div>
                 </div>
                 <!-- /.card -->
-                <div class="card card-blue">
-                    <h4 class="header">miR-ТЕСТ «Пан+»</h4>
-                    <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul check-list">
-                        <li class="item">раку легені</li>
-                        <li class="item">раку передміхурової залози</li>
-                        <li class="item">раку шлунку</li>
-                        <li class="item">раку кішківнику</li>
-                        <li class="item">раку сечового міхура</li>
-                        <li class="item">раку нирки</li>
+                <div class="ot-card ot-card-blue">
+                    <h4 class="ot-header">miR-ТЕСТ «Пан+»</h4>
+                    <p class="ot-title">Оцінка ризику виникнення:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item">раку легені</li>
+                        <li class="ot-item">раку передміхурової залози</li>
+                        <li class="ot-item">раку шлунку</li>
+                        <li class="ot-item">раку кішківнику</li>
+                        <li class="ot-item">раку сечового міхура</li>
+                        <li class="ot-item">раку нирки</li>
                     </ul>
-                    <div class="bottom">6600 грн.</div>
+                    <div class="ot-bottom">6600 грн.</div>
                 </div>
                 <!-- /.card -->
-                <div class="card">
-                    <h4 class="header">miR-ТЕСТ «МОНО»</h4>
-                    <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul check-list">
-                        <li class="item">одна будь-яка локалізація на вибір.</li>
+                <div class="ot-card">
+                    <h4 class="ot-header">miR-ТЕСТ «МОНО»</h4>
+                    <p class="ot-title">Оцінка ризику виникнення:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item">одна будь-яка локалізація на вибір.</li>
                     </ul>
-                    <div class="bottom">3000 грн.</div>
+                    <div class="ot-bottom">3000 грн.</div>
                 </div>
                 <!-- /.card -->
-                <div class="card">
-                    <h4 class="header">miR-ТЕСТ «МАКСІ» </h4>
-                    <p class="title">Оцінка ризику виникнення:</p>
-                    <ul class="ul check-list">
-                        <li class="item"></li>
-                        <li class="item">раку кішківнику</li>
-                        <li class="item">раку шлунку</li>
-                        <li class="item">раку щитовидної залози</li>
-                        <li class="item">раку легені</li>
-                        <li class="item">раку сечового міхура</li>
-                        <li class="item">раку нирки</li>
-                        <li class="item">раку печінки</li>
-                        <li class="item">раку підшлункової залози</li>
-                        <li class="item">раку молочної залози</li>
-                        <li class="item">раку шийки матки</li>
-                        <li class="item">раку яєчника</li>
-                        <li class="item">раку передміхурової залози</li>
+                <div class="ot-card">
+                    <h4 class="ot-header">miR-ТЕСТ «МАКСІ» </h4>
+                    <p class="ot-title">Оцінка ризику виникнення:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item"></li>
+                        <li class="ot-item">раку кішківнику</li>
+                        <li class="ot-item">раку шлунку</li>
+                        <li class="ot-item">раку щитовидної залози</li>
+                        <li class="ot-item">раку легені</li>
+                        <li class="ot-item">раку сечового міхура</li>
+                        <li class="ot-item">раку нирки</li>
+                        <li class="ot-item">раку печінки</li>
+                        <li class="ot-item">раку підшлункової залози</li>
+                        <li class="ot-item">раку молочної залози</li>
+                        <li class="ot-item">раку шийки матки</li>
+                        <li class="ot-item">раку яєчника</li>
+                        <li class="ot-item">раку передміхурової залози</li>
                     </ul>
-                    <div class="bottom">10080 грн.</div>
+                    <div class="ot-bottom">10080 грн.</div>
                 </div>
                 <!-- /.card -->
             </section>
         </div>
         <!-- /.container -->
 
-        <div class="order">
-            <div class="container">
-                <div class="inner">
+        <div class="ot-order">
+            <div class="ot-container">
+                <div class="ot-inner">
                     <div style="flex: 0 0 auto;">
-                        <img src="/client/assets/images/static/order.png" alt="" class="img" width="137px">
+                        <img src="/client/assets/images/static/order.png" alt="" class="ot-img" width="137px">
                     </div>
-                    <p class="text">Залиште свій телефон та електронну адресу. Найближчим часом ми зв’яжемося з вами, допоможемо обрати найліпший для Вас варіант діагностики та зручний час для процедури.</p>
+                    <p class="ot-text">Залиште свій телефон та електронну адресу. Найближчим часом ми зв’яжемося з вами, допоможемо обрати найліпший для Вас варіант діагностики та зручний час для процедури.</p>
                     <div>
-                        <button class="btn js-scroll" data-target="#footer">заявка</button>
+                        <button class="ot-btn js-scroll" data-target="#footer">заявка</button>
                     </div>
                 </div>
                 <!-- /.order-inner -->

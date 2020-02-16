@@ -6,18 +6,18 @@
 @section('keywords', 'хіміотерапія, ОНКО Drug Test')
 @section('content')
 
-    <main class="page" id="services">
-        <div class="page-title">Чутливість до хіміотерапії</div>
-        <div class="container">
-            <ul class="breadcrumbs">
+    <main class="ot-page" id="services">
+        <div class="ot-page-title">Чутливість до хіміотерапії</div>
+        <div class="ot-container">
+            <ul class="ot-breadcrumbs">
                 <li><a href="{{URL::to('/')}}">Головна</a></li>
                 <li><a href="/#services-2">Послуги</a></li>
                 <li>Чутливість до хіміотерапії</li>
             </ul>
             <!-- /.breadcrumbs -->
 
-            <article class="news-article">
-                <h1 class="news-article-title">ОНКО Drug Test</h1>
+            <article class="ot-news-article">
+                <h1 class="ot-news-article-title">ОНКО Drug Test</h1>
 
                 <h3>Визначення чутливості до протипухлинної терапії : хіміопрепарати, гормональна терапія, таргетні препарати.</h3>
 
@@ -41,7 +41,7 @@
                     <img src="/client/assets/images/static/s-img-1.jpg" alt="ОНКО Drug Test">
                 </picture>
 
-                <h2 class="pink">ОНКО Drug Test</h2>
+                <h2 class="ot-pink">ОНКО Drug Test</h2>
 
                 <ul>
                     <li>Аналіз чутливості “ДО” “ПІД ЧАС” та “ПІСЛЯ” терапії</li>
@@ -50,83 +50,83 @@
                     <li>Малоінвазивний метод (не потребує пухлинної тканини) - застосовується для  моніторингу перебігу пухлинного процесу  з урахуванням індивідуальних особливостей організму на системному рівні</li>
                 </ul>
 
-                <h2 class="pink">Що дає програма «Онко Drug Test»</h2>
+                <h2 class="ot-pink">Що дає програма «Онко Drug Test»</h2>
 
                 <ul>
                     <li>Індивідуальне визначення чутливості до хіміотерапії</li>
                     <li>Молекулярно-епігенетична оцінка стану організму та перебігу патологічного процесу</li>
                 </ul>
 
-                <h2 class="pink">ВАРІАНТИ ПРОГРАММИ «Онко Drug Test» в нашій клініці</h2>
+                <h2 class="ot-pink">ВАРІАНТИ ПРОГРАММИ «Онко Drug Test» в нашій клініці</h2>
 
-                <div class="services">
-                    <figure class="item">
-                       <div> <img src="/client/assets/images/static/s2-1.png" alt="" class="img"></div>
+                <div class="ot-services">
+                    <figure class="ot-item">
+                       <div> <img src="/client/assets/images/static/s2-1.png" alt="" class="ot-img"></div>
                         <figcaption>
-                            <strong class="main-text">«Онко Drug Test» на крові</strong>
+                            <strong class="ot-main-text">«Онко Drug Test» на крові</strong>
                         </figcaption>
                     </figure>
-                    <figure class="item">
-                        <div><img src="/client/assets/images/static/s2-2.png" alt="" class="img"></div>
+                    <figure class="ot-item">
+                        <div><img src="/client/assets/images/static/s2-2.png" alt="" class="ot-img"></div>
                         <figcaption>
-                            <strong class="main-text">«Онко Drug Test» на пухлинних клітинах</strong>
+                            <strong class="ot-main-text">«Онко Drug Test» на пухлинних клітинах</strong>
                         </figcaption>
                     </figure>
-                    <figure class="item">
-                        <div><img src="/client/assets/images/static/s2-3.png" alt="" class="img"></div>
+                    <figure class="ot-item">
+                        <div><img src="/client/assets/images/static/s2-3.png" alt="" class="ot-img"></div>
                         <figcaption>
-                            <strong class="main-text">«Онко Drug Test» на парфінових блоках</strong>
+                            <strong class="ot-main-text">«Онко Drug Test» на парфінових блоках</strong>
                         </figcaption>
                     </figure>
                 </div>
                 <!-- /.services -->
 
-                <h2 class="pink text-xs-center">Що ми пропонуємо в нашій клініці</h2>
+                <h2 class="ot-pink ot-text-xs-center">Що ми пропонуємо в нашій клініці</h2>
 
-                <div class="block">
-                    <b class="name">Прогнозування перебігу онкологічного процесу</b>
-                    <b class="period">до 10 роб. днів</b>
-                    <b class="price">3950 грн.</b>
+                <div class="ot-block">
+                    <b class="ot-name">Прогнозування перебігу онкологічного процесу</b>
+                    <b class="ot-period">до 10 роб. днів</b>
+                    <b class="ot-price">3950 грн.</b>
                 </div>
                 <!-- /.block -->
-                <div class="block">
-                    <b class="name">Визначення індивідуальної чутливості до протипухлинних препаратів</b>
-                    <b class="period">до 10 роб. днів</b>
-                    <b class="price">2250 - 12750 грн.</b>
+                <div class="ot-block">
+                    <b class="ot-name">Визначення індивідуальної чутливості до протипухлинних препаратів</b>
+                    <b class="ot-period">до 10 роб. днів</b>
+                    <b class="ot-price">2250 - 12750 грн.</b>
                 </div>
-                <div class="expanded">
-                    <strong class="title text-xs-center">Ціна залежить від кількості препаратів для оцінки</strong>
-                    <div class="list">
+                <div class="ot-expanded">
+                    <strong class="ot-title ot-text-xs-center">Ціна залежить від кількості препаратів для оцінки</strong>
+                    <div class="ot-list">
                         <div>
-                            <ul class="check-list">
-                                <li class="item">1 преп. - <b>2250 грн.</b></li>
-                                <li class="item">2 преп. - <b>3000 грн.</b></li>
-                                <li class="item">3 преп. - <b>3375 грн.</b></li>
-                                <li class="item">4 преп. - <b>3750 грн.</b></li>
-                                <li class="item">5 преп.- <b>4125 грн.</b></li>
-                                <li class="item">6 преп. - <b>4500 грн.</b></li>
+                            <ul class="ot-check-list">
+                                <li class="ot-item">1 преп. - <b>2250 грн.</b></li>
+                                <li class="ot-item">2 преп. - <b>3000 грн.</b></li>
+                                <li class="ot-item">3 преп. - <b>3375 грн.</b></li>
+                                <li class="ot-item">4 преп. - <b>3750 грн.</b></li>
+                                <li class="ot-item">5 преп.- <b>4125 грн.</b></li>
+                                <li class="ot-item">6 преп. - <b>4500 грн.</b></li>
                             </ul>
                             <!-- /.check-list -->
                         </div>
                         <div>
-                            <ul class="check-list">
-                                <li class="item">7 преп. - <b>5250 грн.</b></li>
-                                <li class="item">8 преп. - <b>5700 грн.</b></li>
-                                <li class="item">9 преп. - <b>6000 грн.</b></li>
-                                <li class="item">10 преп. - <b>6750 грн.</b></li>
-                                <li class="item">11 преп. - <b>7500 грн.</b></li>
-                                <li class="item">12 преп. - <b>8250 грн.</b></li>
+                            <ul class="ot-check-list">
+                                <li class="ot-item">7 преп. - <b>5250 грн.</b></li>
+                                <li class="ot-item">8 преп. - <b>5700 грн.</b></li>
+                                <li class="ot-item">9 преп. - <b>6000 грн.</b></li>
+                                <li class="ot-item">10 преп. - <b>6750 грн.</b></li>
+                                <li class="ot-item">11 преп. - <b>7500 грн.</b></li>
+                                <li class="ot-item">12 преп. - <b>8250 грн.</b></li>
                             </ul>
                             <!-- /.check-list -->
                         </div>
                         <div>
-                            <ul class="check-list">
-                                <li class="item">13 преп. - <b>9000 грн.</b></li>
-                                <li class="item">14 преп. - <b>9750 грн.</b></li>
-                                <li class="item">15 преп. - <b>10500 грн.</b></li>
-                                <li class="item">16 преп. - <b>11250 грн.</b></li>
-                                <li class="item">17 преп. - <b>12000 грн.</b></li>
-                                <li class="item">18-22 преп. -  <b>12750 грн.</b></li>
+                            <ul class="ot-check-list">
+                                <li class="ot-item">13 преп. - <b>9000 грн.</b></li>
+                                <li class="ot-item">14 преп. - <b>9750 грн.</b></li>
+                                <li class="ot-item">15 преп. - <b>10500 грн.</b></li>
+                                <li class="ot-item">16 преп. - <b>11250 грн.</b></li>
+                                <li class="ot-item">17 преп. - <b>12000 грн.</b></li>
+                                <li class="ot-item">18-22 преп. -  <b>12750 грн.</b></li>
                             </ul>
                             <!-- /.check-list -->
                         </div>
@@ -135,11 +135,11 @@
                 </div>
                 <!-- /.expanded -->
                 <!-- /.block -->
-                <div class="block">
-                    <b class="name">Пробопідготовка для проведення оцінки
+                <div class="ot-block">
+                    <b class="ot-name">Пробопідготовка для проведення оцінки
                         прямої чутливості </b>
-                    <b class="period">1-2 роб. дні</b>
-                    <b class="price">750 – 1200.00 грн.</b>
+                    <b class="ot-period">1-2 роб. дні</b>
+                    <b class="ot-price">750 – 1200.00 грн.</b>
                 </div>
                 <!-- /.block -->
             </article>
@@ -152,8 +152,8 @@
 
 
             <!-- /.container -->
-            <article class="news-article">
-                <h1 class="blue text-xs-center" style="text-transform: uppercase;">Перевірка активності протипухлинних препаратів <em>in vitro</em></h1>
+            <article class="ot-news-article">
+                <h1 class="ot-blue ot-text-xs-center" style="text-transform: uppercase;">Перевірка активності протипухлинних препаратів <em>in vitro</em></h1>
 
                 <blockquote>
                     <div>ДЛЯ ЧОГО?</div>
@@ -169,15 +169,15 @@
         </div>
         <!-- /.container -->
 
-        <div class="order">
-            <div class="container">
-                <div class="inner">
+        <div class="ot-order">
+            <div class="ot-container">
+                <div class="ot-inner">
                     <div style="flex: 0 0 auto;">
-                        <img src="/client/assets/images/static/order.png" alt="" class="img" width="137px">
+                        <img src="/client/assets/images/static/order.png" alt="" class="ot-img" width="137px">
                     </div>
-                    <p class="text">Якщо у вас залишились будь-які запитання, то залиште свій  номер телефону та електронну адресу. Найближчим часом ми зв’яжемося з вами, допоможемо обрати найліпший для Вас варіант.</p>
+                    <p class="ot-text">Якщо у вас залишились будь-які запитання, то залиште свій  номер телефону та електронну адресу. Найближчим часом ми зв’яжемося з вами, допоможемо обрати найліпший для Вас варіант.</p>
                     <div>
-                        <button  class="btn js-scroll" data-target="#footer">заявка</button>
+                        <button  class="ot-btn js-scroll" data-target="#footer">заявка</button>
                     </div>
                 </div>
                 <!-- /.order-inner -->

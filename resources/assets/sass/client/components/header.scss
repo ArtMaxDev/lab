@@ -2,7 +2,7 @@ $p-link-padding: 10px;
 $p-lang-link-padding: 10px 10px 10px 0;
 $p-link-font-size: 24px;
 
-.nav {
+.ot-nav {
   margin-top: 35px;
   margin-bottom: 10px;
   position: relative;
@@ -13,12 +13,12 @@ $p-link-font-size: 24px;
   font-weight: 300;
 }
 
-.nav-brand {
+.ot-nav-brand {
   position: relative;
   display: block;
 }
 
-.nav-lang {
+.ot-nav-lang {
   position: absolute;
   top: 0;
   display: flex;
@@ -26,15 +26,15 @@ $p-link-font-size: 24px;
   margin: 0;
 }
 
-.nav-logo {
+.ot-nav-logo {
   max-width: 100%;
 }
 
-.nav-lang-item {
+.ot-nav-lang-item {
   //
 }
 
-.nav-lang-link {
+.ot-nav-lang-link {
   color: #0ba2c7;
   padding: $p-lang-link-padding;
 
@@ -43,19 +43,19 @@ $p-link-font-size: 24px;
   }
 }
 
-.nav-toggle {
+.ot-nav-toggle {
   position: absolute;
   top: -9999px;
   left: -9999px;
 }
 
-.nav-toggle-button,
-.nav-toggle {
+.ot-nav-toggle-button,
+.ot-nav-toggle {
   display: none;
   visibility: hidden;
 }
 
-.nav-toggle-button {
+.ot-nav-toggle-button {
   position: relative;
   height: 30px;
   width: 40px;
@@ -75,20 +75,20 @@ $p-link-font-size: 24px;
   }
 }
 
-.nav-menu {
+.ot-nav-menu {
   display: flex;
   margin: 15px 0 0;
 }
 
-.nav-item {
-  &.dropdown {
+.ot-nav-item {
+  &.ot-dropdown {
     position: relative;
 
     input {
       display: none;
     }
 
-    ul.submenu {
+    ul.ot-submenu {
       margin: 0;
       padding: 15px 0;
       background: #fff;
@@ -109,27 +109,27 @@ $p-link-font-size: 24px;
       cursor: pointer;
     }
 
-    input:checked ~ ul.submenu {
+    input:checked ~ ul.ot-submenu {
       display: block;
     }
   }
 }
 
-.nav-menu,
-.nav-lang {
+.ot-nav-menu,
+.ot-nav-lang {
   list-style: none;
   padding: 0;
 }
 
-.nav-link {
+.ot-nav-link {
   display: block;
   padding: $p-link-padding;
   font-size: $p-link-font-size;
   color: #0b959f;
 }
 
-.nav-lang-link,
-.nav-link {
+.ot-nav-lang-link,
+.ot-nav-link {
   text-decoration: none;
   transition: color .2s;
 
@@ -139,34 +139,34 @@ $p-link-font-size: 24px;
   }
 }
 
-.nav-lang-item,
-.nav-item {
-  &.disabled {
+.ot-nav-lang-item,
+.ot-nav-item {
+  &.ot-disabled {
     pointer-events: none;
 
-    .nav-lang-link,
-    .nav-link {
+    .ot-nav-lang-link,
+    .ot-nav-link {
       color: #abb3b5;
     }
   }
 }
 
 @media all and (min-width: 1150px) {
-  .nav-menu {
+  .ot-nav-menu {
     margin-left: auto;
   }
 }
 
 @media all and (min-width: 1024px) {
-  .nav-item {
-    &.dropdown {
+  .ot-nav-item {
+    &.ot-dropdown {
       &:hover {
-        ul.submenu {
+        ul.ot-submenu {
           display: block;
         }
       }
 
-      ul.submenu {
+      ul.ot-submenu {
         width: 290px;
         position: absolute;
         top: 100%;
@@ -178,21 +178,21 @@ $p-link-font-size: 24px;
 }
 
 @media all and (max-width: 767px) {
-  .nav {
+  .ot-nav {
     flex-flow: column;
   }
 
-  .nav-lang {
+  .ot-nav-lang {
     left: 50%;
     transform: translate(-50%, -50%);
   }
 
-  .nav-lang-link {
+  .ot-nav-lang-link {
     font-size: 20px;
     padding: 10px;
   }
 
-  .nav-menu {
+  .ot-nav-menu {
     display: none;
     margin: 0;
     position: absolute;
@@ -205,7 +205,7 @@ $p-link-font-size: 24px;
     z-index: 100;
   }
 
-  .nav-link {
+  .ot-nav-link {
     display: block;
     font-size: 24px;
     line-height: 48px;
@@ -217,22 +217,22 @@ $p-link-font-size: 24px;
     }
   }
 
-  .nav-item,
-  .nav-link {
+  .ot-nav-item,
+  .ot-nav-link {
     width: 100%;
   }
 
-  .nav-toggle-button,
-  .nav-toggle {
+  .ot-nav-toggle-button,
+  .ot-nav-toggle {
     display: block;
     visibility: visible;
   }
 
-  .nav-toggle[type=checkbox]:checked + .nav-menu {
+  .ot-nav-toggle[type=checkbox]:checked + .ot-nav-menu {
     display: flex;
   }
 
-  .nav-item {
+  .ot-nav-item {
     border-top: 1px solid #ccc;
 
     &:first-child {

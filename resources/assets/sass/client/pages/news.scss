@@ -2,28 +2,28 @@
 @import "../components/news-item";
 @import "../components/pagination";
 
-.news {
+.ot-news {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: 0 -15px;
 
-  .item {
+  .ot-item {
     width: 33.33%;
   }
 }
 
 @media all and (max-width: 1023px) {
-  .news {
-    .item {
+  .ot-news {
+    .ot-item {
       width: 50%;
     }
   }
 }
 
 @media all and (max-width: 767px) {
-  .news {
-    .item {
+  .ot-news {
+    .ot-item {
       width: 100%;
     }
   }

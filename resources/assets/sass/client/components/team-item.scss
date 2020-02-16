@@ -1,19 +1,19 @@
-.team-hexagon {
+.ot-team-hexagon {
   margin: 0 auto;
 
-  .team-hexagon__img {
+  .ot-team-hexagon__img {
     filter: url(#grayscale);
     transition: filter .2s;
   }
 
   &:hover {
-    .team-hexagon__img {
+    .ot-team-hexagon__img {
       filter: none;
     }
   }
 }
 
-.team-hexagon__hex {
+.ot-team-hexagon__hex {
   stroke-width: 5;
   stroke: #17a3ad;
 

@@ -74,25 +74,25 @@ $p-roboto-slab-path: '#{$p-fonts-path}/Roboto_Slab';
   body {
     font-family: 'Roboto Condensed', sans-serif;
   }
-  .slider .tns-nav button,
-  .slider .content,
-  .about,
-  .about .content .title,
-  .team .item .name,
-  .team .item .name,
-  .section-title,
-  .page-title,
-  .news-article h1,
-  .news-article h2,
-  .news-article h3,
-  .news-article h4,
-  .news-article h5,
-  .news-article h6,
-  .news-article blockquote > div,
-  .services .item,
-  h1.news-article-title,
-  .service-list .link,
-  .rnk {
+  .ot-slider .tns-nav button,
+  .ot-slider .ot-content,
+  .ot-about,
+  .ot-about .ot-content .ot-title,
+  .ot-team .ot-item .ot-name,
+  .ot-team .ot-item .ot-name,
+  .ot-section-title,
+  .ot-page-title,
+  .ot-news-article h1,
+  .ot-news-article h2,
+  .ot-news-article h3,
+  .ot-news-article h4,
+  .ot-news-article h5,
+  .ot-news-article h6,
+  .ot-news-article blockquote > div,
+  .ot-services .ot-item,
+  h1.ot-news-article-title,
+  .ot-service-list .ot-link,
+  .ot-rnk {
     font-family: 'Roboto Slab', serif;
   }
 }

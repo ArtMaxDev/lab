@@ -7,7 +7,7 @@ const map = document.querySelector('#map');
 Array.from(document.querySelectorAll('.js-open-map')).forEach((node) => {
   node.addEventListener('click', (e) => {
     e.preventDefault();
-    map.classList.toggle('open');
+    map.classList.toggle('ot-open');
   });
 });
 

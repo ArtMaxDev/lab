@@ -4,15 +4,15 @@
 @import "../components/order";
 @import "../components/check-list";
 
-.service-2 {
+.ot-service-2 {
   margin-bottom: 60px;
 }
 
-.news-article:first-child {
+.ot-news-article:first-child {
   margin-bottom: 30px;
 }
 
-.news-article {
+.ot-news-article {
   h1,
   h2,
   h3,
@@ -22,21 +22,21 @@
   }
 }
 
-.cards {
+.ot-cards {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
   margin: 50px -15px 30px;
 }
 
-.card {
+.ot-card {
   width: 25%;
   padding: 0 15px;
   margin-bottom: 30px;
 
 
-  .header,
-  .bottom {
+  .ot-header,
+  .ot-bottom {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,18 +47,18 @@
     margin: 0;
   }
 
-  .header {
+  .ot-header {
     color: #fff;
     background-color: #3a4143;
   }
 
-  .bottom {
+  .ot-bottom {
     background-color: #fff;
     color: #ea5260;
     border: 1px solid #ccc;
   }
 
-  .title {
+  .ot-title {
     color: #3a4143;
     font-size: 18px;
     font-weight: bold;
@@ -68,34 +68,34 @@
 
 }
 
-.card-pink {
-  .header {
+.ot-card-pink {
+  .ot-header {
     background-color: #ea5260;
   }
 
-  .title {
+  .ot-title {
     color: #ea5260;
   }
 }
 
-.card-blue {
-  .header {
+.ot-card-blue {
+  .ot-header {
     background-color: #0b959f;
   }
 
-  .title {
+  .ot-title {
     color: #0b959f;
   }
 }
 
 @media all and (max-width: 1023px) {
-  .card {
+  .ot-card {
     width: 50%;
   }
 }
 
 @media all and (max-width: 767px) {
-  .card {
+  .ot-card {
     width: 100%;
   }
 }

@@ -5,16 +5,16 @@
 @section('keywords', __('team.title'))
 @section('content')
 
-    <main class="page" id="team">
-        <h1 class="page-title">@lang('team.title')</h1>
-        <div class="container">
-            <ul class="breadcrumbs">
+    <main class="ot-page" id="team">
+        <h1 class="ot-page-title">@lang('team.title')</h1>
+        <div class="ot-container">
+            <ul class="ot-breadcrumbs">
                 <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
                 <li>@lang('team.title')</li>
             </ul>
             <!-- /.breadcrumbs -->
 
-            <div class="team">
+            <div class="ot-team">
                 @each('client.components.team-item', $team, 'member')
             </div>
         </div>

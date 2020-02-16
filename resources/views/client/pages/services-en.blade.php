@@ -6,20 +6,20 @@
 
 @section('content')
 
-    <main class="page" id="services">
-        <div class="page-title">Screening and early diagnosis</div>
-        <div class="container">
-            <ul class="breadcrumbs">
+    <main class="ot-page" id="services">
+        <div class="ot-page-title">Screening and early diagnosis</div>
+        <div class="ot-container">
+            <ul class="ot-breadcrumbs">
                 <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
                 <li><a href="/#services-2">Services</a></li>
                 <li>SCREENING AND EARLY DIAGNOSIS</li>
             </ul>
             <!-- /.breadcrumbs -->
 
-            <article class="news-article">
-                <h1 class="news-article-title">SCREENING AND EARLY DIAGNOSIS</h1>
+            <article class="ot-news-article">
+                <h1 class="ot-news-article-title">SCREENING AND EARLY DIAGNOSIS</h1>
 
-                <h3 class="text-xs-center">Do I have cancer? Where do I check for cancer?</h3>
+                <h3 class="ot-text-xs-center">Do I have cancer? Where do I check for cancer?</h3>
 
                 <blockquote>
                     Early diagnosis and screening of cancer are extremely important components in fighting neoplasms. The main task is to detect the disease in the earliest stages, to diagnose and start treatment without delay
@@ -38,9 +38,9 @@
                     <img src="/client/assets/images/static/services/img-1.jpg" alt="ONCO Check-Up">
                 </picture>
 
-                <h2 class="text-xs-center">ONCO Check-Up</h2>
+                <h2 class="ot-text-xs-center">ONCO Check-Up</h2>
 
-                <b class="text-xs-center" style="display: block; font-size: 24px">You need to</b>
+                <b class="ot-text-xs-center" style="display: block; font-size: 24px">You need to</b>
 
                 <ul>
                     <li>contact the clinic</li>
@@ -50,37 +50,37 @@
                 </ul>
 
                 <p>Test results are presented in a convenient form with a detailed description and the best recommendations!
-                    <span class="pink"><b>Test prices start from 3950 UAH</b></span>
+                    <span class="ot-pink"><b>Test prices start from 3950 UAH</b></span>
                 </p>
             </article>
-            <ul class="service-list service-2">
-                <li class="item">
-                    <a href="javascript:void(0)" class="link">
-                        <img class="img" src="/client/assets/images/static/services/s5.png" alt="sensitive and specific methods">
-                        <strong class="sub-text-small">Applying most informative, sensitive and specific methods in clinical trials</strong>
+            <ul class="ot-service-list ot-service-2">
+                <li class="ot-item">
+                    <a href="javascript:void(0)" class="ot-link">
+                        <img class="ot-img" src="/client/assets/images/static/services/s5.png" alt="sensitive and specific methods">
+                        <strong class="ot-sub-text-small">Applying most informative, sensitive and specific methods in clinical trials</strong>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="javascript:void(0)" class="link">
-                        <img class="img" src="/client/assets/images/static/services/s6.png" alt="health status">
-                        <strong class="sub-text-small">Using integrated approach to assess patient’s health status</strong>
+                <li class="ot-item">
+                    <a href="javascript:void(0)" class="ot-link">
+                        <img class="ot-img" src="/client/assets/images/static/services/s6.png" alt="health status">
+                        <strong class="ot-sub-text-small">Using integrated approach to assess patient’s health status</strong>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="javascript:void(0)" class="link">
-                        <img class="img" src="/client/assets/images/static/services/s7.png" alt="European standards">
-                        <strong class="sub-text-small">Innovation and translational principles using European standards</strong>
+                <li class="ot-item">
+                    <a href="javascript:void(0)" class="ot-link">
+                        <img class="ot-img" src="/client/assets/images/static/services/s7.png" alt="European standards">
+                        <strong class="ot-sub-text-small">Innovation and translational principles using European standards</strong>
                     </a>
                 </li>
-                <li class="item">
-                    <a href="javascript:void(0)" class="link">
-                        <img class="img" src="/client/assets/images/static/services/s8.png" alt="safe clinical methods">
-                        <strong class="sub-text-small">Minimally invasive and safe clinical methods</strong>
+                <li class="ot-item">
+                    <a href="javascript:void(0)" class="ot-link">
+                        <img class="ot-img" src="/client/assets/images/static/services/s8.png" alt="safe clinical methods">
+                        <strong class="ot-sub-text-small">Minimally invasive and safe clinical methods</strong>
                     </a>
                 </li>
             </ul>
             <!-- /.container -->
-            <article class="news-article">
+            <article class="ot-news-article">
                 <p><b>If you can not visit the clinic personally or you already have a genetic map and basic clinical test results, we offer another version of the screening study miR-TEST</b></p>
 
                 <picture>
@@ -89,9 +89,9 @@
                     <img src="/client/assets/images/static/services/img-2.jpg" alt="miR-TEST">
                 </picture>
 
-                <h2 class="text-xs-center">miR-TEST</h2>
+                <h2 class="ot-text-xs-center">miR-TEST</h2>
 
-                <p class="text-xs-center" style="font-size: 24px"><b>miR-TEST is based on the <a href="#">miRNA</a> analysis</b></p>
+                <p class="ot-text-xs-center" style="font-size: 24px"><b>miR-TEST is based on the <a href="#">miRNA</a> analysis</b></p>
 
                 <ul>
                     <li>Estimating miRNA levels in plasma can determine the risk of developing neoplasms in most localizations and predict the risk of relapse.</li>
@@ -101,100 +101,100 @@
                 </ul>
             </article>
 
-            <section class="cards" id="service-list">
-                <div class="card card-pink">
-                    <h4 class="header">miR-TEST "Lady"</h4>
-                    <p class="title">Risk assessment for:</p>
-                    <ul class="ul check-list">
-                        <li class="item">breast cancer</li>
-                        <li class="item">cervical cancer</li>
-                        <li class="item">ovarian cancer</li>
+            <section class="ot-cards" id="service-list">
+                <div class="ot-card ot-card-pink">
+                    <h4 class="ot-header">miR-TEST "Lady"</h4>
+                    <p class="ot-title">Risk assessment for:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item">breast cancer</li>
+                        <li class="ot-item">cervical cancer</li>
+                        <li class="ot-item">ovarian cancer</li>
                     </ul>
-                    <div class="bottom">starting at 4200 UAH</div>
+                    <div class="ot-bottom">starting at 4200 UAH</div>
                 </div>
                 <!-- /.card -->
-                <div class="card card-pink">
-                    <h4 class="header">miR-TEST "Lady+"</h4>
-                    <p class="title">Risk assessment for:</p>
-                    <ul class="ul check-list">
-                        <li class="item">breast cancer</li>
-                        <li class="item">cervical cancer</li>
-                        <li class="item">ovarian cancer</li>
-                        <li class="item">intestinal cancer</li>
-                        <li class="item">stomach cancer</li>
-                        <li class="item">thyroid cancer</li>
+                <div class="ot-card ot-card-pink">
+                    <h4 class="ot-header">miR-TEST "Lady+"</h4>
+                    <p class="ot-title">Risk assessment for:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item">breast cancer</li>
+                        <li class="ot-item">cervical cancer</li>
+                        <li class="ot-item">ovarian cancer</li>
+                        <li class="ot-item">intestinal cancer</li>
+                        <li class="ot-item">stomach cancer</li>
+                        <li class="ot-item">thyroid cancer</li>
                     </ul>
-                    <div class="bottom">starting at 6600 UAH</div>
+                    <div class="ot-bottom">starting at 6600 UAH</div>
                 </div>
                 <!-- /.card -->
-                <div class="card card-blue">
-                    <h4 class="header">miR-TEST "Mister"</h4>
-                    <p class="title">Risk assessment for:</p>
-                    <ul class="ul check-list">
-                        <li class="item">lung cancer</li>
-                        <li class="item">prostate cancer</li>
-                        <li class="item">stomach cancer</li>
+                <div class="ot-card ot-card-blue">
+                    <h4 class="ot-header">miR-TEST "Mister"</h4>
+                    <p class="ot-title">Risk assessment for:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item">lung cancer</li>
+                        <li class="ot-item">prostate cancer</li>
+                        <li class="ot-item">stomach cancer</li>
                     </ul>
-                    <div class="bottom">starting at 4200 UAH</div>
+                    <div class="ot-bottom">starting at 4200 UAH</div>
                 </div>
                 <!-- /.card -->
-                <div class="card card-blue">
-                    <h4 class="header">miR-TEST "Mister"</h4>
-                    <p class="title">Risk assessment for:</p>
-                    <ul class="ul check-list">
-                        <li class="item">lung cancer</li>
-                        <li class="item">prostate cancer</li>
-                        <li class="item">stomach cancer</li>
-                        <li class="item">intestinal cancer</li>
-                        <li class="item">bladder cancer</li>
-                        <li class="item">kidney cancer</li>
+                <div class="ot-card ot-card-blue">
+                    <h4 class="ot-header">miR-TEST "Mister"</h4>
+                    <p class="ot-title">Risk assessment for:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item">lung cancer</li>
+                        <li class="ot-item">prostate cancer</li>
+                        <li class="ot-item">stomach cancer</li>
+                        <li class="ot-item">intestinal cancer</li>
+                        <li class="ot-item">bladder cancer</li>
+                        <li class="ot-item">kidney cancer</li>
                     </ul>
-                    <div class="bottom">starting at 6600 UAH</div>
+                    <div class="ot-bottom">starting at 6600 UAH</div>
                 </div>
                 <!-- /.card -->
-                <div class="card">
-                    <h4 class="header">miR-TEST «MONO»</h4>
-                    <p class="title">Risk assessment for:</p>
-                    <ul class="ul check-list">
-                        <li class="item">any chosen localization</li>
+                <div class="ot-card">
+                    <h4 class="ot-header">miR-TEST «MONO»</h4>
+                    <p class="ot-title">Risk assessment for:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item">any chosen localization</li>
                     </ul>
-                    <div class="bottom">starting at 3000 UAH</div>
+                    <div class="ot-bottom">starting at 3000 UAH</div>
                 </div>
                 <!-- /.card -->
-                <div class="card">
-                    <h4 class="header">miR-TEST «MAXI»</h4>
-                    <p class="title">Risk assessment for:</p>
-                    <ul class="ul check-list">
-                        <li class="item"></li>
-                        <li class="item">intestinal cancer</li>
-                        <li class="item">stomach cancer</li>
-                        <li class="item">thyroid cancer</li>
-                        <li class="item">lung cancer</li>
-                        <li class="item">bladder cancer</li>
-                        <li class="item">kidney cancer</li>
-                        <li class="item">liver cancer</li>
-                        <li class="item">pancreatic cancer</li>
-                        <li class="item">breast cancer</li>
-                        <li class="item">cervical cancer</li>
-                        <li class="item">ovarian cancer</li>
-                        <li class="item">prostate cancer</li>
+                <div class="ot-card">
+                    <h4 class="ot-header">miR-TEST «MAXI»</h4>
+                    <p class="ot-title">Risk assessment for:</p>
+                    <ul class="ot-ul ot-check-list">
+                        <li class="ot-item"></li>
+                        <li class="ot-item">intestinal cancer</li>
+                        <li class="ot-item">stomach cancer</li>
+                        <li class="ot-item">thyroid cancer</li>
+                        <li class="ot-item">lung cancer</li>
+                        <li class="ot-item">bladder cancer</li>
+                        <li class="ot-item">kidney cancer</li>
+                        <li class="ot-item">liver cancer</li>
+                        <li class="ot-item">pancreatic cancer</li>
+                        <li class="ot-item">breast cancer</li>
+                        <li class="ot-item">cervical cancer</li>
+                        <li class="ot-item">ovarian cancer</li>
+                        <li class="ot-item">prostate cancer</li>
                     </ul>
-                    <div class="bottom">starting at 10800 UAH</div>
+                    <div class="ot-bottom">starting at 10800 UAH</div>
                 </div>
                 <!-- /.card -->
             </section>
         </div>
         <!-- /.container -->
 
-        <div class="order">
-            <div class="container">
-                <div class="inner">
+        <div class="ot-order">
+            <div class="ot-container">
+                <div class="ot-inner">
                     <div style="flex: 0 0 auto;">
-                        <img src="/client/assets/images/static/order.png" alt="contact us" class="img" width="137px">
+                        <img src="/client/assets/images/static/order.png" alt="contact us" class="ot-img" width="137px">
                     </div>
-                    <p class="text">If you have any questions, leave your phone number and email address. We will contact you soon and help choose the best option for you.</p>
+                    <p class="ot-text">If you have any questions, leave your phone number and email address. We will contact you soon and help choose the best option for you.</p>
                     <div>
-                        <button class="btn js-scroll" data-target="#footer">Submit</button>
+                        <button class="ot-btn js-scroll" data-target="#footer">Submit</button>
                     </div>
                 </div>
                 <!-- /.order-inner -->

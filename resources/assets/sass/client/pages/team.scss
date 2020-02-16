@@ -2,31 +2,31 @@
 @import "../components/team-item";
 
 
-.team {
+.ot-team {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: 50px -20px 0;
 
-  .item {
+  .ot-item {
     width: 25%;
     margin: 0 0 15px;
     text-decoration: none;
 
-    .content {
+    .ot-content {
       padding: 5px 20px;
       line-height: 30px;
       text-align: center;
     }
 
-    .name {
+    .ot-name {
 
       font-size: 18px;
       font-weight: bold;
       color: #3a4143;
     }
 
-    .sub-text {
+    .ot-sub-text {
       display: block;
 
       font-size: 16px;
@@ -35,7 +35,7 @@
     }
 
     &:hover {
-      .sub-text {
+      .ot-sub-text {
         color: #ea5260;
       }
     }
@@ -43,13 +43,13 @@
 }
 
 @media all and (max-width: 1023px) {
-  .team {
-    .item {
-      .name {
+  .ot-team {
+    .ot-item {
+      .ot-name {
         font-size: 16px;
       }
 
-      .sub-text {
+      .ot-sub-text {
         font-size: 14px;
       }
     }
@@ -57,8 +57,8 @@
 }
 
 @media all and (max-width: 767px) {
-  .team {
-    .item {
+  .ot-team {
+    .ot-item {
       width: 50%;
     }
   }

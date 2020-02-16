@@ -25,25 +25,25 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-viber {
+.ot-icon-viber {
   &:before {
-    content: $icon-viber;     
+    content: $icon-viber;
     color: #665cac;
   }
 }
-.icon-googleplus {
+.ot-icon-googleplus {
   &:before {
-    content: $icon-googleplus; 
+    content: $icon-googleplus;
   }
 }
-.icon-linkedin {
+.ot-icon-linkedin {
   &:before {
-    content: $icon-linkedin; 
+    content: $icon-linkedin;
   }
 }
-.icon-facebook {
+.ot-icon-facebook {
   &:before {
-    content: $icon-facebook; 
+    content: $icon-facebook;
   }
 }
 

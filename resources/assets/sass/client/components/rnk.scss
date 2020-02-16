@@ -1,28 +1,28 @@
-.rnk {
+.ot-rnk {
   background: #0b939d url('../../../images/client/rnk-bg.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
 
 
-  .rnk-title {
+  .ot-rnk-title {
     margin-top: 0;
     font-size: 67px;
     font-weight: bold;
     color: #003333;
   }
 
-  .sub-title {
+  .ot-sub-title {
     padding-left: 3%;
     font-size: 36px;
     color: #fff;
   }
 
-  .content {
+  .ot-content {
     display: flex;
     justify-content: space-between;
   }
 
-  .main {
+  .ot-main {
     flex: 0 1 60%;
 
     p {
@@ -35,19 +35,19 @@
 
   }
 
-  .main-list {
+  .ot-main-list {
     display: none;
 
     color: #003333;
   }
 
-  .main-list-title {
+  .ot-main-list-title {
     font-size: 24px;
     margin-top: 0;
     margin-bottom: 30px;
   }
 
-  .main-ul {
+  .ot-main-ul {
     display: block;
     columns: 3 auto;
     list-style: none;
@@ -55,7 +55,7 @@
     margin: 0 0 30px 0;
   }
 
-  .main-btn {
+  .ot-main-btn {
     display: inline-block;
     width: 100%;
     padding: 18px 15px;
@@ -79,18 +79,18 @@
     }
   }
 
-  .banner {
+  .ot-banner {
     flex: 0 0 35%;
     background-color: rgba(0, 0, 0, .4);
     padding: 40px 35px 5px;
 
-    .ul {
+    .ot-ul {
       list-style: none;
       padding: 0;
       margin: 0;
       color: #fff;
 
-      .item {
+      .ot-item {
         margin-bottom: 15px;
         display: block;
         padding-left: 35px;
@@ -99,14 +99,14 @@
         background: url('../../../images/client/rnk-list.png') left 2px no-repeat;
       }
 
-      .sub-text {
+      .ot-sub-text {
         display: block;
         color: #3ef9f7;
       }
     }
   }
 
-  .banner-title {
+  .ot-banner-title {
     color: #ea5260;
     font-size: 46px;
     margin-top: 0;
@@ -115,61 +115,61 @@
 }
 
 @media all and (max-width: 1023px) {
-  .rnk {
-    .rnk-title {
+  .ot-rnk {
+    .ot-rnk-title {
       text-align: center;
     }
 
-    .sub-title {
+    .ot-sub-title {
       margin-top: 30px;
       display: block;
     }
 
-    .content {
+    .ot-content {
       flex-flow: column nowrap;
 
-      .main {
+      .ot-main {
         text-align: center;
       }
     }
 
-    .main-list {
+    .ot-main-list {
       margin-top: 50px;
     }
   }
 }
 
 @media all and (max-width: 767px) {
-  .rnk {
-    .rnk-title {
+  .ot-rnk {
+    .ot-rnk-title {
       font-size: 36px;
     }
 
-    .sub-title {
+    .ot-sub-title {
       font-size: 24px;
     }
 
-    .content {
-      .main {
+    .ot-content {
+      .ot-main {
         font-size: 16px;
       }
     }
 
-    .main-list-title {
+    .ot-main-list-title {
       font-size: 24px;
     }
 
-    .main-list-title,
-    .main-ul {
+    .ot-main-list-title,
+    .ot-main-ul {
       color: #fff;
     }
 
-    .banner-title {
+    .ot-banner-title {
       font-size: 36px;
       text-align: center;
     }
 
-    .banner .ul .item {
+    .ot-banner .ot-ul .ot-item {
       font-size: 16px;
     }
   }

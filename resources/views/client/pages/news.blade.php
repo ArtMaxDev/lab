@@ -5,16 +5,16 @@
 @section('description', __('meta-description'))
 @section('keywords', __('meta-keywords'))
 @section('content')
-    <main class="page" id="news">
-        <h1 class="page-title">@lang('news.title')</h1>
-        <div class="container">
-            <ul class="breadcrumbs">
+    <main class="ot-page" id="news">
+        <h1 class="ot-page-title">@lang('news.title')</h1>
+        <div class="ot-container">
+            <ul class="ot-breadcrumbs">
                 <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
                 <li>@lang('news.title')</li>
             </ul>
             <!-- /.breadcrumbs -->
 
-            <div class="news" id="news-container">
+            <div class="ot-news" id="news-container">
                 @each('client.components.news-item', $news, 'news')
             </div>
 

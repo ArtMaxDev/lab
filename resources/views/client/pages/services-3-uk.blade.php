@@ -6,25 +6,25 @@
 @section('keywords', 'Онкогематологічні дослідження')
 @section('content')
 
-    <main class="page" id="services">
-        <div class="page-title">Онкогематологічні дослідження</div>
-        <div class="container">
-            <ul class="breadcrumbs">
+    <main class="ot-page" id="services">
+        <div class="ot-page-title">Онкогематологічні дослідження</div>
+        <div class="ot-container">
+            <ul class="ot-breadcrumbs">
                 <li><a href="{{URL::to('/')}}">Головна</a></li>
                 <li><a href="/#services-2">Послуги</a></li>
                 <li>Онкогематологічні дослідження</li>
             </ul>
             <!-- /.breadcrumbs -->
 
-            <article class="news-article">
-                <h1 class="news-article-title">Онкогематологічні дослідження</h1>
+            <article class="ot-news-article">
+                <h1 class="ot-news-article-title">Онкогематологічні дослідження</h1>
 
                 <picture>
                     <source srcset="/client/assets/images/static/s3-img-2_tablet.jpg" media="(max-width: 992px)">
                     <source srcset="/client/assets/images/static/s3-img-2_mobile.jpg" media="(max-width: 768px)">
                     <img src="/client/assets/images/static/s3-img-2.jpg" alt="Діагностика онкогематологічних захворювань здійснюється на основі комплексного дослідження препаратів периферичної крові і кісткового мозку.">
                 </picture>
-                <h2 class="subtitle pink">Відповідно до сучасної класифікації ВООЗ (2016 р.) ми здійснюємо діагностику таких онкогематологічних захворювань:
+                <h2 class="ot-subtitle ot-pink">Відповідно до сучасної класифікації ВООЗ (2016 р.) ми здійснюємо діагностику таких онкогематологічних захворювань:
                 </h2>
 
                 <ul>
@@ -37,7 +37,7 @@
                     <li>пухлини з гістіоцитів та дендритних клітин.</li>
                 </ul>
 
-                <h3 class="ul-title blue">Для діагностики застосовуються:</h3>
+                <h3 class="ot-ul-title ot-blue">Для діагностики застосовуються:</h3>
 
                 <blockquote>
                     <div>Цитоморфологічні методи</div>

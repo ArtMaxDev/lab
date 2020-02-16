@@ -1,23 +1,23 @@
 $section-margin: 85px;
 
-.container-fluid {
+.ot-container-fluid {
   padding-right: $p-gutter / 2;
   padding-left: $p-gutter / 2;
 }
 
-.container {
+.ot-container {
   width: $p-container;
   max-width: 100%;
   padding-right: 16px;
   padding-left: 16px;
 }
 
-.container, .container-fluid {
+.ot-container, .ot-container-fluid {
   margin-right: auto;
   margin-left: auto;
 }
 
-.section {
+.ot-section {
   padding-top: $section-margin;
   padding-bottom: $section-margin;
 
@@ -32,7 +32,7 @@ $section-margin: 85px;
   }
 }
 
-.page {
+.ot-page {
   &-title {
     margin: 0;
     padding: 25px 0;
@@ -45,13 +45,13 @@ $section-margin: 85px;
     text-transform: uppercase;
   }
 
-  .section {
+  .ot-section {
     padding-top: 60px;
     padding-bottom: 60px;
   }
 }
 
-.breadcrumbs {
+.ot-breadcrumbs {
   display: block;
   list-style: none;
   padding: 0;
@@ -96,13 +96,13 @@ nav {
 }
 
 @media all and (max-width: 1023px) {
-  .breadcrumbs {
+  .ot-breadcrumbs {
     text-align: center;
   }
 }
 
 @media all and (max-width: 767px) {
-  .section {
+  .ot-section {
     padding-top: 50px;
     padding-bottom: 50px;
 
@@ -111,13 +111,13 @@ nav {
     }
   }
 
-  .page {
+  .ot-page {
     &-title {
       padding: 15px 0;
       font-size: 33px;
     }
 
-    .section {
+    .ot-section {
       padding-top: 40px;
       padding-bottom: 40px;
     }
@@ -125,13 +125,13 @@ nav {
 }
 
 @media all and (max-width: 479px) {
-  .section {
+  .ot-section {
     &-title {
       font-size: 28px;
     }
   }
 
-  .page {
+  .ot-page {
     &-title {
       padding: 15px 0;
       font-size: 26px;
