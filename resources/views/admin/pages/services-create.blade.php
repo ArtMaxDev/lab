@@ -160,10 +160,6 @@
                     </div>
                     <div class="block-content">
                         <div class="form-group">
-                            <label for="image_alt">Альтернативный текст изображение (SEO)</label>
-                            <input type="text" class="form-control" id="image_alt" name="image_alt" placeholder=".." value="{{$publication->image_alt ?? null}}">
-                        </div>
-                        <div class="form-group">
                             <div class="custom-file">
                                 <input type="file" class="custom-file-input js-preview" id="image" name="image" data-toggle="custom-file-input">
                                 <label class="custom-file-label" for="image"></label>
