@@ -11,7 +11,7 @@
         <div class="ot-container">
             <ul class="ot-breadcrumbs">
                 <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
-                <li><a href="/#services-2">@lang('nav.services.title')</a></li>
+                <li><a href="/#services-2">@lang('main.nav.services.title')</a></li>
                 <li>{{$service->getLocalizedProperty('title')}}</li>
             </ul>
             <!-- /.breadcrumbs -->

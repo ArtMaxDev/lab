@@ -53,21 +53,5 @@ return [
 
     'services-2' => [
         'section-title' => 'Services',
-        'list' => [
-            [
-                'title' => 'Cancer early detection',
-                'description' => 'MiR-TEST<br/> ONCO Check-Up',
-            ],
-            [
-                'title' => 'Individual sensitivity to antitumor drugs',
-                'description' => 'ONCO Drug Test',
-            ],
-            [
-                'title' => 'Oncohematological clinical trials',
-            ],
-            [
-                'title' => 'Basic clinical tests',
-            ],
-        ]
     ]
 ];

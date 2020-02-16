@@ -24,7 +24,7 @@
                         <li>Ovarian cancer</li>
                         <li>Prostate cancer</li>
                     </ul>
-                    <a href="{{route('client.services-2.index')}}" class="ot-main-btn">Learn More</a>
+                    <a href="{{route('client.service.item', 'sensitivity-to-chemotherapy')}}" class="ot-main-btn">Learn More</a>
                 </div>
                 <!-- /.list -->
             </div>
@@ -63,7 +63,7 @@
                     <li>Ovarian cancer</li>
                     <li>Prostate cancer</li>
                 </ul>
-                <a href="{{route('client.services-2.index')}}" class="ot-main-btn">Learn More</a>
+                <a href="{{route('client.service.item', 'sensitivity-to-chemotherapy')}}" class="ot-main-btn">Learn More</a>
             </div>
             <!-- /.list -->
         </div>

@@ -59,32 +59,15 @@
     <section class="ot-container ot-section ot-services-2" id="services-2">
         <h2 class="ot-section-title">@lang('main.services-2.section-title')</h2>
         <ul class="ot-service-list">
-            <li class="ot-item">
-                <a href="{{route('client.services.index')}}" class="ot-link">
-                    <img class="ot-img" src="/client/assets/images/static/s1.png" alt="@lang('main.services-2.list.0.title')">
-                    <strong>@lang('main.services-2.list.0.title')</strong>
-                    <span class="ot-sub-text">{!! __('main.services-2.list.0.description') !!}</span>
-                </a>
-            </li>
-            <li class="ot-item">
-                <a href="{{route('client.services-2.index')}}" class="ot-link">
-                    <img class="ot-img" src="/client/assets/images/static/s2.png" alt="@lang('main.services-2.list.1.title')">
-                    <strong>@lang('main.services-2.list.1.title')</strong>
-                    <span class="ot-sub-text">@lang('main.services-2.list.1.description')</span>
-                </a>
-            </li>
-            <li class="ot-item">
-                <a href="{{route('client.services-3.index')}}" class="ot-link">
-                    <img class="ot-img" src="/client/assets/images/static/s3.png" alt="@lang('main.services-2.list.2.title')">
-                    <strong>@lang('main.services-2.list.2.title')</strong>
-                </a>
-            </li>
-            <li class="ot-item">
-                <a href="/storage/price.pdf" target="_blank" class="ot-link">
-                    <img class="ot-img" src="/client/assets/images/static/s4.png" alt="@lang('main.services-2.list.3.title')">
-                    <strong>@lang('main.services-2.list.3.title')</strong>
-                </a>
-            </li>
+            @foreach($services as $service)
+                <li class="ot-item">
+                    <a href="{{$service->getUrl()}}" class="ot-link" target="{{$service->url_target}}">
+                        <img class="ot-img" src="{{$service->image}}" alt="{{$service->getLocalizedProperty('title')}}">
+                        <strong>{{$service->getLocalizedProperty('title')}}</strong>
+                        <span class="ot-sub-text">{!! $service->getLocalizedProperty('description') !!}</span>
+                    </a>
+                </li>
+            @endforeach
         </ul>
         <!-- /.container -->
     </section>

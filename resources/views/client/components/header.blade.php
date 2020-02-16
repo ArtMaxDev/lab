@@ -21,10 +21,9 @@
             <input id="services-dropdown" type="checkbox" name="services-dropdown" />
             <label for="services-dropdown" class="ot-nav-link">@lang('main.nav.services.title')</label>
             <ul class="ot-submenu">
-                <li><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.services.index'), [], false)}}" class="ot-nav-link">@lang('main.nav.services.screening')</a></li>
-                <li><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.services-2.index'), [], false)}}" class="ot-nav-link">@lang('main.nav.services.therapy')</a></li>
-                <li><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.services-3.index'), [], false)}}" class="ot-nav-link">@lang('main.nav.services.onco')</a></li>
-                <li><a href="/storage/price.pdf" target="_blank" class="ot-nav-link">@lang('main.nav.services.tests')</a></li>
+                @foreach($services as $service)
+                    <li><a href="{{$service->getUrl()}}" class="ot-nav-link" target="{{$service->url_target}}">{{$service->getLocalizedProperty('title')}}</a></li>
+                @endforeach
             </ul>
         </li>
         <li class="ot-nav-item"><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.news.index'), [], false)}}" class="ot-nav-link">@lang('main.nav.info')</a></li>

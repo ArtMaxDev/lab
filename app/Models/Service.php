@@ -5,6 +5,8 @@ namespace App\Models;
 use App\Traits\LocalizedProperty;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Str;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /**
  * Class Service
@@ -34,5 +36,20 @@ class Service extends Model
     public function scopePublished(Builder $query)
     {
         return $query->where('status', '!=', 0);
+    }
+
+    public function getUrl()
+    {
+        $currentLocale = LaravelLocalization::getCurrentLocale() ?? 'uk';
+
+        $url = $this->id;
+        if (!empty($this->url)) {
+            if (Str::startsWith($this->url, 'http')) {
+                return $this->url;
+            }
+            $url = $this->url;
+        }
+
+        return LaravelLocalization::getLocalizedURL($currentLocale, route('client.service.item', $url), [], false);
     }
 }
