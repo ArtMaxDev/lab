@@ -62,7 +62,7 @@
             @foreach($services as $service)
                 <li class="ot-item">
                     <a href="{{$service->getUrl()}}" class="ot-link" target="{{$service->url_target}}">
-                        <img class="ot-img" src="{{$service->image}}" alt="{{$service->getLocalizedProperty('title')}}">
+                        <img class="ot-img" src="{{$service->getImage()}}" alt="{{$service->getLocalizedProperty('title')}}">
                         <strong>{{$service->getLocalizedProperty('title')}}</strong>
                         <span class="ot-sub-text">{!! $service->getLocalizedProperty('description') !!}</span>
                     </a>
