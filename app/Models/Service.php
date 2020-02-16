@@ -20,22 +20,34 @@ class Service extends Model
 
     protected $fillable = [
         'image',
-        'text_en',
-        'text_uk',
-        'title_en',
+        'url',
+        'url_target',
         'title_uk',
-        'meta_title_en',
+        'title_en',
+        'description_uk',
+        'description_en',
+        'text_uk',
+        'text_en',
         'meta_title_uk',
-        'meta_description_en',
+        'meta_title_en',
         'meta_description_uk',
-        'meta_keywords_en',
+        'meta_description_en',
         'meta_keywords_uk',
+        'meta_keywords_en',
         'status',
     ];
 
     public function scopePublished(Builder $query)
     {
         return $query->where('status', '!=', 0);
+    }
+
+    public function getImage(): ?string
+    {
+        if ($this->image) {
+            return Str::endsWith($this->image, '.png') ? $this->image : "{$this->image}.jpg";
+        }
+        return null;
     }
 
     public function getUrl()

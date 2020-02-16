@@ -72,6 +72,14 @@ $p-roboto-slab-path: '#{$p-fonts-path}/Roboto_Slab';
   font-style: normal;
 }
 
+#preview {
+  display: block;
+}
+
+#preview[src=""] {
+  display: none;
+}
+
 .note-editing-area {
   @import "../../client/core/variables";
   @import "../../client/core/grid";

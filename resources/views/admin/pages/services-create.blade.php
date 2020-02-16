@@ -22,7 +22,6 @@
             <div class="block-content block-content-full">
                 <form id="formApi" method="post">
                     <input type="hidden" name="image" value="{{$service->image ?? null}}">
-                    <input type="hidden" name="image_alt" value="{{$service->image_alt ?? null}}">
                     <div class="row">
                         <div class="form-group col-xl-6">
                             <label for="title_uk">Название [UK] <span class="text-danger">*</span></label>
@@ -31,6 +30,35 @@
                         <div class="form-group col-xl-6">
                             <label for="title_en">Название [EN] <span class="text-danger">*</span></label>
                             <input type="text" class="form-control" id="title_en" name="title_en" placeholder="..." value="{{$service->title_en ?? null}}" required>
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="row">
+                        <div class="form-group col-xl-6">
+                            <label for="description_uk">Описание [UK]</label>
+                            <input type="text" class="form-control" id="description_uk" name="description_uk" placeholder="..." value="{{$service->description_uk ?? null}}">
+                        </div>
+                        <div class="form-group col-xl-6">
+                            <label for="description_en">Описание [EN]</label>
+                            <input type="text" class="form-control" id="description_en" name="description_en" placeholder="..." value="{{$service->description_en ?? null}}">
+                        </div>
+                    </div>
+                    <!-- /.row -->
+
+                    <div class="row">
+                        <div class="form-group col-xl-6">
+                            <label for="url">Ссылка</label>
+                            <input type="text" class="form-control" id="url" name="url" placeholder="..." value="{{$service->url ?? null}}">
+                            <div class="form-text text-muted">Тут может быть постоянная ссылка на услугу например <code>my-best-service</code>. Тогда в меню это будет выглядеть как <code>{{route('client.service.item', 'my-best-service')}}</code></div>
+                            <small class="form-text text-muted">*Так же можно ввести полную ссылку, например <code>http://some-site.ua/news</code>, и тогда по нажатию откроется именно эта ссылка.</small>
+                        </div>
+                        <div class="form-group col-xl-6">
+                            <label for="description_en">Открыть ссылку в</label>
+                            <select class="form-control" name="url_target" id="url_target">
+                                <option value="_self">В текущем окне</option>
+                                <option value="_blank">В новом окне</option>
+                            </select>
                         </div>
                     </div>
                     <!-- /.row -->
@@ -83,6 +111,19 @@
                         </div>
                     </div>
                     <!-- /.row -->
+
+                    <div class="row">
+                        <div class="form-group col-md-6">
+                            <label>Изображение<span class="text-danger">*</span></label>
+                            <div>
+                                <button class="btn btn-alt-info mr-20" type="button" data-toggle="modal" data-target="#modal-image">Изменить</button>
+                                <label class="css-control css-control css-control-success css-switch">
+                                    <input type="checkbox" class="css-control-input" {{ isset($service) && $service->status ? 'checked' : ''}} name="status" value="true" id="publication-status">
+                                    <span class="css-control-indicator"></span> Статус публикации
+                                </label>
+                            </div>
+                        </div>
+                    </div>
                 </form>
 
             </div>
@@ -104,6 +145,44 @@
     </div>
     <!-- END Page Content -->
 @endsection
+@push('modals')
+    <div class="modal" id="modal-image" tabindex="-1" role="dialog" aria-labelledby="modal-image" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="block block-themed block-transparent mb-0">
+                    <div class="block-header bg-primary-dark">
+                        <h3 class="block-title">Изображение для публикации</h3>
+                        <div class="block-options">
+                            <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                                <i class="si si-close"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="block-content">
+                        <div class="form-group">
+                            <label for="image_alt">Альтернативный текст изображение (SEO)</label>
+                            <input type="text" class="form-control" id="image_alt" name="image_alt" placeholder=".." value="{{$publication->image_alt ?? null}}">
+                        </div>
+                        <div class="form-group">
+                            <div class="custom-file">
+                                <input type="file" class="custom-file-input js-preview" id="image" name="image" data-toggle="custom-file-input">
+                                <label class="custom-file-label" for="image"></label>
+                            </div>
+                        </div>
+                        <!-- /.form-group -->
+                        <img src="{{isset($service) && $service->getImage()}}" id="preview" alt="Загрузите изображение" class="img-fluid mx-auto">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-alt-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-alt-success js-update-image">
+                        <i class="fa fa-check"></i> Изменить
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+@endpush
 @push('scripts')
     <script defer src="{{mix('/assets/pages/service-create.js', 'admin')}}"></script>
 @endpush

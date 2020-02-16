@@ -128,7 +128,7 @@ const validation = (() => {
       if (element.hasClass('js-summernote')) {
         error.insertAfter(element.siblings('.note-editor'));
       } else {
-        error.insertAfter(element);
+        error.appendTo(element.parents('.form-group'));
       }
     },
     ...validationDefaults,
