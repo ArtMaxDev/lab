@@ -20,7 +20,7 @@ function applyHtml(html, opts) {
   if (defaults.replace) {
     container.replaceWith(newDOM);
   } else {
-    Array.from(newDOM.querySelectorAll('.news-item')).forEach((childNode) => {
+    Array.from(newDOM.querySelectorAll('.ot-news-item')).forEach((childNode) => {
       container.appendChild(childNode);
     });
   }
@@ -43,7 +43,7 @@ function activeLink(linkNode, next) {
 function handleNext(e) {
   e.preventDefault();
   const totalElements = d.querySelectorAll('.js-news-page');
-  const activeElements = d.querySelectorAll('.js-news-page.active');
+  const activeElements = d.querySelectorAll('.js-news-page.ot-active');
   const nextActivePageElement = activeElements[activeElements.length - 1]
     .parentElement
     .nextElementSibling
