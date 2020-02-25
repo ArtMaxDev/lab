@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="{{ app()->getLocale() }}">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-135008392-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {dataLayer.push(arguments);}
+
+        gtag('js', new Date());
+        gtag('config', 'UA-135008392-1');
+    </script>
+
     {{-- Font loader --}}
     <script>
         if (localStorage.fontsLoaded) {
-            window.document.documentElement.className += " fonts-loaded";
+            window.document.documentElement.className += ' fonts-loaded';
         }
     </script>
     <meta charset="utf-8">
@@ -59,7 +70,12 @@
     @stack('styles')
 </noscript>
 <script>
-    var loadDeferredStyles=function(){var e=document.getElementById("deferred-styles"),t=document.createElement("div");t.innerHTML=e.textContent,document.body.appendChild(t),e.parentElement.removeChild(e)},raf=requestAnimationFrame||mozRequestAnimationFrame||webkitRequestAnimationFrame||msRequestAnimationFrame;raf?raf(function(){window.setTimeout(loadDeferredStyles,0)}):window.addEventListener("load",loadDeferredStyles);
+    var loadDeferredStyles = function () {
+            var e = document.getElementById('deferred-styles'), t = document.createElement('div');
+            t.innerHTML = e.textContent, document.body.appendChild(t), e.parentElement.removeChild(e)
+        },
+        raf = requestAnimationFrame || mozRequestAnimationFrame || webkitRequestAnimationFrame || msRequestAnimationFrame;
+    raf ? raf(function () {window.setTimeout(loadDeferredStyles, 0)}) : window.addEventListener('load', loadDeferredStyles);
 </script>
 {{-- Scripts/core --}}
 <script>
