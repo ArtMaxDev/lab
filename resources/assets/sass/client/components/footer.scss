@@ -1,11 +1,11 @@
 @import '../../fonts/client/icons/style';
 
 .fonts-loaded {
-  .icon {
+  .ot-icon {
     font-family: '#{$icomoon-font-family}' !important;
   }
 }
-.footer {
+.ot-footer {
   position: relative;
   background-color: #e0e3e6;
   color: #3a4143;
@@ -13,7 +13,7 @@
   font-size: 18px;
   z-index: 2;
 
-  .info {
+  .ot-info {
     text-align: center;
   }
 
@@ -22,7 +22,7 @@
     color: #ea6773;
   }
 
-  .address {
+  .ot-address {
     display: block;
     font-style: normal;
     margin: 0 auto;
@@ -30,15 +30,15 @@
     background: url('../../../images/client/loc.png') center top no-repeat;
   }
 
-  .phone {
+  .ot-phone {
     list-style: none;
     margin: 10px auto 0;
     padding: 55px 0 0 0;
     background: url('../../../images/client/rnk.png') center top no-repeat;
   }
 
-  .phone a,
-  .skype {
+  .ot-phone a,
+  .ot-skype {
     color: #3a4143;
     text-decoration: none;
 
@@ -47,14 +47,14 @@
     }
   }
 
-  .socials {
+  .ot-socials {
     padding: 0;
     margin-top: 25px;
     display: flex;
     justify-content: center;
     font-size: 0;
 
-    .icon {
+    .ot-icon {
       font-size: 45px;
     }
 
@@ -65,9 +65,9 @@
     }
   }
 
-  .form {
+  .ot-form {
 
-    .title {
+    .ot-title {
       font-size: 30px;
       margin: 15px 0;
       text-transform: uppercase;
@@ -75,7 +75,7 @@
 
     form {
       text-align: right;
-      .row {
+      .ot-row {
         display: flex;
         flex-flow: row wrap;
 
@@ -84,7 +84,7 @@
       }
     }
 
-    .form-group {
+    .ot-form-group {
       text-align: left;
       width: 33.33%;
       padding: 0 15px;
@@ -94,7 +94,7 @@
     }
   }
 
-  .btn {
+  .ot-btn {
     display: inline-block;
     width: 100%;
     max-width: 450px;
@@ -119,22 +119,22 @@
     }
   }
 
-  > .section {
+  > .ot-section {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
 
 
-    .info {
+    .ot-info {
       flex: 0 1 25%;
     }
 
-    .form {
+    .ot-form {
       flex: 0 1 65%;
     }
   }
 
-  .map {
+  .ot-map {
     display: none;
     transform: translate(100%, 0);
     z-index: 1;
@@ -153,7 +153,7 @@
       top: 0;
     }
 
-    .container {
+    .ot-container {
       pointer-events: none;
       position: relative;
       height: 100%;
@@ -163,12 +163,12 @@
       z-index: 2;
     }
 
-    .btn {
+    .ot-btn {
       pointer-events: all;
       margin-bottom: 30px;
     }
 
-    &.open {
+    &.ot-open {
       transform: translate(0, 0);
       display: block;
     }
@@ -176,12 +176,12 @@
 }
 
 @media all and (max-width: 1023px) {
-  .footer {
-    > .section {
+  .ot-footer {
+    > .ot-section {
       padding-bottom: 0;
       flex-flow: column nowrap;
 
-      .info {
+      .ot-info {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -192,12 +192,12 @@
           padding: 0 25px;
         }
 
-        .phone, .socials {
+        .ot-phone, .ot-socials {
           margin-bottom: 20px;
         }
       }
 
-      .form {
+      .ot-form {
         text-align: center;
         background: #fff;
         margin: 25px -15px 0;
@@ -205,19 +205,19 @@
       }
     }
 
-    .map {
+    .ot-map {
       top: 225px;
     }
   }
 }
 
 @media all and (max-width: 767px) {
-  .footer {
-    > .section {
+  .ot-footer {
+    > .ot-section {
       padding-bottom: 0;
       flex-flow: column nowrap;
 
-      .info {
+      .ot-info {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
@@ -229,13 +229,13 @@
         }
       }
 
-      .form {
+      .ot-form {
         text-align: center;
         background: #fff;
         margin: 25px -15px 0;
         padding: 15px 25px 25px;
 
-        .form-group {
+        .ot-form-group {
           width: 100%;
 
           label {
@@ -245,7 +245,7 @@
       }
     }
 
-    .map {
+    .ot-map {
       top: 0;
     }
   }

@@ -1,16 +1,16 @@
-.news-item {
+.ot-news item {
   margin: 0;
   text-decoration: none;
   text-align: center;
 
-  .content {
+  .ot-content {
     padding: 5px 15px;
     line-height: 30px;
     text-align: center;
 
   }
 
-  .img {
+  .ot-img {
     display: block;
     max-width: 100%;
     width: 100%;
@@ -26,26 +26,26 @@
     color: #ccc;
   }
 
-  .title {
+  .ot-title {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 24px;
     color: #0b959f;
   }
 
-  .description {
+  .ot-description {
     font-size: 18px;
     color: #686b6d;
   }
 
   &:hover {
-    .title {
+    .ot-title {
       color: #ea5260;
     }
-    .description {
+    .ot-description {
       text-decoration: underline;
     }
-    .img {
+    .ot-img {
       filter: grayscale(0);
     }
   }
@@ -53,8 +53,8 @@
 
 
 @media all and (max-width: 1023px) {
-  .news-item {
-    .description {
+  .ot-news-item {
+    .ot-description {
       font-size: 16px;
     }
   }

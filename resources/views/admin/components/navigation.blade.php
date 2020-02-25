@@ -23,6 +23,25 @@
             'url'   => route('admin.sliders.index'),
         ),
         array(
+            'name'  => 'Комманда',
+            'icon'  => 'fa fa-users',
+            'url'   => route('admin.team.index'),
+        ),
+        array(
+            'name'  => 'Услуги',
+            'icon'  => 'fa fa-list-alt',
+            'sub'   => array(
+                array(
+                    'name'  => 'Все',
+                    'url'   => route('admin.services.index'),
+                ),
+                array(
+                    'name'  => 'Создать новую',
+                    'url'   => route('admin.services.create'),
+                ),
+            )
+        ),
+        array(
             'name'  => 'Публикации',
             'icon'  => 'fa fa-list',
             'sub'   => array(

@@ -8,29 +8,29 @@
 
 @section('content')
 
-    <main class="page" id="team">
-        <div class="page-title">@lang('news.title')</div>
-        <div class="container">
-            <ul class="breadcrumbs">
+    <main class="ot-page" id="team">
+        <div class="ot-page-title">@lang('news.title')</div>
+        <div class="ot-container">
+            <ul class="ot-breadcrumbs">
                 <li><a href="{{URL::to('/')}}">@lang('main.title')</a></li>
                 <li><a href="{{route('client.news.index')}}">@lang('news.title')</a></li>
                 <li>{{$item->getLocalizedProperty('title')}}</li>
             </ul>
             <!-- /.breadcrumbs -->
 
-            <article class="news-article">
-                <h1 class="news-article-title">{{$item->getLocalizedProperty('title')}} <time datetime="{{$item->publicated_at}}">{{$item->publicated_at}}</time></h1>
+            <article class="ot-news-article">
+                <h1 class="ot-news-article-title">{{$item->getLocalizedProperty('title')}} <time datetime="{{$item->publicated_at}}">{{$item->publicated_at}}</time></h1>
                 <picture>
                     <source srcset="{{$item->image}}_small.jpg" media="(max-width: 768px)">
-                    <img class="news-article-img" src="{{$item->image}}.jpg" alt="{{$item->image_alt}}">
+                    <img class="ot-news-article-img" src="{{$item->image}}.jpg" alt="{{$item->image_alt}}">
                 </picture>
 
                 {!! $item->getLocalizedProperty('text') !!}
             </article>
 
-            <h5 class="section-title">@lang('news.random')</h5>
+            <h5 class="ot-section-title">@lang('news.random')</h5>
             <!-- /.section-title -->
-            <div class="news">
+            <div class="ot-news">
                 @each('client.components.news-item', $news, 'news')
             </div>
             <!-- /.pagination -->

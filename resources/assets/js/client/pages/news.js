@@ -32,12 +32,12 @@ function activeLink(linkNode, next) {
 
   Array.from(d.querySelectorAll('.js-news-page')).forEach((node, index) => {
     if (next && index <= elementIndex) {
-      node.classList.add('active');
+      node.classList.add('ot-active');
     } else {
-      node.classList.remove('active');
+      node.classList.remove('ot-active');
     }
   });
-  linkNode.classList.add('active');
+  linkNode.classList.add('ot-active');
 }
 
 function handleNext(e) {

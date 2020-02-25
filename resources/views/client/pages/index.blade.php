@@ -4,34 +4,34 @@
 @section('meta-title', __('main.title'))
 @section('content')
 
-    <section class="slider">
+    <section class="ot-slider">
         <div id="slider">
             @each('client.components.slide-item', $slides, 'slide')
         </div>
     </section>
 
-    <section class="container section" id="services">
-        <div class="services">
-                <figure class="item">
+    <section class="ot-container ot-section" id="services">
+        <div class="ot-services">
+                <figure class="ot-item">
                     <div>
-                        <img src="/client/assets/images/static/service-1.png" alt="@lang('main.services[0].title')" class="img">
+                        <img src="/client/assets/images/static/service-1.png" alt="@lang('main.services[0].title')" class="ot-img">
                     </div>
                     <figcaption>
-                        <strong class="main-text">@lang('main.services.0.title')</strong>
-                        <p class="sub-text">@lang('main.services.0.description')</p>
+                        <strong class="ot-main-text">@lang('main.services.0.title')</strong>
+                        <p class="ot-sub-text">@lang('main.services.0.description')</p>
                     </figcaption>
                 </figure>
-                <figure class="item">
-                    <div><img src="/client/assets/images/static/service-2.png" alt="@lang('main.services.1.title')" class="img"></div>
+                <figure class="ot-item">
+                    <div><img src="/client/assets/images/static/service-2.png" alt="@lang('main.services.1.title')" class="ot-img"></div>
                     <figcaption>
-                        <strong class="main-text">@lang('main.services.1.title')</strong>
+                        <strong class="ot-main-text">@lang('main.services.1.title')</strong>
                     </figcaption>
                 </figure>
-                <figure class="item">
-                    <div><img src="/client/assets/images/static/service-3.png" alt="@lang('main.services.2.title')" class="img"></div>
+                <figure class="ot-item">
+                    <div><img src="/client/assets/images/static/service-3.png" alt="@lang('main.services.2.title')" class="ot-img"></div>
                     <figcaption>
-                        <strong class="main-text">@lang('main.services.2.title')</strong>
-                        <p class="sub-text">@lang('main.services.2.description')</p>
+                        <strong class="ot-main-text">@lang('main.services.2.title')</strong>
+                        <p class="ot-sub-text">@lang('main.services.2.description')</p>
                     </figcaption>
                 </figure>
         </div>
@@ -39,13 +39,13 @@
     </section>
     <!-- /#services -->
 
-    <section id="about" class="section about">
-        <div class="container">
-            <h2 class="about-title">@lang('main.about.section-title')</h2>
-            <article class="article">
-                <img src="/client/assets/images/static/about.jpg" alt="@lang('main.about.section-title')" class="img">
-                <div class="content">
-                    <h3 class="title">@lang('main.about.title')</h3>
+    <section id="about" class="ot-section ot-about">
+        <div class="ot-container">
+            <h2 class="ot-about-title">@lang('main.about.section-title')</h2>
+            <article class="ot-article">
+                <img src="/client/assets/images/static/about.jpg" alt="@lang('main.about.section-title')" class="ot-img">
+                <div class="ot-content">
+                    <h3 class="ot-title">@lang('main.about.title')</h3>
                     {!! __('main.about.content') !!}
                 </div>
                 <!-- /.content -->
@@ -56,35 +56,18 @@
     </section>
     <!-- /#about -->
 
-    <section class="container section services-2" id="services-2">
-        <h2 class="section-title">@lang('main.services-2.section-title')</h2>
-        <ul class="service-list">
-            <li class="item">
-                <a href="{{route('client.services.index')}}" class="link">
-                    <img class="img" src="/client/assets/images/static/s1.png" alt="@lang('main.services-2.list.0.title')">
-                    <strong>@lang('main.services-2.list.0.title')</strong>
-                    <span class="sub-text">{!! __('main.services-2.list.0.description') !!}</span>
-                </a>
-            </li>
-            <li class="item">
-                <a href="{{route('client.services-2.index')}}" class="link">
-                    <img class="img" src="/client/assets/images/static/s2.png" alt="@lang('main.services-2.list.1.title')">
-                    <strong>@lang('main.services-2.list.1.title')</strong>
-                    <span class="sub-text">@lang('main.services-2.list.1.description')</span>
-                </a>
-            </li>
-            <li class="item">
-                <a href="{{route('client.services-3.index')}}" class="link">
-                    <img class="img" src="/client/assets/images/static/s3.png" alt="@lang('main.services-2.list.2.title')">
-                    <strong>@lang('main.services-2.list.2.title')</strong>
-                </a>
-            </li>
-            <li class="item">
-                <a href="/storage/price.pdf" target="_blank" class="link">
-                    <img class="img" src="/client/assets/images/static/s4.png" alt="@lang('main.services-2.list.3.title')">
-                    <strong>@lang('main.services-2.list.3.title')</strong>
-                </a>
-            </li>
+    <section class="ot-container ot-section ot-services-2" id="services-2">
+        <h2 class="ot-section-title">@lang('main.services-2.section-title')</h2>
+        <ul class="ot-service-list">
+            @foreach($services as $service)
+                <li class="ot-item">
+                    <a href="{{$service->getUrl()}}" class="ot-link" target="{{$service->url_target}}">
+                        <img class="ot-img" src="{{$service->getImage()}}" alt="{{$service->getLocalizedProperty('title')}}">
+                        <strong>{{$service->getLocalizedProperty('title')}}</strong>
+                        <span class="ot-sub-text">{!! $service->getLocalizedProperty('description') !!}</span>
+                    </a>
+                </li>
+            @endforeach
         </ul>
         <!-- /.container -->
     </section>
@@ -92,8 +75,8 @@
 
     @include('client.components.rnk-' . $currentLocale)
 
-    <section class="section container team" id="team">
-        <h2 class="section-title">@lang('team.title')</h2>
+    <section class="ot-section ot-container ot-team" id="team">
+        <h2 class="ot-section-title">@lang('team.title')</h2>
         <div id="slider-team">
             @each('client.components.team-item', $team, 'member')
         </div>
@@ -101,9 +84,9 @@
     </section>
     <!-- /#team -->
     @if($news->count())
-    <section class="section container news" id="news">
-        <h2 class="section-title">@lang('news.title')</h2>
-        <div id="slider-news">
+    <section class="ot-section ot-container ot-news" id="news">
+        <h2 class="ot-section-title">@lang('news.title')</h2>
+        <div id="ot-slider-news">
             @each('client.components.news-item', $news, 'news')
         </div>
         <!-- /#slider-team -->

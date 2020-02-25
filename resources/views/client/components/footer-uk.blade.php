@@ -1,14 +1,14 @@
-<footer class="footer" id="footer">
-    <div class="container section">
-        <div class="info">
+<footer class="ot-footer" id="footer">
+    <div class="ot-container ot-section">
+        <div class="ot-info">
             <div>
                 @if($settings->getLocalizedProperty('address') !== null)
-                <address class="address">{{$settings->getLocalizedProperty('address')}}</address>
+                <address class="ot-address">{{$settings->getLocalizedProperty('address')}}</address>
                 <a href="#" class="js-open-map">Показати на мапі</a>
                 @endisset
             </div>
             <div>
-                <ul class="phone">
+                <ul class="ot-phone">
                     @isset($settings->phone1)
                         @php($phone1viber_active = str_contains($settings->phone1, [':v', ':viber']))
                     <li><a href="tel:{{$settings->phone1}}"><strong>{{preg_replace('/(:viber|:v)/i', '', $settings->phone1)}}</strong>
@@ -55,55 +55,55 @@
                 <a href="mailto:{{$settings->email}}">{{$settings->email}}</a>
                 @endisset
                 @isset($settings->skype)
-                <a href="skype:{{$settings->skype}}" class="skype"><b>Skype:</b> {{$settings->skype}}</a>
+                <a href="skype:{{$settings->skype}}" class="ot-skype"><b>Skype:</b> {{$settings->skype}}</a>
                 @endisset
             </div>
 
-            <ul class="socials">
+            <ul class="ot-socials">
                 @isset($settings->facebook)
-                <li><a href="{{$settings->facebook}}" target="_blank"><i class="icon icon-facebook"></i>Facebook</a></li>
+                <li><a href="{{$settings->facebook}}" target="_blank"><i class="ot-icon ot-icon-facebook"></i>Facebook</a></li>
                 @endisset
                 @isset($settings->linkedin)
-                <li><a href="{{$settings->linkedin}}" target="_blank"><i class="icon icon-linkedin"></i>Linked In</a></li>
+                <li><a href="{{$settings->linkedin}}" target="_blank"><i class="ot-icon ot-icon-linkedin"></i>Linked In</a></li>
                 @endisset
                 @isset($settings->google)
-                <li><a href="{{$settings->google}}" target="_blank"><i class="icon icon-googleplus"></i>Google</a></li>
+                <li><a href="{{$settings->google}}" target="_blank"><i class="ot-icon ot-icon-googleplus"></i>Google</a></li>
                 @endisset
             </ul>
             <!-- /.socials -->
         </div>
         <!-- /.info -->
-        <div class="form">
-            <h5 class="title">зворотний зв’язок</h5>
+        <div class="ot-form">
+            <h5 class="ot-title">зворотний зв’язок</h5>
             <form action="{{route('client.feedback.store')}}" id="feedback-form" method="post">
-                <div class="row">
-                    <div class="form-group">
+                <div class="ot-row">
+                    <div class="ot-form-group">
                         <label for="footer-name">Ваше ім’я</label>
-                        <input type="text" class="form-control" id="footer-name" name="fullname" required placeholder="Ваше ім’я">
+                        <input type="text" class="ot-form-control" id="footer-name" name="fullname" required placeholder="Ваше ім’я">
                     </div>
-                    <div class="form-group">
+                    <div class="ot-form-group">
                         <label for="footer-phone">Ваш телефон</label>
-                        <input type="text" class="form-control" id="footer-phone" placeholder="(0XX) XXX-XX-XX" name="phone" required>
+                        <input type="text" class="ot-form-control" id="footer-phone" placeholder="(0XX) XXX-XX-XX" name="phone" required>
                     </div>
-                    <div class="form-group">
+                    <div class="ot-form-group">
                         <label for="footer-email">Ваш e-mail</label>
-                        <input type="email" class="form-control" id="footer-email" name="email" placeholder="Ваш e-mail">
+                        <input type="email" class="ot-form-control" id="footer-email" name="email" placeholder="Ваш e-mail">
                     </div>
-                    <div class="form-group">
-                        <textarea class="form-control" rows="4" id="footer-text" name="message" maxlength="1000" placeholder="Повiдомлення.."></textarea>
+                    <div class="ot-form-group">
+                        <textarea class="ot-form-control" rows="4" id="footer-text" name="message" maxlength="1000" placeholder="Повiдомлення.."></textarea>
                     </div>
                 </div>
-                <button type="submit" class="btn">Відправити</button>
+                <button type="submit" class="ot-btn">Відправити</button>
             </form>
         </div>
         <!-- /.form -->
     </div>
     <!-- /.container -->
 
-    <div class="map" id="map">
+    <div class="ot-map" id="map">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2543.824509806457!2d30.480247115729014!3d50.38846987946683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c8dd278a7e5d%3A0x9b298682892d1b10!2sVasylkivska+St%2C+45%2C+Kyiv%2C+02000!5e0!3m2!1sen!2sua!4v1538336624186" width="100%" height="450px" frameborder="0" style="border:0" allowfullscreen></iframe>
-        <div class="container text-right">
-            <button type="submit" class="btn js-open-map">згорнути мапу</button>
+        <div class="ot-container ot-text-right">
+            <button type="submit" class="ot-btn js-open-map">згорнути мапу</button>
         </div>
     </div>
     <!-- /.map -->

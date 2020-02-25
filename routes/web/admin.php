@@ -44,4 +44,16 @@ Route::middleware(['auth', 'role:root'])->group(function () {
     Route::post('/sliders', 'SliderController@store')->name('sliders.store');
     Route::put('/sliders/{slide}', 'SliderController@update')->name('sliders.update');
     Route::delete('/sliders/{slide}', 'SliderController@destroy')->name('sliders.destroy');
+
+    Route::get('/team', 'TeamController@index')->name('team.index');
+    Route::post('/team', 'TeamController@store')->name('team.store');
+    Route::put('/team/{team}', 'TeamController@update')->name('team.update');
+    Route::delete('/team/{team}', 'TeamController@destroy')->name('team.destroy');
+
+    Route::get('/services', 'ServiceController@index')->name('services.index');
+    Route::get('/services/create', 'ServiceController@create')->name('services.create');
+    Route::get('/services/{service}', 'ServiceController@edit')->name('services.edit');
+    Route::post('/services', 'ServiceController@store')->name('services.store');
+    Route::put('/services/{service}', 'ServiceController@update')->name('services.update');
+    Route::delete('/services/{service}', 'ServiceController@destroy')->name('services.destroy');
 });

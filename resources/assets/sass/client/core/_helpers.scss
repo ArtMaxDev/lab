@@ -1,21 +1,21 @@
-.d-block {
+.ot-d-block {
   display: block !important;
 }
 
 
-.d-md-block {
+.ot-d-md-block {
   @media all and (min-width: 1024px) {
     display: block !important;
   }
 }
 
-.d-md-none {
+.ot-d-md-none {
   @media all and (min-width: 1024px) {
     display: none !important;
   }
 }
 
-.text-xs-center {
+.ot-text-xs-center {
   @media all and (max-width: 767px) {
     text-align: center;
   }

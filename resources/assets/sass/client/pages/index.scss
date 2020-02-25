@@ -9,7 +9,7 @@ $slider-button-text-color: #fff;
 $slider-dot-color: #92989e;
 $slider-dot-color-active: #3a4652;
 
-.slider {
+.ot-slider {
   position: relative;
 
   .tns-nav {
@@ -88,18 +88,18 @@ $slider-dot-color-active: #3a4652;
     }
   }
 
-  .slide {
+  .ot-slide {
     display: none;
     position: relative;
 
     &.tns-slide-active {
-      .image {
+      .ot-image {
         opacity: 1;
       }
     }
   }
 
-  .image {
+  .ot-image {
     opacity: 0;
     position: absolute;
     z-index: -1;
@@ -115,36 +115,36 @@ $slider-dot-color-active: #3a4652;
     }
   }
 
-  .content {
+  .ot-content {
     margin-top: 134px;
     margin-bottom: 100px;
 
     font-weight: bold;
 
-    &.light {
-      .title {
+    &.ot-light {
+      .ot-title {
         color: #fff;
       }
-      .description {
+      .ot-description {
         color: #16e4e4;
       }
     }
   }
 
-  .content-right {
+  .ot-content-right {
     padding-left: 50%;
     padding-right: 5%;
     text-align: center;
   }
 
-  .title {
+  .ot-title {
     margin-bottom: 25px;
     font-size: 72px;
     color: $slider-title-color;
     text-transform: uppercase;
   }
 
-  .description {
+  .ot-description {
     padding: 0 10%;
     font-size: 22px;
     color: $slider-description-color;
@@ -152,7 +152,7 @@ $slider-dot-color-active: #3a4652;
     margin-bottom: 25px;
   }
 
-  .btn {
+  .ot-btn {
     display: inline-block;
     width: 100%;
     max-width: 450px;
@@ -178,18 +178,18 @@ $slider-dot-color-active: #3a4652;
 
 }
 
-.about {
+.ot-about {
   background: #0b939d url('../../../images/client/about-bg.jpg') no-repeat center center;
   background-size: cover;
   color: #fff;
 
-  .about-title {
+  .ot-about-title {
     font-size: 46px;
     margin-top: 0;
     font-weight: bold;
   }
 
-  .img {
+  .ot-img {
     display: block;
     max-width: 380px;
     width: 100%;
@@ -197,19 +197,19 @@ $slider-dot-color-active: #3a4652;
     border: 9px solid #b1c7c9;
   }
 
-  .article {
+  .ot-article {
     display: flex;
     align-items: flex-start;
   }
 
-  .content {
+  .ot-content {
     padding-left: 55px;
     font-size: 18px;
 
     font-weight: 400;
     line-height: 30px;
 
-    .title {
+    .ot-title {
       margin-top: 0;
       font-size: 22px;
 
@@ -233,28 +233,28 @@ $slider-dot-color-active: #3a4652;
 
 @import "../components/team-item";
 
-.team {
+.ot-team {
   position: relative;
 
-  .item {
+  .ot-item {
     display: none;
     margin: 0;
     text-decoration: none;
 
-    .content {
+    .ot-content {
       padding: 5px 20px;
       line-height: 30px;
       text-align: center;
     }
 
-    .name {
+    .ot-name {
 
       font-size: 18px;
       font-weight: bold;
       color: #3a4143;
     }
 
-    .sub-text {
+    .ot-sub-text {
       display: block;
 
       font-size: 16px;
@@ -263,7 +263,7 @@ $slider-dot-color-active: #3a4652;
     }
 
     &:hover {
-      .sub-text {
+      .ot-sub-text {
         color: #ea5260;
       }
     }
@@ -272,16 +272,16 @@ $slider-dot-color-active: #3a4652;
 
 @import "../components/news-item";
 
-.news {
+.ot-news {
   position: relative;
 
-  .item {
+  .ot-item {
     display: none;
   }
 }
 
-.team,
-.news {
+.ot-team,
+.ot-news {
   .tns-controls {
     position: absolute;
     right: -10px;
@@ -299,31 +299,31 @@ $slider-dot-color-active: #3a4652;
 }
 
 @media all and (max-width: 1023px) {
-  .slider {
-    .title {
+  .ot-slider {
+    .ot-title {
       font-size: 60px;
     }
 
-    .btn {
+    .ot-btn {
       font-size: 18px;
     }
   }
 
-  .about {
-    .img {
+  .ot-about {
+    .ot-img {
       display: none;
     }
 
-    .about-title,
-    .content .title {
+    .ot-about-title,
+    .ot-content .ot-title {
       text-align: center;
     }
 
-    .about-title {
+    .ot-about-title {
       font-size: 36px;
     }
 
-    .content .title {
+    .ot-content .ot-title {
       margin: 80px 0;
     }
   }
@@ -334,25 +334,25 @@ $slider-dot-color-active: #3a4652;
 }
 
 @media all and (max-width: 767px) {
-  .slider {
+  .ot-slider {
     .tns-nav {
       bottom: 1%;
     }
-    .content {
+    .ot-content {
       margin-top: 80px;
       margin-bottom: 50px;
     }
 
-    .content-right {
+    .ot-content-right {
       padding: 0;
     }
   }
-  .about {
-    .content {
+  .ot-about {
+    .ot-content {
       padding-left: 0;
       font-size: 16px;
 
-      .title {
+      .ot-title {
         font-size: 18px;
         margin: 40px 0;
       }
@@ -363,20 +363,20 @@ $slider-dot-color-active: #3a4652;
     }
   }
 
-  .team {
+  .ot-team {
     > div {
       display: flex;
       flex-flow: row wrap;
     }
-    .item {
+    .ot-item {
       width: 50%;
       display: block;
       word-break: break-word;
-      .name {
+      .ot-name {
         font-size: 16px;
       }
 
-      .sub-text {
+      .ot-sub-text {
         font-size: 14px;
       }
     }

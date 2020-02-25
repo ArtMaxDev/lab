@@ -2,7 +2,6 @@
 
 use App\Models\User;
 use Illuminate\Database\Seeder;
-use Ultraware\Roles\Models\Role;
 
 class UsersSeeder extends Seeder
 {

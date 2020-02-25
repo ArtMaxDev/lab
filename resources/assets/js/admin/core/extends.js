@@ -35,6 +35,16 @@ $.validator.addMethod('phonesRUS_UA_Viber', function (phone, element) { // eslin
 }, 'Укажите верный телефонный номер в формате +380000000000. '
   + 'Так же можно указать :viber или :v в конце номера, что бы отобразить иконку вайбера');
 
+$.validator.addMethod('encoded_or_url', function (value, element) { // eslint-disable-line func-names
+  if (this.optional(element)) {
+    return this.optional(element);
+  } else if (/^http:/.test(value)) { // eslint-disable-line no-else-return
+    return $.validator.methods.url.call(this, value, element);
+  }
+  console.log(!/[^\w-]+/.test(value));
+  return !/[^\w-]+/.test(value);
+}, 'Используйте только буквы латиницы и дефизы, остальные символы принимаються только в составе полной ссылки (http:://...)');
+
 // Override jquery validation messages
 $.extend($.validator.messages, {
   required: 'Поле является обязательным.',
