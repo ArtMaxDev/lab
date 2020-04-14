@@ -40,9 +40,9 @@ if (window.screen && window.screen.width > 768) {
   });
 }
 
-if (document.querySelector('#slider-news')) {
+if (document.querySelector('#ot-slider-news')) {
   tns({
-    container: '#slider-news',
+    container: '#ot-slider-news',
     items: window.screen && window.screen.width > 768 ? 3 : 1,
     slideBy: 1,
     controls: true,
