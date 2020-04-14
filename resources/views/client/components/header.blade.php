@@ -27,7 +27,9 @@
             </ul>
         </li>
         <li class="ot-nav-item"><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.news.index'), [], false)}}" class="ot-nav-link">@lang('main.nav.info')</a></li>
+        @if($team->count())
         <li class="ot-nav-item"><a href="{{LaravelLocalization::getLocalizedURL($currentLocale, route('client.team.index'), [], false)}}" class="ot-nav-link">@lang('main.nav.team')</a></li>
+        @endif
         <li class="ot-nav-item"><a href="#footer" class="ot-nav-link js-scroll">@lang('main.nav.contact')</a></li>
     </ul>
 </nav>

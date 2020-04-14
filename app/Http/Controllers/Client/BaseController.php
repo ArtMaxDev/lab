@@ -30,14 +30,12 @@ class BaseController extends Controller
         ]);
         View::share('settings', $settings);
         View::share('services', $services);
+        View::share('team', Team::all());
         View::share('currentLocale', $this->currentLocale);
     }
 
-    public function team(Team $team)
+    public function team()
     {
-        return view('client.pages.team')
-            ->with([
-                'team' => $team->get()
-            ]);
+        return view('client.pages.team');
     }
 }

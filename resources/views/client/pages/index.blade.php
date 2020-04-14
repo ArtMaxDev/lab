@@ -75,6 +75,7 @@
 
     @include('client.components.rnk-' . $currentLocale)
 
+    @if($team->count())
     <section class="ot-section ot-container ot-team" id="team">
         <h2 class="ot-section-title">@lang('team.title')</h2>
         <div id="slider-team">
@@ -83,6 +84,7 @@
         <!-- /#slider-team -->
     </section>
     <!-- /#team -->
+    @endif
     @if($news->count())
     <section class="ot-section ot-container ot-news" id="news">
         <h2 class="ot-section-title">@lang('news.title')</h2>

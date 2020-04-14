@@ -17,7 +17,7 @@ class NewsController extends BaseController
     {
         return view('client.pages.news-item')->with([
             'item' => $publication,
-            'news' => $publication->published()->get()->take(3),
+            'news' => $publication->published()->inRandomOrder()->get()->take(3),
         ]);
     }
 }
